@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  padding: 50px;
+  font-size: 25px;
+  color: #84e;
+}
+
+.jedi {
+  width: 200px;
+}
+
+section {
+  width: 400px;
+}
+
+.info {
+  text-align: center;
+}
+
+.intro-footer {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li {
+  padding: 10px;
+  text-align: center;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #84e;
+}
+
+a:hover {
+  color: rgb(107, 22, 236);
+}
