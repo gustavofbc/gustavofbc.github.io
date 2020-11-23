@@ -56,3 +56,49 @@ a {
 a:hover {
   color: rgb(107, 22, 236);
 }
+
+@media (max-width: 700px) {
+  header {
+    width: 400px;
+    text-align: center;
+  }
+
+  header h1 {
+    margin-top: -20px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+  }
+  section p {
+    font-size: 12px;
+  }
+
+  section img {
+    width: 200px;
+  }
+
+  .intro-footer {
+    text-align: center;
+    width: 300px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #84e;
+  }
+
+  footer a {
+    font-size: 12px;
+    color: #fff;
+  }
+
+  .mandalorian {
+    width: 50px;
+  }
+}
