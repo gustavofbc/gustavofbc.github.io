@@ -118,12 +118,39 @@ section .container-home .container-home-image img {
 section .container-sobre_mim {
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/background_black_reverse2.png");
+  background-image: url("../images/background_black_reverse3.png");
   background-repeat: no-repeat;
   background-position-x: left;
   background-color: var(--white-jedi);
 
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+section .container-sobre_mim .gustavo_force_storm {
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 450px;
+}
+
+section .container-sobre_mim-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 325px;
+  margin-right: 10%;
+}
+
+section .title-sobre_mim {
+  display: flex;
+}
+
+section .title-sobre_mim h1 {
+  font-size: 35px;
+}
+
+section .title-sobre_mim .sabre_negro {
+  width: 50px;
+  height: 50px;
 }
