@@ -1,0 +1,124 @@
+*,
+section,
+p,
+body,
+span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SpaceMono-Regular";
+}
+
+/* cores */
+:root {
+  --black-jedi: #000000;
+  --gray-jedi: #1f1f1f;
+  --white-jedi: #fff;
+}
+/* -------------------------- */
+
+/* Fonts */
+@font-face {
+  src: url("../fonts/Space_Mono/SpaceMono-Regular.ttf");
+  font-family: "SpaceMono-Regular";
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("../fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf");
+  font-family: "UbuntuMono-Bold";
+  font-weight: normal;
+}
+/* -------------------------- */
+
+/* Alterações no bootstrap */
+nav {
+  height: 70px;
+}
+/* -------------------------- */
+
+section {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/background_black.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+/* Section: home */
+
+section .container-home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section .container-home .container-home-text {
+  min-width: 350px;
+  max-width: 450px;
+}
+
+section .container-home-text {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+section .container-home-text p {
+  font-size: 22px;
+}
+
+section .container-home-text a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  height: 65px;
+  width: 200px;
+  margin-top: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 8px;
+  color: var(--white-jedi);
+  background-color: var(--gray-jedi);
+  box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
+  transition: 1s;
+}
+
+section .container-home-text a:hover {
+  background-color: var(--black-jedi);
+}
+
+section .container-home .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section .container-home .title-name {
+  font-family: "UbuntuMono-Bold";
+  font-size: 45px;
+}
+
+section .container-home .title img {
+  width: 120px;
+  height: 120px;
+  margin-top: -40px;
+}
+
+section .container-home .container-home-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section .container-home .container-home-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-left: 200px;
+}
+/* ------------------------------------------ */
