@@ -14,6 +14,7 @@ span {
   --black-jedi: #000000;
   --gray-jedi: #1f1f1f;
   --white-jedi: #f8f9fa;
+  --gray-light: #f4f4f4;
 }
 /* -------------------------- */
 
@@ -21,6 +22,12 @@ span {
 @font-face {
   src: url("../fonts/Space_Mono/SpaceMono-Regular.ttf");
   font-family: "SpaceMono-Regular";
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("../fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf");
+  font-family: "UbuntuMono-Regular";
   font-weight: normal;
 }
 
@@ -80,12 +87,14 @@ section .container-home-text a {
 
 section .container-home-text a:hover {
   background-color: var(--black-jedi);
+  transform: scale(1.05);
 }
 
 section .container-home .title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 section .container-home .title-name {
@@ -94,8 +103,8 @@ section .container-home .title-name {
 }
 
 section .container-home .title img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   margin-top: -40px;
 }
 
@@ -154,3 +163,67 @@ section .title-sobre_mim .sabre_negro {
   width: 50px;
   height: 50px;
 }
+/* ------------------------------------------ */
+
+/* Section: sobre mim */
+section .container-conhecimentos {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/background_black_2.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-color: var(--white-jedi);
+
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section .title-conhecimentos {
+  display: flex;
+}
+
+section .title-conhecimentos img {
+  width: 50px;
+  height: 50px;
+}
+
+section .title-conhecimentos h1 {
+  font-size: 35px;
+}
+
+section .skills {
+  display: flex;
+  justify-content: left;
+  max-width: 800px;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+
+section article .skill-card {
+  width: 200px;
+  height: 225px;
+  border-radius: 8px;
+  background-color: var(--gray-light);
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px 20px;
+  transition: 1s;
+}
+
+section article .skill-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+section article .skill-card .experience {
+  text-align: center;
+  font-size: 15px;
+}
+/* ------------------------------------------ */
