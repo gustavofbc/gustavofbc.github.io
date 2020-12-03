@@ -31,19 +31,15 @@ span {
 }
 /* -------------------------- */
 
-section {
+/* Section: home */
+section .container-home {
   width: 100vw;
   height: 100vh;
   background-image: url("../images/background_black.png");
   background-repeat: no-repeat;
   background-position-x: right;
   background-color: var(--white-jedi);
-}
 
-/* Section: home */
-section .container-home {
-  width: 100vw;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -117,3 +113,17 @@ section .container-home .container-home-image img {
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 /* ------------------------------------------ */
+
+/* Section: sobre mim */
+section .container-sobre_mim {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/background_black_reverse2.png");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-color: var(--white-jedi);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
