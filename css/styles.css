@@ -13,7 +13,7 @@ span {
 :root {
   --black-jedi: #000000;
   --gray-jedi: #1f1f1f;
-  --white-jedi: #fff;
+  --white-jedi: #f8f9fa;
 }
 /* -------------------------- */
 
@@ -31,22 +31,16 @@ span {
 }
 /* -------------------------- */
 
-/* Alterações no bootstrap */
-nav {
-  height: 70px;
-}
-/* -------------------------- */
-
 section {
   width: 100vw;
   height: 100vh;
   background-image: url("../images/background_black.png");
   background-repeat: no-repeat;
   background-position-x: right;
+  background-color: var(--white-jedi);
 }
 
 /* Section: home */
-
 section .container-home {
   width: 100vw;
   height: 100vh;
@@ -120,5 +114,6 @@ section .container-home .container-home-image img {
   height: 300px;
   border-radius: 50%;
   margin-left: 200px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 /* ------------------------------------------ */
