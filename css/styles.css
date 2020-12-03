@@ -127,7 +127,7 @@ section .container-home .container-home-image img {
 section .container-sobre_mim {
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/background_black_reverse3.png");
+  background-image: url("../images/background_black_reverse.png");
   background-repeat: no-repeat;
   background-position-x: left;
   background-color: var(--white-jedi);
@@ -185,7 +185,7 @@ section .title-conhecimentos {
   display: flex;
 }
 
-section .title-conhecimentos img {
+section .title-conhecimentos .sabre_mestre_jedi {
   width: 50px;
   height: 50px;
 }
@@ -225,5 +225,46 @@ section article .skill-card:hover {
 section article .skill-card .experience {
   text-align: center;
   font-size: 15px;
+}
+/* ------------------------------------------ */
+
+/* Section: sobre mim */
+section .container-projetos {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/background_black_reverse_2.png");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-color: var(--white-jedi);
+
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section .title-projetos h1 {
+  font-size: 35px;
+}
+
+section article .project-card {
+  width: 300px;
+  height: 225px;
+  border-radius: 8px;
+  background-color: var(--gray-light);
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 15px 20px;
+  transition: 1s;
+}
+
+section article .project-description {
+  text-align: center;
+  padding: 0px 30px;
 }
 /* ------------------------------------------ */
