@@ -223,6 +223,11 @@ section article .project-card {
   transition: 1s;
 }
 
+section article .project-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
 section article .project-description {
   text-align: center;
   padding: 0px 30px;
