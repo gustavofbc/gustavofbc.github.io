@@ -299,6 +299,11 @@ footer .heart {
     background-position-x: right;
     background-size: 50% 100%;
     box-sizing: border-box;
+    margin: 0px 20px;
+  }
+
+  section .container-home-text div img {
+    margin-right: 20px;
   }
 
   section .container-home-text a {
@@ -320,12 +325,18 @@ footer .heart {
     box-sizing: border-box;
   }
 
+  section .container-sobre_mim p {
+    font-size: 18px;
+  }
+
   section .container-sobre_mim .gustavo_force_storm {
     width: 200px;
+    margin-top: -10px;
+    margin-bottom: -50px;
   }
 
   section .container-sobre_mim-text {
-    min-width: 450px;
+    min-width: 350px;
     margin-right: 0;
   }
 
@@ -405,6 +416,9 @@ footer .heart {
     width: 100%;
     flex-wrap: wrap;
     text-align: center;
+  }
+  footer p {
+    margin: 0px 50px;
   }
 }
 /* ------------------------------------------ */
