@@ -1,6 +1,6 @@
 /* Section: home */
 section .container-home {
-  width: 98vw;
+  width: 100vw;
   height: 100vh;
   background-image: url("../images/background_black.png");
   background-repeat: no-repeat;
@@ -85,7 +85,7 @@ section .container-home .container-home-image img {
 
 /* Section: sobre mim */
 section .container-sobre_mim {
-  width: 98vw;
+  width: 100vw;
   height: 100vh;
   background-image: url("../images/background_black_reverse.png");
   background-repeat: no-repeat;
@@ -121,9 +121,9 @@ section .title-sobre_mim .sabre_negro {
 }
 /* ------------------------------------------ */
 
-/* Section: sobre mim */
+/* Section: Conhecimentos */
 section .container-conhecimentos {
-  width: 98vw;
+  width: 100vw;
   height: 100vh;
   background-image: url("../images/background_black_2.png");
   background-repeat: no-repeat;
@@ -181,9 +181,9 @@ section article .skill-card .experience {
 }
 /* ------------------------------------------ */
 
-/* Section: sobre mim */
+/* Section: Projetos */
 section .container-projetos {
-  width: 98vw;
+  width: 100vw;
   height: 100vh;
   background-image: url("../images/background_black_reverse_2.png");
   background-repeat: no-repeat;
@@ -235,9 +235,9 @@ section article .project-description {
 
 /* ------------------------------------------ */
 
-/* Section: sobre mim */
+/* Section: Contato */
 section .container-contato {
-  width: 98vw;
+  width: 100vw;
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -274,5 +274,137 @@ footer .footer-icon {
 footer .heart {
   width: 50px;
   margin-bottom: -20px;
+}
+/* ------------------------------------------ */
+
+/* Responsividade */
+
+@media (max-width: 1050px) {
+  nav {
+    display: none !important;
+  }
+
+  section {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  /* Section: Home */
+  section .container-home {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    min-width: 540px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 50% 100%;
+    box-sizing: border-box;
+  }
+
+  section .container-home-text a {
+    width: 100%;
+  }
+
+  section .container-home .container-home-image img {
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: 0px;
+  }
+
+  /* Section: Sobre mim */
+  section .container-sobre_mim {
+    flex-direction: column;
+    justify-content: center;
+    background-size: 50% 100%;
+    min-width: 540px;
+    box-sizing: border-box;
+  }
+
+  section .container-sobre_mim .gustavo_force_storm {
+    width: 200px;
+  }
+
+  section .container-sobre_mim-text {
+    min-width: 450px;
+    margin-right: 0;
+  }
+
+  /* Section: Conhecimentos */
+  section .container-conhecimentos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-size: 50% 100%;
+    min-width: 540px;
+    box-sizing: border-box;
+  }
+
+  section .title-conhecimentos {
+    margin-left: 0px;
+  }
+
+  section .skills {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+
+  section article .skill-card {
+    width: 70%;
+    height: 80%;
+  }
+
+  section article div img {
+    margin-top: 10px;
+  }
+
+  section article div div img {
+    width: 20px;
+  }
+
+  /* Section: Projetos */
+  section .container-projetos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-size: 50% 100%;
+    min-width: 540px;
+    box-sizing: border-box;
+  }
+
+  section .title-projetos {
+    margin-right: 0px;
+  }
+
+  section .projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  section article .project-card {
+    width: 200px;
+    height: 150px;
+  }
+
+  /* Section: Contato */
+  section .container-contato {
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 540px;
+    box-sizing: border-box;
+  }
+
+  footer {
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+  }
 }
 /* ------------------------------------------ */

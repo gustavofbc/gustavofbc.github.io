@@ -1,5 +1,6 @@
 /* Barra de navegação */
 nav {
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,7 +21,7 @@ ul {
 }
 
 nav .logo-name {
-  padding: 10px;
+  margin-left: 20px;
 }
 
 nav .nav-link {
