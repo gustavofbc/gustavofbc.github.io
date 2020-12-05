@@ -1,6 +1,10 @@
 # portfólio
+<p> :computer: Desktop:</p>
+<img src="./images/demo/demo-v1.gif" alt="site desktop">
 
-<img src="./images/demo/demo-v1.gif">
+<p> :iphone: Mobile:</p>
+<br/>
+<img src="./images/demo/demo_mobile.gif" alt="site mobile">
 > projeto desenvolvido para mostrar um pouco mais do meu trabalho.
 
 ### Desáfios:
@@ -9,8 +13,8 @@ O projeto está em fase de desenvolvimento e as atividades a serem desempenhadas
 - [x] Idealização;
 - [x] Prototipação das telas;
 - [x] Construção do projeto Beta (HTML e CSS);
-- [ ] Refatoração 1 - (Melhorar código HTML e CSS);
-- [ ] Implementar responsividade;
+- [x] Refatoração 1 - (Melhorar código HTML e CSS);
+- [x] Implementar responsividade;
 - [ ] Criar navbar responsiva para acesso ao site via mobile;
 - [ ] Implementar scroll suave;
 - [ ] Implementar formulário para contato;
