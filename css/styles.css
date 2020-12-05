@@ -475,6 +475,12 @@ footer .heart {
       height: 170px;
       margin-bottom: 25px;
     }
+
+    /* Section: Contato */
+
+    .contato {
+      height: 50vh;
+    }
   }
 }
 /* ------------------------------------------ */
