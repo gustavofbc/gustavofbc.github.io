@@ -285,21 +285,22 @@ footer .heart {
   }
 
   section {
-    height: 100vh;
+    height: 140vh;
     width: 100vw;
   }
 
   /* Section: Home */
   section .container-home {
+    height: 140vh;
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     min-width: 540px;
     background-repeat: no-repeat;
     background-position-x: right;
     background-size: 50% 100%;
     box-sizing: border-box;
-    margin: 0px 20px;
+    padding: 0px 10px;
   }
 
   section .container-home-text div img {
@@ -311,13 +312,14 @@ footer .heart {
   }
 
   section .container-home .container-home-image img {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 75%;
+    max-height: 75%;
     margin-left: 0px;
   }
 
   /* Section: Sobre mim */
   section .container-sobre_mim {
+    height: 140vh;
     flex-direction: column;
     justify-content: center;
     background-size: 50% 100%;
@@ -326,22 +328,26 @@ footer .heart {
   }
 
   section .container-sobre_mim p {
-    font-size: 18px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
   }
 
   section .container-sobre_mim .gustavo_force_storm {
-    width: 200px;
+    width: 60%;
     margin-top: -10px;
     margin-bottom: -50px;
   }
 
   section .container-sobre_mim-text {
-    min-width: 350px;
+    min-width: 80%;
     margin-right: 0;
   }
 
   /* Section: Conhecimentos */
   section .container-conhecimentos {
+    height: 140vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -376,6 +382,7 @@ footer .heart {
 
   /* Section: Projetos */
   section .container-projetos {
+    height: 140vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
