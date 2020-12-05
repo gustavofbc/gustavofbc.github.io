@@ -429,21 +429,33 @@ footer .heart {
   }
 
   @media (max-width: 750px) {
+    /* Section: Home */
     section .container-home {
       background: none;
     }
 
+    /* Section: Sobre mim */
     section .container-sobre_mim {
       background: none;
       background-color: rgba(0, 0, 0, 0.88);
       color: var(--white-jedi);
     }
 
+    /* Section: Conhecimentos */
     section .container-conhecimentos {
       background: none;
       background-color: var(--white-jedi);
     }
 
+    section .container-conhecimentos .skills {
+      margin-top: -150px;
+    }
+
+    section article .skill-card {
+      margin-top: 50px;
+    }
+
+    /* Section: Projetos */
     section .container-projetos {
       background: none;
       background-color: rgba(0, 0, 0, 0.88);
@@ -452,6 +464,16 @@ footer .heart {
     section .title-projetos {
       margin-right: 0px;
       color: var(--white-jedi);
+    }
+
+    section .projects {
+      margin-top: -20%;
+    }
+
+    section article .project-card {
+      width: 220px;
+      height: 170px;
+      margin-bottom: 25px;
     }
   }
 }
