@@ -368,8 +368,8 @@ footer .heart {
   }
 
   section article .skill-card {
-    width: 70%;
-    height: 80%;
+    width: 80%;
+    height: 85%;
   }
 
   section article div img {
@@ -426,6 +426,24 @@ footer .heart {
   }
   footer p {
     margin: 0px 50px;
+  }
+
+  @media (max-width: 750px) {
+    section .container-sobre_mim {
+      background: none;
+      background-color: rgba(0, 0, 0, 0.88);
+      color: var(--white-jedi);
+    }
+
+    section .container-conhecimentos {
+      background: none;
+      background-color: var(--white-jedi);
+    }
+
+    section .container-projetos {
+      background: none;
+      background-color: rgba(0, 0, 0, 0.88);
+    }
   }
 }
 /* ------------------------------------------ */
