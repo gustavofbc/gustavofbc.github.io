@@ -429,6 +429,10 @@ footer .heart {
   }
 
   @media (max-width: 750px) {
+    section .container-home {
+      background: none;
+    }
+
     section .container-sobre_mim {
       background: none;
       background-color: rgba(0, 0, 0, 0.88);
@@ -443,6 +447,11 @@ footer .heart {
     section .container-projetos {
       background: none;
       background-color: rgba(0, 0, 0, 0.88);
+    }
+
+    section .title-projetos {
+      margin-right: 0px;
+      color: var(--white-jedi);
     }
   }
 }
