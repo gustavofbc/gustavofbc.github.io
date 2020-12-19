@@ -15,8 +15,8 @@ O projeto está em fase de desenvolvimento e as atividades a serem desempenhadas
 - [x] Construção do projeto Beta (HTML e CSS);
 - [x] Refatoração 1 - (Melhorar código HTML e CSS);
 - [x] Implementar responsividade;
-- [ ] Criar navbar responsiva para acesso ao site via mobile;
-- [ ] Implementar scroll suave;
+- [x] Criar navbar responsiva para acesso ao site via mobile;
+- [x] Implementar scroll suave;
 - [ ] Implementar formulário para contato;
 
 ### Instalação:
