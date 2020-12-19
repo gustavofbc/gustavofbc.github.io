@@ -7,9 +7,13 @@ nav {
   position: fixed;
   height: 70px;
   width: 100%;
-  background-color: #f8f9fa;
+  background-color: var(--white-jedi);
   box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
   z-index: 50;
+}
+
+nav .btn-menu-mobile {
+  display: none;
 }
 
 nav .navbar-items {
@@ -36,3 +40,51 @@ nav .nav-link:hover {
   border-bottom: 3px solid var(--black-jedi);
 }
 /* -------------------------- */
+
+/* Barra de navegação mobile */
+@media screen and (max-width: 820px) {
+  nav {
+    display: block;
+  }
+
+  .logo-name img {
+    margin-top: 1.5em;
+  }
+
+  .btn-menu-mobile {
+    display: block !important;
+    font-size: 1.75em;
+    color: var(--gray-jedi);
+    position: absolute;
+    right: 1.5em;
+    top: 0.6em;
+  }
+
+  .navbar ul {
+    display: none;
+    position: relative;
+    top: 1em;
+    height: 100%;
+  }
+
+  .navbar ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-jedi);
+    margin-top: -1px;
+    min-height: calc(100% - 75%) !important;
+  }
+
+  .navbar ul li a {
+    font-size: 1.4em;
+    text-decoration: none !important;
+  }
+
+  .open {
+    display: flex !important;
+    flex-direction: column;
+    text-align: center;
+    min-height: 140vh !important;
+  }
+}
