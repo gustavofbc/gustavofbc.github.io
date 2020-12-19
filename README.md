@@ -1,10 +1,10 @@
 # portfólio
 <p> :computer: Desktop:</p>
-<img src="./images/demo/demo-v1.gif" alt="site desktop">
+<img src="./images/demo/demo_v2.gif" alt="site desktop">
 
 <p> :iphone: Mobile:</p>
 <br/>
-<img src="./images/demo/demo_mobile.gif" alt="site mobile">
+<img src="./images/demo/demo_mobile_v2.gif" alt="site mobile">
 > projeto desenvolvido para mostrar um pouco mais do meu trabalho.
 
 ### Desáfios:
@@ -17,6 +17,7 @@ O projeto está em fase de desenvolvimento e as atividades a serem desempenhadas
 - [x] Implementar responsividade;
 - [x] Criar navbar responsiva para acesso ao site via mobile;
 - [x] Implementar scroll suave;
+- [x] Refatoração 2 - (Melhorar a navbar, responsividade nas mudanças de tamanho da tela, adição de efeitos e animações);
 - [ ] Implementar formulário para contato;
 
 ### Instalação:
