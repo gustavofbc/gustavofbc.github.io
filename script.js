@@ -42,18 +42,22 @@ function initAnimationScroll(){
 }
 initAnimationScroll();
 
-const navbar = document.querySelector('.navbar-items');
-const menuMobile = document.querySelector('.btn-menu-mobile');
+function initResponsiveness(){
+    const navbar = document.querySelector('.navbar-items');
+    const menuMobile = document.querySelector('.btn-menu-mobile');
 
-menuMobile.addEventListener('click', () =>{
-    navbar.classList.toggle('open');
-});
-
-// Remover o menu ao clicar em uma opção
-const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
-
-linksInternos.forEach((link) => {
-    link.addEventListener('click', () => {
-        navbar.classList.remove('open');
+    menuMobile.addEventListener('click', () =>{
+        navbar.classList.toggle('open');
     });
-});
+
+    // Remover o menu ao clicar em uma opção
+    const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+
+    linksInternos.forEach((link) => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('open');
+        });
+    });
+};
+
+initResponsiveness();
