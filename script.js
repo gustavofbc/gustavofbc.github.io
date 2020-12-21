@@ -94,3 +94,5 @@ function initAnimationButtonToTopScroll(){
     }
     window.addEventListener('scroll', animationScroll);
 }
+
+initAnimationButtonToTopScroll();
