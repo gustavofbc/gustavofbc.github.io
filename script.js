@@ -61,3 +61,18 @@ function initResponsiveness(){
 };
 
 initResponsiveness();
+
+function initButtonToTop(){
+    const buttonToTop = document.querySelector('.toTop');
+
+    function initMillenniumFalcon(event) {
+        event.preventDefault();
+        const home = document.querySelector('.home')
+        home.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+
+    buttonToTop.addEventListener('click', initMillenniumFalcon);
+}
+initButtonToTop();

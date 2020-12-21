@@ -496,3 +496,21 @@ footer .heart {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+
+.toTop {
+  position: fixed;
+  width: 4em;
+  height: 4em;
+  bottom: 1em;
+  right: 1em;
+
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.25);
+  background-image: url("../images/icons/millennium_falcon.png");
+  z-index: 2;
+}
+
+.toTop:hover {
+  background-image: url("../images/icons/millennium_falcon.gif");
+}
