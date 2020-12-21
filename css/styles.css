@@ -497,7 +497,12 @@ footer .heart {
   transform: translate3d(0, 0, 0);
 }
 
+.toTop.ativo {
+  opacity: 1;
+}
 .toTop {
+  transition: 0.5s;
+  opacity: 0;
   position: fixed;
   width: 4em;
   height: 4em;

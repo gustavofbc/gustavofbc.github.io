@@ -62,12 +62,12 @@ function initResponsiveness(){
 
 initResponsiveness();
 
+
 function initButtonToTop(){
     const buttonToTop = document.querySelector('.toTop');
 
     function initMillenniumFalcon(event) {
         event.preventDefault();
-        const home = document.querySelector('.home')
         home.scrollIntoView({
             behavior: 'smooth'
         });
@@ -76,3 +76,21 @@ function initButtonToTop(){
     buttonToTop.addEventListener('click', initMillenniumFalcon);
 }
 initButtonToTop();
+
+function initAnimationButtonToTopScroll(){
+    function animationScroll(){
+        const buttonToTop = document.querySelector('.toTop');
+        const home = document.querySelector('.home')
+        const homeTop = home.getBoundingClientRect().top;
+        const windowEightyPercent = window.innerHeight * 0.3;
+        //soma pois os valores depois de homeTop são negativos pois ele é a primeira sessão e tudo vem depois dele.
+        const millenniumVisible = (homeTop + windowEightyPercent) < 0;
+
+        if(millenniumVisible){
+            buttonToTop.classList.add('ativo');
+        } else {
+            buttonToTop.classList.remove('ativo');
+        }
+    }
+    window.addEventListener('scroll', animationScroll);
+}
