@@ -22,13 +22,13 @@ function initAnimationScroll(){
     const sections = document.querySelectorAll('.js-scroll');
 
     if(sections.length){
-    const windowEightyPercent = window.innerHeight * 0.8;
+    const windowSeventyPercent = window.innerHeight * 0.7;
 
     function animationScroll() {
         sections.forEach((section) => {
             const sectionTop = section.getBoundingClientRect().top;
 
-            const isSectionVisible = (sectionTop - windowEightyPercent) < 0; 
+            const isSectionVisible = (sectionTop - windowSeventyPercent) < 0; 
             if(isSectionVisible){
                 section.classList.add('ativo');
             } else {

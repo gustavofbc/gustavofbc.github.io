@@ -262,14 +262,14 @@ section form .card-agradecimentos {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 15em;
-  width: 15em;
+  height: 275px;
+  width: 250px;
   border-radius: 8px;
   box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
 }
 
 section form .card-agradecimentos .vader {
-  width: 75px;
+  width: 90px;
 }
 
 section form .card-agradecimentos .subtitle {
@@ -284,8 +284,8 @@ section form .card-agradecimentos .texto-agradecimentos {
 section form .card-contact {
   display: flex;
   flex-direction: column;
-  width: 35em;
-  height: 20em;
+  width: 550px;
+  height: 300px;
   border-radius: 8px;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 10px 20px;
@@ -297,10 +297,10 @@ section form .card-contact label {
 }
 
 section form .card-contact input {
-  width: 90%;
+  width: 95%;
   height: 80px;
   margin-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-left: 5px;
   border: none;
   border-radius: 6px;
@@ -308,7 +308,7 @@ section form .card-contact input {
 }
 
 section form .card-contact textarea {
-  width: 90%;
+  width: 95%;
   margin-left: 10px;
   margin-bottom: 20px;
   padding-left: 5px;
@@ -361,10 +361,6 @@ footer .heart {
 /* Responsividade */
 
 @media (max-width: 1050px) {
-  nav {
-    /* display: none !important; */
-  }
-
   section {
     height: 140vh;
     width: 100vw;
@@ -463,7 +459,6 @@ footer .heart {
 
   /* Section: Projetos */
   section .container-projetos {
-    height: 140vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -491,13 +486,38 @@ footer .heart {
 
   /* Section: Contato */
   section .container-contato {
-    height: 100% !important;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     min-width: 540px;
     box-sizing: border-box;
+  }
+
+  section form .card-agradecimentos {
+    display: none;
+  }
+
+  section form {
+    width: 100%;
+  }
+
+  section form .card-contact {
+    width: 80%;
+    height: 80%;
+  }
+
+  section form .card-contact label {
+    font-size: 1.7rem;
+  }
+
+  section form .card-contact input {
+    font-size: 1.2rem;
+  }
+
+  section form .card-contact textarea {
+    font-size: 1.2rem;
   }
 
   footer {
