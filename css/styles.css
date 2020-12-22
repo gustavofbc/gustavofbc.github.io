@@ -459,6 +459,7 @@ footer .heart {
 
   /* Section: Projetos */
   section .container-projetos {
+    height: 140vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -486,10 +487,10 @@ footer .heart {
 
   /* Section: Contato */
   section .container-contato {
-    height: 100vh;
+    height: 140vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     min-width: 540px;
     box-sizing: border-box;
@@ -525,6 +526,7 @@ footer .heart {
     flex-wrap: wrap;
     text-align: center;
   }
+
   footer p {
     margin: 0px 50px;
   }
@@ -578,9 +580,12 @@ footer .heart {
     }
 
     /* Section: Contato */
+    section form {
+      margin: 0px;
+    }
 
-    .contato {
-      height: 50vh;
+    .icons {
+      margin-bottom: 20px;
     }
   }
 }
