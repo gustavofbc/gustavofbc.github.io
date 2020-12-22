@@ -496,6 +496,10 @@ footer .heart {
     box-sizing: border-box;
   }
 
+  section .container-contato .title-contato {
+    margin-top: 20px;
+  }
+
   section form .card-agradecimentos {
     display: none;
   }
@@ -506,7 +510,7 @@ footer .heart {
 
   section form .card-contact {
     width: 80%;
-    height: 80%;
+    height: 60%;
   }
 
   section form .card-contact label {
