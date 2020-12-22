@@ -238,7 +238,7 @@ section article .project-description {
 /* Section: Contato */
 section .container-contato {
   width: 100vw;
-  height: 50vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -249,13 +249,94 @@ section .title-contato {
   display: flex;
 }
 
+section form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0px;
+}
+
+section form .card-agradecimentos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 15em;
+  width: 15em;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+section form .card-agradecimentos .vader {
+  width: 75px;
+}
+
+section form .card-agradecimentos .subtitle {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+section form .card-agradecimentos .texto-agradecimentos {
+  padding: 0px 15px;
+}
+
+section form .card-contact {
+  display: flex;
+  flex-direction: column;
+  width: 35em;
+  height: 20em;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+}
+
+section form .card-contact label {
+  font-size: 20px;
+  padding: 5px;
+}
+
+section form .card-contact input {
+  width: 90%;
+  height: 80px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--input-background);
+}
+
+section form .card-contact textarea {
+  width: 90%;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--input-background);
+}
+
+section form .card-contact .btn-submit {
+  width: 100px;
+  padding-left: 0px;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--master-jedi);
+  transition: 1s;
+}
+
+section form .card-contact .btn-submit:hover {
+  background-color: var(--master-jedi-darker);
+}
+
 .icons a {
   margin: 0px 10px;
 }
 
 footer {
   width: 100%;
-  height: 30%;
+  height: 100px;
 
   display: flex;
   flex-direction: row;

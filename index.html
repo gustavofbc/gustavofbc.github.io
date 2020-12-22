@@ -290,15 +290,19 @@
                 <h1>Contato_</h1>
                 <img class="sabre_mestre_jedi" src="images/pixels/sabre mestre jedi.gif" alt="Sabre mestre jedi">
             </div>
+
             <form action="">
                 <article>
-                    <img src="images/icons/darth_vader.gif" alt="Darth Vader">
-                    <h4>Obrigado pela visita 
-                        caro mestre Jedi/Sith,
-                        deixe uma mensagem de
-                        qualquer parte da
-                        galáxia...
-                    </h4>
+                    <div class="card-agradecimentos">
+                        <img class="vader" src="images/icons/darth_vader.gif" alt="Darth Vader">
+                        <p class="subtitle">Obrigado pela visita!</p>
+                        <p class="texto-agradecimentos">
+                            Caro Mestre(a) Jedi / Lord Sith,
+                            deixe uma mensagem de
+                            qualquer parte da
+                            galáxia...
+                        </p>
+                    </div>
                 </article>
 
                 <div class="card-contact">
@@ -306,10 +310,11 @@
                     <input name="email" type="text" placeholder="Digite seu e-mail aqui...">
 
                     <label for="message">Mensagem</label>
-                    <input name="message" type="text" placeholder="Digite sua mensagem aqui...">
+                    <textarea name="message" type="text" placeholder="Digite sua mensagem aqui..." cols="30" rows="10"></textarea>
+                
+                    <input class="btn-submit" type="button" type="submit" value="Enviar">
                 </div>
 
-                <input type="button" type="submit" value="Enviar">
             </form>
 
             <div class="icons">
