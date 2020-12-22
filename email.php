@@ -9,8 +9,8 @@ if( isset($_POST['email'] ) && !empty($_POST['email']) ){
     $subject = 'Contato via site portfólio';
     $body = "Email: ". $email. "\r\n".
             "Mensagem: ". $message;
-    $header = 'From: gustavofbc <gustavo.felipebc@gmail.com>'."\r\n"
-              ."Reply-To:". $email."\r\n"
+    $header = 'From:gustavo.felipebc@gmail.com'."\r\n"
+              ."Reply-To:".$email."\r\n"
               ."X-Mailer:PHP/".phpversion();
 
     if(mail($to, $subject, $body, $header)){
