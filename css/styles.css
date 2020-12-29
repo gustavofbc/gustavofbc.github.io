@@ -532,6 +532,16 @@ footer .heart {
   section .container-conhecimentos .skills .skill-card {
     width: 500px;
   }
+
+  /* Section: Projetos */
+  section .container-projetos .projects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section .container-projetos .projects .project-card {
+    width: 500px;
+  }
 }
 
 /* ------------------------------------------ */
