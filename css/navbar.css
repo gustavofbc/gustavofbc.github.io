@@ -6,7 +6,6 @@ nav {
   justify-content: space-between;
   position: fixed;
   height: 70px;
-  width: 100%;
   background-color: var(--white-jedi);
   box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
   z-index: 50;
@@ -86,5 +85,12 @@ nav .nav-link:hover {
     flex-direction: column;
     text-align: center;
     min-height: 140vh !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  nav {
+    display: block;
+    width: 100vw;
   }
 }

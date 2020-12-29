@@ -2,9 +2,9 @@
 section .container-home {
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/background_black.png");
+  /* background-image: url("../images/background_black.png");
   background-repeat: no-repeat;
-  background-position-x: right;
+  background-position-x: right; */
   background-color: var(--white-jedi);
 
   display: flex;
@@ -70,16 +70,23 @@ section .container-home .title img {
 
 section .container-home .container-home-image {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-section .container-home .container-home-image img {
+section .container-home .container-home-image .my-skin {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  margin-left: 200px;
+  /* margin-left: 200px; */
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+section .container-home .icons-my-skin img {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
 }
 /* ------------------------------------------ */
 
@@ -87,28 +94,27 @@ section .container-home .container-home-image img {
 section .container-sobre_mim {
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/background_black_reverse.png");
-  background-repeat: no-repeat;
-  background-position-x: left;
-  background-color: var(--white-jedi);
+  background-image: url("../images/background-sobre_mim.png");
+  background-color: var(--gray-jedi);
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-section .container-sobre_mim .gustavo_force_storm {
-  margin-left: 5%;
+section .container-sobre_mim .meu-avatar {
+  margin-left: 10%;
   margin-top: 5%;
-  width: 450px;
+  width: 400px;
 }
 
 section .container-sobre_mim-text {
+  width: 325px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 325px;
   margin-right: 10%;
+  color: var(--white-jedi);
 }
 
 section .title-sobre_mim {
@@ -125,9 +131,7 @@ section .title-sobre_mim .sabre_negro {
 section .container-conhecimentos {
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/background_black_2.png");
-  background-repeat: no-repeat;
-  background-position-x: right;
+  background-image: url("../images/background_conhecimentos.png");
   background-color: var(--white-jedi);
 
   display: flex;
@@ -185,10 +189,8 @@ section article .skill-card .experience {
 section .container-projetos {
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/background_black_reverse_2.png");
-  background-repeat: no-repeat;
-  background-position-x: left;
-  background-color: var(--white-jedi);
+  background-image: url("../images/background_projetos.png");
+  background-color: var(--gray-jedi);
 
   display: flex;
   flex-direction: column;
@@ -268,7 +270,7 @@ section form .card-agradecimentos {
   box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
 }
 
-section form .card-agradecimentos .vader {
+section form .card-agradecimentos .mandalorian {
   width: 90px;
 }
 
@@ -360,239 +362,6 @@ footer .heart {
 
 /* Responsividade */
 
-@media (max-width: 1050px) {
-  section {
-    height: 140vh;
-    width: 100vw;
-  }
-
-  /* Section: Home */
-  section .container-home {
-    height: 140vh;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    min-width: 540px;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-size: 50% 100%;
-    box-sizing: border-box;
-    padding: 0px 10px;
-  }
-
-  section .container-home-text div img {
-    margin-right: 20px;
-  }
-
-  section .container-home-text a {
-    width: 100%;
-  }
-
-  section .container-home .container-home-image img {
-    max-width: 75%;
-    max-height: 75%;
-    margin-left: 0px;
-  }
-
-  /* Section: Sobre mim */
-  section .container-sobre_mim {
-    height: 140vh;
-    flex-direction: column;
-    justify-content: center;
-    background-size: 50% 100%;
-    min-width: 540px;
-    box-sizing: border-box;
-  }
-
-  section .container-sobre_mim p {
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 10px;
-  }
-
-  section .container-sobre_mim .gustavo_force_storm {
-    width: 60%;
-    margin-top: -10px;
-    margin-bottom: -50px;
-  }
-
-  section .container-sobre_mim-text {
-    min-width: 80%;
-    margin-right: 0;
-  }
-
-  /* Section: Conhecimentos */
-  section .container-conhecimentos {
-    height: 140vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-size: 50% 100%;
-    min-width: 540px;
-    box-sizing: border-box;
-  }
-
-  section .title-conhecimentos {
-    margin-left: 0px;
-  }
-
-  section .skills {
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: 0;
-  }
-
-  section article .skill-card {
-    width: 80%;
-    height: 85%;
-  }
-
-  section article div img {
-    margin-top: 10px;
-  }
-
-  section article div div img {
-    width: 20px;
-  }
-
-  /* Section: Projetos */
-  section .container-projetos {
-    height: 140vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-size: 50% 100%;
-    min-width: 540px;
-    box-sizing: border-box;
-  }
-
-  section .title-projetos {
-    margin-right: 0px;
-  }
-
-  section .projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  section article .project-card {
-    width: 200px;
-    height: 150px;
-  }
-
-  /* Section: Contato */
-  section .container-contato {
-    height: 140vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 540px;
-    box-sizing: border-box;
-  }
-
-  section .container-contato .title-contato {
-    margin-top: 20px;
-  }
-
-  section form .card-agradecimentos {
-    display: none;
-  }
-
-  section form {
-    width: 100%;
-  }
-
-  section form .card-contact {
-    width: 80%;
-    height: 60%;
-  }
-
-  section form .card-contact label {
-    font-size: 1.7rem;
-  }
-
-  section form .card-contact input {
-    font-size: 1.2rem;
-  }
-
-  section form .card-contact textarea {
-    font-size: 1.2rem;
-  }
-
-  footer {
-    width: 100%;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  footer p {
-    margin: 0px 50px;
-  }
-
-  @media (max-width: 750px) {
-    /* Section: Home */
-    section .container-home {
-      background: none;
-    }
-
-    /* Section: Sobre mim */
-    section .container-sobre_mim {
-      background: none;
-      background-color: rgba(0, 0, 0, 0.88);
-      color: var(--white-jedi);
-    }
-
-    /* Section: Conhecimentos */
-    section .container-conhecimentos {
-      background: none;
-      background-color: var(--white-jedi);
-    }
-
-    section .container-conhecimentos .skills {
-      margin-top: -150px;
-    }
-
-    section article .skill-card {
-      margin-top: 50px;
-    }
-
-    /* Section: Projetos */
-    section .container-projetos {
-      background: none;
-      background-color: rgba(0, 0, 0, 0.88);
-    }
-
-    section .title-projetos {
-      margin-right: 0px;
-      color: var(--white-jedi);
-    }
-
-    section .projects {
-      margin-top: -20%;
-    }
-
-    section article .project-card {
-      width: 220px;
-      height: 170px;
-      margin-bottom: 25px;
-    }
-
-    /* Section: Contato */
-    section form {
-      margin: 0px;
-    }
-
-    .icons {
-      margin-bottom: 20px;
-    }
-  }
-}
 /* ------------------------------------------ */
 
 /* Animação */
@@ -614,18 +383,18 @@ footer .heart {
   transition: 0.5s;
   opacity: 0;
   position: fixed;
-  width: 4em;
-  height: 4em;
-  bottom: 1em;
-  right: 1em;
+  width: 64px;
+  height: 64px;
+  bottom: 10px;
+  right: 10px;
 
   border-radius: 8px;
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.25);
-  background-image: url("../images/icons/millennium_falcon.png");
+  background-image: url("../images/icons/pixels/millennium_falcon.png");
   z-index: 2;
 }
 
 .toTop:hover {
-  background-image: url("../images/icons/millennium_falcon.gif");
+  background-image: url("../images/icons/pixels/animated/millennium_falcon.gif");
 }
