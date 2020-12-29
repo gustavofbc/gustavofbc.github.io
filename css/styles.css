@@ -544,6 +544,30 @@ footer .heart {
   }
 }
 
+/* 650px */
+@media (max-width: 650px) {
+  section .container-contato {
+    width: 100%;
+  }
+
+  section .container-contato form {
+    width: 90%;
+  }
+
+  section .container-contato form article .card-agradecimentos {
+    width: 175px;
+    margin-left: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section .container-contato .card-agradecimentos .texto-agradecimentos {
+    display: none;
+  }
+}
+
 /* ------------------------------------------ */
 
 /* Animação */
