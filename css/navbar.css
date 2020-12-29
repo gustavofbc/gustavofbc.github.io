@@ -72,7 +72,7 @@ nav .nav-link:hover {
     align-items: center;
     background-color: var(--white-jedi);
     margin-top: -1px;
-    min-height: calc(100% - 75%) !important;
+    min-height: calc(100% - 77%) !important;
   }
 
   .navbar ul li a {
@@ -84,13 +84,13 @@ nav .nav-link:hover {
     display: flex !important;
     flex-direction: column;
     text-align: center;
-    min-height: 140vh !important;
+    min-height: 100vh !important;
   }
 }
 
-@media screen and (max-width: 540px) {
+/* @media screen and (max-width: 540px) {
   nav {
     display: block;
     width: 100vw;
   }
-}
+} */

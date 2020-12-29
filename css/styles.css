@@ -363,6 +363,24 @@ footer .heart {
 
 /* Responsividade */
 
+@media (max-width: 1020px) {
+  section .container-home {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  section .container-home .container-home-image .my-skin {
+    margin-top: 75px;
+    width: 200px;
+    height: 200px;
+  }
+
+  section .container-home-text a {
+    width: 100%;
+  }
+}
+
 /* ------------------------------------------ */
 
 /* Animação */
@@ -386,8 +404,8 @@ footer .heart {
   position: fixed;
   width: 64px;
   height: 64px;
-  bottom: 10px;
-  right: 10px;
+  bottom: 5%;
+  right: 5%;
 
   border-radius: 8px;
   background-repeat: no-repeat;
