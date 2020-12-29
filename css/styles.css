@@ -222,7 +222,7 @@ section article .project-card {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin: 20px 20px;
+  margin: 15px 15px;
   transition: 1s;
 }
 
@@ -232,21 +232,19 @@ section article .project-card:hover {
 }
 
 section article h3 {
-  font-size: 25px;
+  font-size: 24px;
 }
 
 section article .project-description {
   text-align: center;
   padding: 0px 30px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* ------------------------------------------ */
 
 /* Section: Contato */
 section .container-contato {
-  width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -255,13 +253,14 @@ section .container-contato {
 
 section .title-contato {
   display: flex;
+  margin-top: 25px;
 }
 
 section form {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 25px 0px;
+  margin: 35px 0px;
 }
 
 section form .card-agradecimentos {
@@ -336,6 +335,11 @@ section form .card-contact .btn-submit {
 
 section form .card-contact .btn-submit:hover {
   background-color: var(--master-jedi-darker);
+}
+
+.icons {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .icons a {
@@ -456,8 +460,10 @@ footer .heart {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: none;
+    background-image: url("../images/background_projetos_min.png");
   }
 
   section .container-projetos .title-projetos {
@@ -478,6 +484,30 @@ footer .heart {
 
   section .container-projetos .project-card {
     height: 250px;
+  }
+}
+
+@media (max-width: 920px) {
+  section .container-contato .title-contato {
+    margin-top: 25px;
+  }
+
+  section .container-contato .card-agradecimentos {
+    position: fixed;
+    width: 450px;
+    height: 180px;
+    margin-top: -400px;
+    margin-left: 55px;
+  }
+
+  section form {
+    padding-top: 250px;
+  }
+
+  section form .card-agradecimentos {
+    padding: 10px;
+    box-shadow: none;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -504,8 +534,8 @@ footer .heart {
   position: fixed;
   width: 64px;
   height: 64px;
-  bottom: 5%;
-  right: 5%;
+  bottom: 3%;
+  right: 3%;
 
   border-radius: 8px;
   background-repeat: no-repeat;
