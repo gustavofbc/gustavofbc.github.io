@@ -92,8 +92,6 @@ section .container-home .icons-my-skin img {
 
 /* Section: sobre mim */
 section .container-sobre_mim {
-  width: 100vw;
-  height: 100vh;
   background-image: url("../images/background-sobre_mim.png");
   background-color: var(--gray-jedi);
 
@@ -106,6 +104,7 @@ section .container-sobre_mim .meu-avatar {
   margin-left: 10%;
   margin-top: 5%;
   width: 400px;
+  padding: 100px 0px;
 }
 
 section .container-sobre_mim-text {
@@ -364,6 +363,7 @@ footer .heart {
 /* Responsividade */
 
 @media (max-width: 1020px) {
+  /* Section: Home */
   section .container-home {
     display: flex;
     flex-direction: column-reverse;
@@ -378,6 +378,34 @@ footer .heart {
 
   section .container-home-text a {
     width: 100%;
+  }
+
+  /* Section: Sobre mim */
+  section .container-sobre_mim {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  section .container-sobre_mim .meu-avatar {
+    margin-left: 0px;
+  }
+
+  section .container-sobre_mim .container-sobre_mim-text {
+    margin-right: 0px;
+    width: 700px;
+  }
+
+  section .container-sobre_mim p {
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(240, 240, 240, 0.1);
+    border-radius: 8px;
+  }
+
+  section .container-sobre_mim .hobbies {
+    margin-bottom: 75px;
   }
 }
 
