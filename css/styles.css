@@ -381,13 +381,15 @@ footer .heart {
   }
 
   section .container-home .container-home-image .my-skin {
-    margin-top: 75px;
+    margin-top: 100px;
     width: 200px;
     height: 200px;
   }
 
   section .container-home-text a {
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   /* Section: Sobre mim */
@@ -404,7 +406,7 @@ footer .heart {
 
   section .container-sobre_mim .container-sobre_mim-text {
     margin-right: 0px;
-    width: 700px;
+    width: 90%;
   }
 
   section .container-sobre_mim p {
@@ -431,7 +433,10 @@ footer .heart {
   }
 
   section .container-conhecimentos .skills {
+    display: flex;
+    justify-content: center;
     margin-bottom: 50px;
+    margin-left: 0;
   }
 
   section .container-conhecimentos .skills .skill-card {
@@ -508,6 +513,24 @@ footer .heart {
     padding: 10px;
     box-shadow: none;
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* 800px */
+@media (max-width: 800px) {
+  /* Section: Conhecimentos */
+  section .container-conhecimentos .skills {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section .container-conhecimentos .title-conhecimentos {
+    margin-left: 0px;
+  }
+
+  section .container-conhecimentos .skills .skill-card {
+    width: 500px;
   }
 }
 
