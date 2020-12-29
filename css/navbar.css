@@ -47,7 +47,7 @@ nav .nav-link:hover {
   }
 
   .logo-name img {
-    margin-top: 1.5em;
+    margin-top: 1.7em;
   }
 
   .btn-menu-mobile {
@@ -88,9 +88,14 @@ nav .nav-link:hover {
   }
 }
 
-/* @media screen and (max-width: 540px) {
-  nav {
-    display: block;
-    width: 100vw;
+@media screen and (max-width: 540px) {
+  nav .logo-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-} */
+
+  nav .logo-name .logo {
+    width: 70% !important;
+  }
+}

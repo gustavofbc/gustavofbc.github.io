@@ -13,8 +13,7 @@ section .container-home {
 }
 
 section .container-home .container-home-text {
-  min-width: 350px;
-  max-width: 450px;
+  width: 450px;
 }
 
 section .container-home-text {
@@ -565,6 +564,92 @@ footer .heart {
 
   section .container-contato .card-agradecimentos .texto-agradecimentos {
     display: none;
+  }
+}
+
+/* 550px */
+@media (max-width: 550px) {
+  /* Section: Conhecimentos */
+  section .container-conhecimentos .skills .skill-card {
+    width: 90%;
+  }
+
+  /* Section: Projetos */
+  section .container-projetos .projects .project-card {
+    width: 90%;
+  }
+}
+
+/* 360px */
+@media (max-width: 360px) {
+  h1 {
+    font-size: 28px !important;
+  }
+
+  section .container-home .container-home-image .my-skin {
+    width: 175px;
+    height: 175px;
+  }
+
+  /* Section: Home */
+  section .container-home .container-home-text {
+    width: 310px;
+    margin-top: 25px;
+  }
+
+  section .container-home .container-home-text p {
+    font-size: 19px;
+  }
+
+  section .container-home .container-home-text .title-name {
+    font-size: 30px;
+  }
+
+  section .container-home .container-home-text .title img {
+    margin-top: -50px;
+  }
+
+  section .container-home .container-home-text .button-github {
+    margin-bottom: 50px;
+  }
+
+  /* Section: Sobre mim */
+  section .container-sobre_mim {
+    background-image: none;
+    background-image: url("../images/background_projetos_min.png");
+  }
+
+  section .container-sobre_mim .meu-avatar {
+    width: 300px;
+    padding: 30px;
+  }
+
+  /* Section: Conhecimentos */
+  section .container-conhecimentos .skill-card {
+    width: 250px !important;
+  }
+
+  section .container-conhecimentos .skill-card .icone {
+    width: 60px !important;
+  }
+
+  section .container-conhecimentos .skill-card img {
+    width: 40px !important;
+  }
+
+  /* Section: Contato */
+  section .container-contato form article .card-agradecimentos {
+    margin-left: 0px;
+    width: 300px;
+  }
+
+  section .container-contato .icons img {
+    width: 30px;
+  }
+
+  section .container-contato footer p {
+    font-size: 16px;
+    text-align: center;
   }
 }
 
