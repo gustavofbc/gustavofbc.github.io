@@ -208,6 +208,7 @@ section .projects {
 section .title-projetos {
   display: flex;
   margin-right: 50px;
+  color: var(--white-jedi);
 }
 
 section article .project-card {
