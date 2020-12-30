@@ -580,6 +580,36 @@ footer .heart {
   }
 }
 
+/* Section: 480px */
+@media (max-width: 480px) {
+  section .container-home {
+    width: 100%;
+  }
+
+  section .container-home .container-home-text {
+    width: 90%;
+  }
+
+  section .container-home .container-home-text p {
+    font-size: 19px;
+  }
+
+  section .container-home .container-home-text .title-name {
+    font-size: 30px;
+  }
+
+  section .container-home .container-home-text .title img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+
+  section .container-contato form article .card-agradecimentos {
+    margin-left: 25px;
+    width: 300px;
+  }
+}
+
 /* 360px */
 @media (max-width: 360px) {
   h1 {
@@ -650,6 +680,50 @@ footer .heart {
   section .container-contato footer p {
     font-size: 16px;
     text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 28px !important;
+  }
+
+  /* Section: Home */
+  section .container-home .container-home-image .my-skin {
+    width: 150px;
+    height: 150px;
+  }
+
+  section .container-home .container-home-text {
+    width: 300px;
+  }
+
+  section .container-home .container-home-text p {
+    font-size: 18px;
+  }
+
+  section .container-home .container-home-text .title-name {
+    font-size: 28px;
+  }
+
+  section .container-home .container-home-text .title img {
+    margin-top: -50px;
+  }
+
+  /* Section: sobre mim */
+  section .container-sobre_mim .meu-avatar {
+    width: 175px;
+    height: 175px;
+  }
+
+  section .container-sobre_mim p {
+    font-size: 16px;
+  }
+
+  /* Section: Contato */
+  section .container-contato form article .card-agradecimentos {
+    margin-left: 0px;
+    width: 268px;
   }
 }
 

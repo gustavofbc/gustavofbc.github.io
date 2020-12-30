@@ -99,3 +99,15 @@ nav .nav-link:hover {
     width: 70% !important;
   }
 }
+
+@media screen and (max-width: 320px) {
+  nav .logo-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav .logo-name .logo {
+    width: 70% !important;
+  }
+}
