@@ -93,10 +93,20 @@ nav .nav-link:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 70%;
   }
 
   nav .logo-name .logo {
-    width: 70% !important;
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav .logo-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80% !important;
   }
 }
 

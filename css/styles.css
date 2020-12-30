@@ -93,6 +93,7 @@ section .container-home .icons-my-skin img {
 section .container-sobre_mim {
   background-image: url("../images/background-sobre_mim.png");
   background-color: var(--gray-jedi);
+  background-blend-mode: overlay;
 
   display: flex;
   align-items: center;
@@ -582,10 +583,11 @@ footer .heart {
 
 /* Section: 480px */
 @media (max-width: 480px) {
-  section .container-home {
+  section {
     width: 100%;
   }
 
+  /* Section: Home */
   section .container-home .container-home-text {
     width: 90%;
   }
@@ -604,9 +606,29 @@ footer .heart {
     margin-right: 20px;
   }
 
+  /* Section: Contato */
+  section .container-contato footer {
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: 375px) {
+    /* Section: Contato */
+  }
+
+  /* Section: Sobre mim */
+  section .container-sobre_mim .meu-avatar {
+    width: 300px;
+  }
+
+  /* Section: Contato */
   section .container-contato form article .card-agradecimentos {
     margin-left: 25px;
     width: 300px;
+  }
+
+  section .container-contato footer p {
+    font-size: 16px;
+    text-align: center;
   }
 }
 
