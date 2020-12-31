@@ -31,7 +31,7 @@ nav .nav-link {
   font-size: 18px;
   text-decoration: none;
   color: var(--gray-jedi);
-  padding-right: 20px;
+  margin-right: 20px;
 }
 
 nav .nav-link:hover {

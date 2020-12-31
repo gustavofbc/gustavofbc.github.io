@@ -493,6 +493,10 @@ footer .heart {
 }
 
 @media (max-width: 920px) {
+  section .container-sobre_mim {
+    background-blend-mode: overlay !important;
+  }
+
   section .container-contato .title-contato {
     margin-top: 25px;
   }
@@ -616,6 +620,10 @@ footer .heart {
   }
 
   /* Section: Sobre mim */
+  section .container-sobre_mim {
+    background-blend-mode: overlay !important;
+  }
+
   section .container-sobre_mim .meu-avatar {
     width: 300px;
   }
@@ -669,6 +677,7 @@ footer .heart {
   section .container-sobre_mim {
     background-image: none;
     background-image: url("../images/background_projetos_min.png");
+    background-blend-mode: overlay !important;
   }
 
   section .container-sobre_mim .meu-avatar {
