@@ -1,15 +1,20 @@
-# portfólio
-<p> :computer: Desktop:</p>
+# Portfólio <img src="./images/icons/pixels/gustavo_avatar.png" alt="site mobile" width="50px">
+<p><b> :computer: Desktop:</b></p>
 <img src="./images/demo/demo_v2.gif" alt="site desktop">
+<hr>
 
-<p> :iphone: Mobile:</p>
+<p><b> :iphone: Mobile:</b></p>
 <br/>
 <img src="./images/demo/demo_mobile_v2.gif" alt="site mobile">
-> projeto desenvolvido para mostrar um pouco mais do meu trabalho.
+<hr>
+
+Projeto desenvolvido para mostrar um pouco mais do meu trabalho.
 
 ### Desáfios:
 
-O projeto está em fase de desenvolvimento e as atividades a serem desempenhadas seguem mapeadas abaixo:
+Atualmente o projeto está concluído, entretanto não está terminado. O processo de criação não prende o projeto a algo fixo para sempre, tudo é mutável e conforme eu vá evoluindo o site também irá. Quem sabe quando vai sair a V3.0 heim...? hehe
+As atividades desempenhadas seguem mapeadas abaixo:
+
 - [x] Idealização;
 - [x] Prototipação das telas;
 - [x] Construção do projeto Beta (HTML e CSS);
@@ -18,7 +23,8 @@ O projeto está em fase de desenvolvimento e as atividades a serem desempenhadas
 - [x] Criar navbar responsiva para acesso ao site via mobile;
 - [x] Implementar scroll suave;
 - [x] Refatoração 2 - (Melhorar a navbar, responsividade nas mudanças de tamanho da tela, adição de efeitos e animações);
-- [ ] Implementar formulário para contato;
+- [x] Implementar formulário para contato;
+- [x] Implementar a V2.0 do site portfólio;
 
 ### Instalação:
 
