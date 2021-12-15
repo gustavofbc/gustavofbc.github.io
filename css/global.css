@@ -22,20 +22,8 @@ span {
 
 /* Fonts */
 @font-face {
-  src: url("../fonts/Space_Mono/SpaceMono-Regular.ttf");
-  font-family: "SpaceMono-Regular";
-  font-weight: normal;
-}
-
-@font-face {
-  src: url("../fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf");
-  font-family: "UbuntuMono-Regular";
-  font-weight: normal;
-}
-
-@font-face {
-  src: url("../fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf");
-  font-family: "UbuntuMono-Bold";
+  src: url("../fonts/Chakra_petch/ChakraPetch-Regular.ttf");
+  font-family: "Chakra-Regular";
   font-weight: normal;
 }
 /* -------------------------- */
