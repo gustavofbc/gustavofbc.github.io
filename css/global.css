@@ -18,7 +18,7 @@ ul {
 
 /* cores */
 :root {
-  --white: #F4F4F4;
+  --white: #f0f0f0;
   --black: #071209;
 /* 
   --black-jedi: #000000;
@@ -35,6 +35,12 @@ ul {
 @font-face {
   src: url("../fonts/Chakra_petch/ChakraPetch-Regular.ttf");
   font-family: "Chakra-Regular";
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("../fonts/Chakra_petch/ChakraPetch-Bold.ttf");
+  font-family: "Chakra-Bold";
   font-weight: normal;
 }
 /* -------------------------- */
