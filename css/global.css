@@ -5,18 +5,29 @@ body,
 span {
   margin: 0;
   padding: 0;
-  font-family: "SpaceMono-Regular";
+  font-family: "Chakra-Regular";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 /* cores */
 :root {
+  --white: #F4F4F4;
+  --black: #071209;
+/* 
   --black-jedi: #000000;
   --gray-jedi: #1f1f1f;
   --white-jedi: #f8f9fa;
   --gray-light: #f4f4f4;
   --master-jedi: #44ee69;
   --master-jedi-darker: #39c958;
-  --input-background: #f0f0f0;
+  --input-background: #f0f0f0; */
 }
 /* -------------------------- */
 
@@ -27,11 +38,3 @@ span {
   font-weight: normal;
 }
 /* -------------------------- */
-
-h1 {
-  font-size: 35px;
-}
-
-a {
-  text-decoration: none;
-}
