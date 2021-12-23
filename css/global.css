@@ -20,6 +20,7 @@ ul {
 :root {
   --white: #f0f0f0;
   --black: #071209;
+  --green: #44ee69;
 /* 
   --black-jedi: #000000;
   --gray-jedi: #1f1f1f;
@@ -41,6 +42,12 @@ ul {
 @font-face {
   src: url("../fonts/Chakra_petch/ChakraPetch-Bold.ttf");
   font-family: "Chakra-Bold";
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("../fonts/Chakra_petch/ChakraPetch-Medium.ttf");
+  font-family: "Chakra-Semibold";
   font-weight: normal;
 }
 /* -------------------------- */
