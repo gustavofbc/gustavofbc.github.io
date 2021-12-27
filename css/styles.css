@@ -346,7 +346,7 @@ section {
 
 
 .container-cards .card .face.face1 .content {
-  opacity: 0.4;
+  opacity: 0.5;
   transition: 1s;
 }
 
@@ -374,15 +374,16 @@ section {
 
 .container-cards .card .face.face2 {
   position: relative;
-  background: var(--white);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
   transform: translateY(-50px);
   border-radius: 8px 8px 6px 6px;
+  border-bottom: 1px solid var(--green);
 }
 
 .container-cards .card:hover .face.face2  {
@@ -392,7 +393,56 @@ section {
 .container-cards .card .face.face2 .content p{
   margin: 0;
   padding: 0;
-  color: var(--black-dark);
+  color: var(--white);
   font-size: 0.6rem;
   text-align: center;
+}
+
+/* projetos */
+.container-projetos {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--black-dark);
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.container-projetos h2 {
+  margin: 1rem;
+}
+
+.container-projetos-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-projetos-content span {
+  color: var(--white);
+  font-size: 0.8rem;
+  margin: 10px;
+}
+
+.projetc-card {
+  width: 225px;
+  height: 150px;
+  background: linear-gradient( var(--black), var(--black-dark) );
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--black-dark);
+}
+
+.projetc-card img {
+  width: 1.6rem;
+}
+
+.projetc-card:hover {
+  border: 1px solid var(--green);
 }
