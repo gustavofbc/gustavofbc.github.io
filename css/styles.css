@@ -254,11 +254,7 @@ section {
   padding: 1rem;
 }
 
-.container-sobre-mim .container-description h2 {
-  display: flex;
-}
-
-.container-sobre-mim .container-description img {
+.animation-dev{
   width: 1rem;
   padding: 0rem 0.4rem;
   animation:  blink 2s infinite linear;
@@ -295,4 +291,108 @@ section {
     margin-right: 10px;
     border-radius: 10px;
     background-color: var(--green);
+}
+
+/* conhecimentos */
+
+.container-conhecimentos {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--black);
+}
+
+.container-conhecimentos .container-cards {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  
+}
+
+.container-conhecimentos .container-cards .card {
+  position: relative;
+  
+}
+
+.container-conhecimentos .container-cards .card img {
+  width: 100px;
+}
+
+.container-cards .card .face {
+  width: 150px;
+  height: 120px;
+  transform: 1s;
+}
+
+.container-cards .card .face.face1 {
+  position: relative;
+  background: var(--black-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(70px);
+  transition: 1s;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.container-cards .card:hover .face.face1 {
+  transform: translateY(0);
+  transition: 1s;
+}
+
+
+.container-cards .card .face.face1 .content {
+  opacity: 0.4;
+  transition: 1s;
+}
+
+.container-cards .card:hover .face.face1 .content {
+  opacity: 1;
+  transition: 1s;
+}
+
+.container-cards .card:hover .face.face1 .content h3{
+  background-color: var(--green);
+}
+
+.container-cards .card .face.face1 .content img {
+  max-width: 60px;
+}
+
+.container-cards .card .face.face1 .content h3 {
+  color: var(--white);
+  padding: 0;
+  margin: 10px 0 0;
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: "Chakra-Semibold";
+}
+
+.container-cards .card .face.face2 {
+  position: relative;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  transform: translateY(-50px);
+  border-radius: 8px 8px 6px 6px;
+}
+
+.container-cards .card:hover .face.face2  {
+  transform: translateY(0);
+}
+
+.container-cards .card .face.face2 .content p{
+  margin: 0;
+  padding: 0;
+  color: var(--black-dark);
+  font-size: 0.6rem;
+  text-align: center;
 }
