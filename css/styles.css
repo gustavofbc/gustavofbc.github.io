@@ -118,9 +118,7 @@ section {
   height: 100%;
 }
 
-.avatar {
-  height: 10rem;
-  animation: opacity 5s;
+.logo-line{
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0002);
 }
 
@@ -134,4 +132,167 @@ section {
   to {
     stroke-dashoffset: 0;
   }
+}
+
+/* sobre mim */
+.container-sobre-mim {
+  height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black-dark);
+}
+
+.container-sobre-mim .container-images{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container-sobre-mim .container-images img {
+  width: 5rem;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.html {
+  animation: html-animation 4s forwards infinite;
+}
+
+@keyframes html-animation {
+  0% {
+    top: -50px;
+    right: -50px;
+    left: 20px;
+    bottom: 50px;
+  }
+  50% {
+    top: 25px;
+    right: -25px;
+    left: -5px;
+    bottom: -25px;
+  }
+  75% {
+    top: -25px;
+    right: 25px;
+    left: 5px;
+    bottom: 25px;
+  }
+  100% {
+    top: -50px;
+    right: -50px;
+    left: 20px;
+    bottom: 50px;
+  }
+}
+
+
+.css {
+  animation: css-animation 5s forwards infinite;
+}
+
+@keyframes css-animation {
+  0% {
+    top: 50px;
+    right: 25px;
+    left: 50px;
+    bottom: 0px;
+  }
+  50% {
+    top: -25px;
+    right: -25px;
+    left: -25px;
+    bottom: -25px;
+  }
+  75% {
+    top: 25px;
+    right: 25px;
+    left: 0px;
+    bottom: 25px;
+  }
+  100% {
+    top: 50px;
+    right: 25px;
+    left: 50px;
+    bottom: 0px;
+  }
+}
+
+.js {
+  animation: js-animation 5s forwards infinite;
+}
+
+@keyframes js-animation {
+  0% {
+    top: -50px;
+    left: -25px;
+    right: 10px;
+  }
+  50% {
+    top: 25px;
+    left: 50px;
+    right: 10px;
+  }
+  75% {
+    top: -25px;
+    left: -50px;
+    right: -10px;
+  }
+  100% {
+    top: -50px;
+    left: -25px;
+    right: 20px;
+  }
+}
+
+.container-sobre-mim .container-description {
+  width: 300px;
+  color: var(--white);
+  padding: 1rem;
+}
+
+.container-sobre-mim .container-description h2 {
+  display: flex;
+}
+
+.container-sobre-mim .container-description img {
+  width: 1rem;
+  padding: 0rem 0.4rem;
+  animation:  blink 2s infinite linear;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75%{
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.container-sobre-mim .container-description, li{
+  font-size: 0.7rem;
+  line-height: 20px;
+  margin-left: 20px;
+}
+.container-sobre-mim .container-description li::before {
+  content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: var(--green);
 }

@@ -1,12 +1,15 @@
 #header {
   box-sizing: border-box;
   height: 50px;
+  width: 100%;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--black);
+  background: var(--black-dark);
   border-bottom: 1px solid var(--green);
+  position: fixed;
+  z-index: 1000;
 }
 
 #logo img {
