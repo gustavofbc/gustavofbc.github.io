@@ -119,6 +119,7 @@ section {
 }
 
 .logo-line{
+  height: 175px;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0002);
 }
 
@@ -229,22 +230,22 @@ section {
   0% {
     top: -50px;
     left: -25px;
-    right: 10px;
+    right: -10px;
   }
   50% {
     top: 25px;
-    left: 50px;
-    right: 10px;
+    left: 25px;
+    right: -10px;
   }
   75% {
     top: -25px;
-    left: -50px;
-    right: -10px;
+    left: -25px;
+    right: 10px;
   }
   100% {
     top: -50px;
     left: -25px;
-    right: 20px;
+    right: -10px;
   }
 }
 
@@ -297,7 +298,6 @@ section {
 /* conhecimentos */
 
 .container-conhecimentos {
-  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -364,7 +364,7 @@ section {
 }
 
 .container-cards .card .face.face1 .content img {
-  max-width: 3.4rem;
+  width: 3.4rem;
 }
 
 .container-cards .card .face.face1 .content h3 {
@@ -398,13 +398,12 @@ section {
   margin: 0;
   padding: 0;
   color: var(--white);
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   text-align: center;
 }
 
 /* projetos */
 .container-projetos {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   background: var(--black-dark);
@@ -420,6 +419,8 @@ section {
 .container-projetos-content {
   display: flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  box-sizing: border-box;
   justify-content: center;
   align-items: center;
   text-align: left;
@@ -431,10 +432,10 @@ section {
   margin: 10px;
 }
 
-.projetc-card {
-  width: 14rem;
+.project-card {
+  width: 13rem;
   height: 9rem;
-  background: linear-gradient( var(--black), var(--black-dark) );
+  background: linear-gradient( rgba(0, 25, 0, 0.1), rgba(0, 0, 0, 1) );
   box-sizing: border-box;
   padding: 1rem;
   margin: 1rem;
@@ -443,13 +444,14 @@ section {
   flex-direction: column;
   align-items: center;
   border: 1px solid var(--black-dark);
+  box-shadow: 4px 4px 4px 4px rgb(0 0 0 / 25%);
 }
 
-.projetc-card img {
+.project-card img {
   width: 1.6rem;
 }
 
-.projetc-card:hover {
+.project-card:hover {
   border: 1px solid var(--green);
 }
 
@@ -492,6 +494,7 @@ section {
     var(--green), 
     var(--black-dark)
   ) 10 1%;
+  box-shadow: 4px 4px 4px 4px rgb(0 0 0 / 25%);
 }
 
 .containter-contato-content .card-mensagem p {
@@ -523,6 +526,7 @@ section {
     var(--green), 
     var(--black-dark)
   ) 70 1%;
+  box-shadow: 4px 4px 4px 4px rgb(0 0 0 / 25%);
 }
 
 .card-contact .btn-submit {
@@ -585,7 +589,7 @@ section {
 footer {
   text-align: center;
   border-top: 1px solid var(--green-dark);
-  line-height: 30px;
+  line-height: 2.2rem;
   font-size: 0.8rem;
 }
 
@@ -601,4 +605,84 @@ footer p img {
 
 footer p span {
   color: var(--green);
+}
+
+@media screen and (max-width: 700px) {
+  /* home */
+  .container-home {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .container-home .logo-line{
+    height: 125px;
+    margin-bottom: 75px;
+  }
+
+  .home-apresentation-text span {
+    font-size: 1rem;
+  }
+
+  .home-apresentation .github-button {
+    width: 100%;
+  }
+
+  /* sobre mim */
+  .container-sobre-mim {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .container-sobre-mim .container-description {
+    width: 260px;
+  }
+  .container-sobre-mim .container-description, li {
+    margin-left: 0;
+  }
+
+  /* conhecimentos */
+  .container-conhecimentos  .container-cards{
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-cards .card {
+    margin-bottom: 5px;
+  }
+  
+  .container-cards .card .face {
+    width: 300px;
+    height: 160px;
+  }
+
+  .container-cards .card .face.face1 {
+    transform: translateY(110px);
+  }
+
+  .container-cards .card .face.face1 .content img {
+    width: 6rem;
+  }
+
+  .container-cards .card .face.face2 .content p {
+    font-size: 1rem;
+  }
+
+  /* contato */  
+  .container-contato .containter-contato-content .container-form{
+    flex-direction: column;
+  }
+
+  .container-contato .containter-contato-content .container-form .card-mensagem {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  
+
+  .container-contato .containter-contato-content .container-form .card-contact{
+    width: 300px;
+  }
+
 }
