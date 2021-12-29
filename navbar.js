@@ -52,3 +52,25 @@ function initScrollSuave(){
 }
 
 initScrollSuave();
+
+function initAnimationToScroll() {
+  const sections = document.querySelectorAll('[data-anime]');
+  console.log(sections);
+
+  const windowSeventyPercent = window.innerHeight * 0.7;
+
+  function animeToScroll() {
+    sections.forEach(section => {
+      const sectionHeightTop = section.getBoundingClientRect().top;
+
+      const isSectionVisible = (sectionHeightTop - windowSeventyPercent) < 0;
+      if(isSectionVisible){
+        section.classList.add('animate');
+      }
+    })
+  }
+
+  window.addEventListener('scroll', animeToScroll);
+}
+
+initAnimationToScroll();
