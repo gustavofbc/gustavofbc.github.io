@@ -296,12 +296,15 @@ section {
 /* conhecimentos */
 
 .container-conhecimentos {
-  height: 70vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
   background: var(--black);
+}
+
+.container-conhecimentos h2 {
+  margin: 1rem;
 }
 
 .container-conhecimentos .container-cards {
@@ -314,7 +317,7 @@ section {
 
 .container-conhecimentos .container-cards .card {
   position: relative;
-  
+  margin-bottom: 4rem;
 }
 
 .container-conhecimentos .container-cards .card img {
@@ -360,7 +363,7 @@ section {
 }
 
 .container-cards .card .face.face1 .content img {
-  max-width: 60px;
+  max-width: 3.4rem;
 }
 
 .container-cards .card .face.face1 .content h3 {
@@ -406,6 +409,7 @@ section {
   background: var(--black-dark);
   box-sizing: border-box;
   padding: 1rem;
+  text-align: right;
 }
 
 .container-projetos h2 {
@@ -417,6 +421,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-align: left;
 }
 
 .container-projetos-content span {
@@ -426,8 +431,8 @@ section {
 }
 
 .projetc-card {
-  width: 225px;
-  height: 150px;
+  width: 14rem;
+  height: 9rem;
   background: linear-gradient( var(--black), var(--black-dark) );
   box-sizing: border-box;
   padding: 1rem;
@@ -445,4 +450,143 @@ section {
 
 .projetc-card:hover {
   border: 1px solid var(--green);
+}
+
+/* contato */
+.container-contato {
+  background: var(--black);
+  box-sizing: border-box;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.containter-contato-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.containter-contato-content  .container-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containter-contato-content .card-mensagem {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0.6rem;
+  background: var(--black-dark);
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: 
+  linear-gradient(
+    to right, 
+    var(--green), 
+    var(--black-dark)
+  ) 10 1%;
+}
+
+.containter-contato-content .card-mensagem p {
+  font-size: 0.7rem;
+  color: var(--white);
+}
+
+.containter-contato-content .card-mensagem .subtitle {
+  font-family: "Chakra-Bold";
+  padding: 0.6rem;
+}
+
+.card-mensagem .mandalorian {
+  width: 3.4rem;
+}
+
+.card-contact {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0.6rem 1rem;
+  background: var(--black-dark);
+  border-width: 1px;
+  border-style: solid;
+  border-image: 
+  linear-gradient(
+    to left, 
+    var(--green), 
+    var(--black-dark)
+  ) 70 1%;
+}
+
+.card-contact .btn-submit {
+  font-family: "Chakra-Bold";
+  background: var(--green);
+  color: var(--white);
+  border: none;
+  width: 80px;
+  height: 30px;
+  border-radius: 4px;
+  margin-top: 8px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card-contact .btn-submit:hover {
+  background: var(--green-dark);
+}
+
+.card-contact label {
+  color: var(--white);
+  font-size: 0.8rem;
+  font-family: "Chakra-Semibold";
+  line-height: 2rem;
+}
+
+.card-contact textarea, input {
+  border: none;
+  max-width: 360px;
+  padding: 4px;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  border-radius: 4px;
+  background: var(--white);
+}
+
+.icons-contact img {
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 5px;
+  width: 1.8rem;
+}
+
+.icons-contact img:hover {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 10px;
+  border-top: 2px solid var(--black-dark);
+}
+
+footer p {
+  color: var(--white);
+}
+
+footer p img {
+  width: 1rem;
+  margin-bottom: -3px;
+  padding: 4px 4px 0px 4px;
+}
+
+footer p span {
+  color: var(--green);
 }
