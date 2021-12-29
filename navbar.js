@@ -1,11 +1,11 @@
 const btnMenu = document.getElementById('btn-menu');
+const nav = document.getElementById('nav');
 
 function toggleMenu(event) {
   if(event.type === 'touchstart') {
     event.preventDefault();
   }
 
-  const nav = document.getElementById('nav');
   nav.classList.toggle('ativo');
 
   //! ACESSIIBILIDADE
@@ -20,28 +20,35 @@ function toggleMenu(event) {
 btnMenu.addEventListener('click', toggleMenu);
 btnMenu.addEventListener('touchstart', toggleMenu);
 
-const menuItens = document.querySelectorAll('#menu a[href^="#"]');
 
+function initScrollSuave(){
+  const menuItens = document.querySelectorAll('#menu a[href^="#"]');
+  
+  menuItens.forEach(item => {
+    item.addEventListener('click', scrollToIdOnClick);
+  })
 
-menuItens.forEach(item => {
-  item.addEventListener('click', scrollToIdOnClick);
-})
+  function scrollToIdOnClick(event) {
+    event.preventDefault();
+    const toSection = getScrollTopByHref(event.currentTarget) - 50;
 
-function getScrollTopByHref(element) {
-  const id = element.getAttribute('href');
-  return document.querySelector(id).offsetTop;
+    scrollToPosition(toSection);
+    //fechar o menu quando um item for selecionado
+    nav.classList.remove('ativo');
+  }
+
+  function getScrollTopByHref(element) {
+    const id = element.getAttribute('href');
+    return document.querySelector(id).offsetTop;
+  }
+
+  function scrollToPosition(toSection) {
+    window.scroll({
+      top: toSection,
+      behavior: "smooth"
+    });
+  }
+
 }
 
-function scrollToIdOnClick(event) {
-  event.preventDefault();
-  const toSection = getScrollTopByHref(event.currentTarget) - 50;
-
-  scrollToPosition(toSection);
-}
-
-function scrollToPosition(toSection) {
-  window.scroll({
-    top: toSection,
-    behavior: "smooth"
-  });
-}
+initScrollSuave();
