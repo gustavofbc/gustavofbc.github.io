@@ -136,6 +136,10 @@ section {
 }
 
 /* sobre mim */
+#sobre-mim {
+  background: var(--black-dark);
+}
+
 .container-sobre-mim {
   height: 100vh;
   width: 100%;
@@ -144,7 +148,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--black-dark);
 }
 
 .container-sobre-mim .container-images{
@@ -296,12 +299,14 @@ section {
 }
 
 /* conhecimentos */
+#conhecimentos {
+  background: var(--black);
+}
 
 .container-conhecimentos {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: var(--black);
 }
 
 .container-conhecimentos h2 {
@@ -337,6 +342,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   z-index: 1;
   transform: translateY(70px);
   transition: 1s;
@@ -403,10 +409,13 @@ section {
 }
 
 /* projetos */
+#projetos {
+  background: var(--black-dark);
+}
+
 .container-projetos {
   display: flex;
   flex-direction: column;
-  background: var(--black-dark);
   box-sizing: border-box;
   padding: 1rem;
   text-align: right;
@@ -456,8 +465,11 @@ section {
 }
 
 /* contato */
-.container-contato {
+#contato {
   background: var(--black);
+}
+
+.container-contato {
   box-sizing: border-box;
   padding: 1rem 1rem 0 1rem;
 }
@@ -691,7 +703,7 @@ footer p span {
 
 [data-anime] {
   opacity: 0;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 [data-anime="left"] {
@@ -700,6 +712,14 @@ footer p span {
 
 [data-anime="right"] {
   transform: translate3d(100px, 0, 0);
+}
+
+[data-anime="down"] {
+  transform: translate3d(0, 100px, 0);
+}
+
+[data-anime="top"] {
+  transform: translate3d(0, -100px, 0);
 }
 
 [data-anime].animate {
