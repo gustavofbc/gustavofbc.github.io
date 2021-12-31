@@ -1,18 +1,18 @@
-# Portfólio <img src="./images/icons/pixels/gustavo_avatar.png" alt="site mobile" width="50px">
+# Portfólio
 <p><b> :computer: Desktop:</b></p>
-<img src="./images/demo/demo_v2.gif" alt="site desktop">
+<img src="./images/demo/demo_v3.gif" alt="site desktop">
 <hr>
 
 <p><b> :iphone: Mobile:</b></p>
 <br/>
-<img src="./images/demo/demo_mobile_v2.gif" alt="site mobile">
+<img src="./images/demo/demo_mobile_v3.gif" alt="site mobile">
 <hr>
 
 Projeto desenvolvido para mostrar um pouco mais do meu trabalho.
 
 ### Desáfios:
 
-Atualmente o projeto está concluído, entretanto não está terminado. O processo de criação não prende o projeto a algo fixo para sempre, tudo é mutável e conforme eu vá evoluindo o site também irá. Quem sabe quando vai sair a V3.0 heim...? hehe
+Atualmente o projeto está concluído, entretanto não está terminado. O processo de criação não prende o projeto a algo fixo para sempre, tudo é mutável e conforme eu vá evoluindo o site também irá. Dando continuidade ao projeto depois de um ano, resolvi testar como estão minhas enferrujadas habilidades tentando retirar uma terceira versão deste projeto.
 As atividades desempenhadas seguem mapeadas abaixo:
 
 - [x] Idealização;
@@ -25,6 +25,16 @@ As atividades desempenhadas seguem mapeadas abaixo:
 - [x] Refatoração 2 - (Melhorar a navbar, responsividade nas mudanças de tamanho da tela, adição de efeitos e animações);
 - [x] Implementar formulário para contato;
 - [x] Implementar a V2.0 do site portfólio;
+- [x] Refatoração 3 - Nova versão do site com elementos mais atuais;
+- [x] Prototipação das telas via Figma;
+- [x] Implementar uma nova Navbar que funcione corretamente com responsividade ao mobile (comecei refazendo o menu);
+- [x] Criação das estruturas HTML das páginas;
+- [x] Estilização via CSS;
+- [x] Busca e implementação de animação ao invés de usar GIFs (santa gambiarra);
+- [x] Criação da logo;
+- [x] Refatorar as imagens .png e .jeg por .svg (otimização);
+- [x] Remover estrutura de código das versões anteriores junto aos arquivos;
+- [x] Atualizar o Readme.
 
 ### Instalação:
 
