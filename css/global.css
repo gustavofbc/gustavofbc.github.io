@@ -18,13 +18,13 @@ ul {
 
 h2 {
   color: var(--white);
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 
 h3 {
   color: var(--white);
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 /* cores */
 :root {
@@ -33,14 +33,6 @@ h3 {
   --green: #44ee69;
   --green-dark: #3DD150;
   --black-dark: #080C09;
-/* 
-  --black-jedi: #000000;
-  --gray-jedi: #1f1f1f;
-  --white-jedi: #f8f9fa;
-  --gray-light: #f4f4f4;
-  --master-jedi: #44ee69;
-  --master-jedi-darker: #39c958;
-  --input-background: #f0f0f0; */
 }
 /* -------------------------- */
 

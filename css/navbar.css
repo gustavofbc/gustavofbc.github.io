@@ -1,6 +1,6 @@
 #header {
   box-sizing: border-box;
-  height: 50px;
+  height: 80px;
   width: 100%;
   padding: 1rem;
   display: flex;
@@ -12,23 +12,24 @@
   z-index: 1000;
 }
 
-#logo img {
+#logo .logo {
+  width: 50px;
   margin-top: 5px;
   transition: 0.5s;
 }
 
-#logo img:hover {
+#logo .logo:hover {
   transform: scale(1.1);
 }
 
 #menu {
   display: flex;
-  gap: .6rem;
+  gap: .4rem;
 }
 
 #menu a {
   color: var(--white);
-  font-size: 12px;
+  font-size: 1.2rem;
   font-family: "Chakra-Bold";
   display: block;
 }
@@ -43,12 +44,12 @@
 }
 
 
-@media (max-width: 500px){
+@media (max-width: 700px){
   #menu {
     display: block;
     position: absolute;
     width: 100%;
-    top: 50px;
+    top: 80px;
     right: 0px;
     background: var(--black-dark);
     z-index: 1000;
