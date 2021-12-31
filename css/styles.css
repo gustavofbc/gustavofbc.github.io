@@ -601,8 +601,8 @@ section {
 footer {
   text-align: center;
   border-top: 1px solid var(--green-dark);
-  padding: 5px 0px;
-  font-size: 1.2rem;
+  padding: 15px 0px;
+  font-size: 1.4rem;
 }
 
 footer p {
@@ -738,7 +738,7 @@ footer p span {
 
   /* contato */
   .card-contact {
-    max-width: 24rem;
+    max-width: 22rem;
   }
 }
 
@@ -796,7 +796,7 @@ footer p span {
 }
 
 [data-anime="right"] {
-  transform: translate3d(100px, 0, 0);
+  transform: translate3d(50px, 0, 0);
 }
 
 [data-anime="down"] {
