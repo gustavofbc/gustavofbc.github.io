@@ -5,45 +5,53 @@ body,
 span {
   margin: 0;
   padding: 0;
-  font-family: "SpaceMono-Regular";
-}
-
-/* cores */
-:root {
-  --black-jedi: #000000;
-  --gray-jedi: #1f1f1f;
-  --white-jedi: #f8f9fa;
-  --gray-light: #f4f4f4;
-  --master-jedi: #44ee69;
-  --master-jedi-darker: #39c958;
-  --input-background: #f0f0f0;
-}
-/* -------------------------- */
-
-/* Fonts */
-@font-face {
-  src: url("../fonts/Space_Mono/SpaceMono-Regular.ttf");
-  font-family: "SpaceMono-Regular";
-  font-weight: normal;
-}
-
-@font-face {
-  src: url("../fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf");
-  font-family: "UbuntuMono-Regular";
-  font-weight: normal;
-}
-
-@font-face {
-  src: url("../fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf");
-  font-family: "UbuntuMono-Bold";
-  font-weight: normal;
-}
-/* -------------------------- */
-
-h1 {
-  font-size: 35px;
+  font-family: "Chakra-Regular";
 }
 
 a {
   text-decoration: none;
 }
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+
+h3 {
+  color: var(--white);
+  font-size: 1.4rem;
+}
+/* cores */
+:root {
+  --white: #f0f0f0;
+  --black: #070D08;
+  --green: #44ee69;
+  --green-dark: #3DD150;
+  --black-dark: #080C09;
+}
+/* -------------------------- */
+
+/* Fonts */
+@font-face {
+  src: url("../fonts/Chakra_petch/ChakraPetch-Regular.ttf");
+  font-family: "Chakra-Regular";
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("../fonts/Chakra_petch/ChakraPetch-Bold.ttf");
+  font-family: "Chakra-Bold";
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("../fonts/Chakra_petch/ChakraPetch-Medium.ttf");
+  font-family: "Chakra-Semibold";
+  font-weight: normal;
+}
+/* -------------------------- */

@@ -7,350 +7,275 @@
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/global.css">
     <link rel="shortcut icon" href="./images/favicon.ico" />
-    <script src="https://kit.fontawesome.com/3c176ac6ab.js" crossorigin="anonymous"></script>
-    <title>Gustavofbc</title>
+    <title> </ Gustavo Felipe ></title>
 
 </head>
 
 <body>
-    <nav class="navbar js-menu">
-        <a class="logo-name" href="#home">
-            <img class="logo" src="./images/logo-name.png" alt="">
+    <header id="header">
+        <a id="logo" href="/">
+            <img class="logo" src="images/logo-web.svg" alt="logo">
         </a>
-        <a class="btn-menu-mobile"><i class="fas fa-bars"></i></a>
-        <ul class="navbar-items">
-            <!-- Sobre mim -->
-            <li class="nav-item">
-                <a class="nav-link" href="#sobre_mim">Sobre mim</a>
-            </li>
-            <!-- Conhecimentos -->
-            <li class="nav-item">
-                <a class="nav-link" href="#conhecimentos">Conhecimentos</a>
-            </li>
-            <!-- Projetos -->
-            <li class="nav-item">
-                <a class="nav-link" href="#projetos">Projetos</a>
-            </li>
-            <!-- Contato -->
-            <li class="nav-item">
-                <a class="nav-link" href="#contato">Contato</a>
-            </li>
-        </ul>
-    </nav>
-    
-    <!-- Section: home -->
-    <section class="home js-scroll ativo" id="home">
-        <div class="container-home">
-            <div class="container-home-text">
-                <p>Opa, eu sou</p>
-                <div class="title">
-                    <p class="title-name">Gustavo Felipe</p>
-                    <img src="images/icons/pixels/animated/gustavo_jedi_saudacoes.gif" alt="Gustavo saudações">
+
+        <nav id="nav">
+            <button id="btn-menu" aria-label="Abri menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#conhecimentos">Conhecimentos</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <!-- Home -->
+        <section id="home">
+            <div class="container-home">
+                <div class="home-apresentation">
+                    <div class="home-apresentation-text">
+                        <span>Opa, eu sou</span>    
+                        <h1>Gustavo <span>Felipe</span></h1>
+                        <span>Aspirante a Desenvolvedor front-end Jr</span>
+                    </div>
+                    <a class="github-button" href="https://github.com/gustavofbc" target="_blank">
+                        GitHub
+                    </a>
                 </div>
-                <p>
-                    Desenvolvedor front-end júnior,
-                    gestor de projetos e fã de
-                    Star Wars...
-                </p>
-                <a class="button-github" href="https://github.com/gustavofbc" target="_blank">
-                    GitHub
-                </a>
+                <svg class="logo-line"  viewBox="0 0 220 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="path" d="M38.299 3L3 37.0909V253H49.3299V75.7273L66.9794 55.2727H217V3H38.299Z" stroke="url(#paint0_linear_117_88)" stroke-width="6"/>
+                    <path class="path" d="M217 253V139.364L190.526 107.545H104.485V148.455H166.258L179.495 164.364V212.091H104.485V253H217Z" stroke="url(#paint1_linear_117_88)" stroke-width="6"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_117_88" x1="219.206" y1="3" x2="52.7092" y2="216.085" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#44EE69"/>
+                    <stop offset="1" stop-color="#071209"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_117_88" x1="219.206" y1="3" x2="52.7092" y2="216.085" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#44EE69"/>
+                    <stop offset="1" stop-color="#071209"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
             </div>
+        </section>
 
-            <div class="container-home-image">
-                <img class="my-skin" src="images/skin_de_programador.jpg" alt="Gustavo Felipe">
-                <div class="icons-my-skin">
-                    <img src="./images/icons/pixels/animated/headphone.gif" alt="icon-animated">
-                    <img src="./images/icons/pixels/animated/coffee.gif" alt="icon-animated">
-                    <img src="./images/icons/pixels/animated/terminal.gif" alt="icon-animated">
+        <!-- Sobre mim -->
+        <section id="sobre-mim">
+            <div class="container-sobre-mim" data-anime="left">
+                <div class="container-images">
+                    <img class="html" src="images/html_dark.svg" alt="HTML">
+                    <img class="css" src="images/css_dark.svg" alt="CSS">
+                    <img class="js" src="images/javascript_dark.svg" alt="JAVASCRIPT">
+                </div>
+                <div class="container-description">
+                    <h2>
+                        <img class="animation-dev" src="images/dev1.svg" alt="menor que">
+                        Sobre mim
+                        <img class="animation-dev" src="images/dev2.svg" alt="maior que">
+                    </h2>
+                    <article id="description">
+                        <br/>
+                        <p data-anime="down">Atualmente sou Assistente de Suporte e aspirante a Desenvolvedor Front-end Jr, tenho 22 anos e sou formado pela UNIFESSPA como Analista de Sistemas. Atualmente tenho me capacitado para atingir minhas metas de carreira.</p>
+                        <br/>
+                        <p>Alguns dos meus hobbies e gostos são:</p>
+                        <ul>
+                            <li data-anime="left">Pedalar;</li>
+                            <li data-anime="left">Lo-fi;</li>
+                            <li data-anime="left">Pixel art;</li>
+                            <li data-anime="left">Livros;</li>
+                        </ul>
+                    </article>
+                                     
                 </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- Conhecimentos -->
+        <section id="conhecimentos">
+            <div class="container-conhecimentos" data-anime="left">
+                <h2>
+                    <img class="animation-dev" src="images/dev1.svg" alt="menor que">
+                    Conhecimentos
+                    <img class="animation-dev" src="images/dev2.svg" alt="maior que">
+                </h2>
 
-    <a class="toTop"></a>
+                <div class="container-cards" data-anime="down">
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <h3>HTML 5</h3>
+                                <img src="images/icons/html-green.svg" alt="HTML">
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Linguagem de marcação de texto e estrutura de páginas web, basicamente é o esqueleto da esturura. </p>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- Section: Sobre mim -->
-    <section class="sobre_mim js-scroll" id="sobre_mim">
-        <div class="container-sobre_mim">
-            <img class="meu-avatar" src="images/icons/pixels/animated/meu_avatar.gif">
-            <div class="container-sobre_mim-text">
-                <div class="title-sobre_mim">
-                    <h1>Sobre mim_</h1>
-                    <img class="sabre_negro" src="images/icons/pixels/sabre_negro.png" alt="sabre negro">
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <h3>CSS</h3>
+                                <img src="images/icons/css-green.svg" alt="CSS">
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Folha de estilização de elementos HTML, basicamente o corpo visual da estrutura.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <h3>JAVASCRIPT</h3>
+                                <img src="images/icons/js-green.svg" alt="JS">
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Linguagem de programação interpretada estruturada, basicamente a inteligência por trás das estruturas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <h3>GIT</h3>
+                                <img src="images/icons/git-green.svg" alt="GIT">
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Sistema de controle e gerenciamento de versões de código.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <br/>
-                    <br/>
-                <p>
-                    Tenho 21 anos, sou graduando de Sistemas 
-                    de Informação pela UNIFESSPA. Atualmente 
-                    tenho melhorado minhas habilidades no 
-                    desenvolvimento web front-end realizando 
-                    cursos na área em conjunto a projetos próprios.
-                </p>
-                <br/>
-                <p class="hobbies">
-                    Meus hobbies são:
-                    Pedalar, ouvir música, buscar
-                    certificações, pesquisar sobre
-                    pixel art, ler, ouvir podcasts e
-                    meditar nos caminhos da força...
-                </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Section: Conhecimentos -->
-    <section class="conhecimentos js-scroll" id="conhecimentos">
-        <div class="container-conhecimentos">
-            <div class="title-conhecimentos">
-                <img class="sabre_mestre_jedi" src="images/icons/pixels/sabre_mestre_jedi.png"sabre mestre jedi">
-                <h1>_Conhecimentos</h1>
-            </div>
-
-            <div class="skills">
-                <article>
-                    <div class="skill-card">
-                        <img class="icone" src="images/icons/skills/html-icon.png" alt="HTML">
-                        <h3>HTML</h3>
-                        <p class="experience">2 anos de experiência</p>
-                        <div>
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
+        <!-- Projetos  -->
+        <section id="projetos">
+            <div class="container-projetos" data-anime="left">
+                <h2>
+                    <img class="animation-dev" src="images/dev1.svg" alt="menor que">
+                    Projetos
+                    <img class="animation-dev" src="images/dev2.svg" alt="maior que">
+                </h2>
+                <div class="container-projetos-content">
+                    <article>
+                        <div class="project-card" data-anime="top">
+                            <h3>Projeto</h3>
+                            <span>O portfólio deste jovem padawan está em construção...</span>
+                            <img src="images/coffee.svg" alt="coffee">
                         </div>
-                    </div>
-                </article>
-                
-                <article>    
-                    <div class="skill-card">
-                        <img class="icone" src="images/icons/skills/css-icon.png" alt="CSS">
-                        <h3>CSS</h3>
-                        <p class="experience">2 anos de experiência</p>
-                        <div>
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
+                    </article>
+                    
+                    <article>
+                        <div class="project-card" data-anime="top">
+                            <h3>Projeto</h3>
+                            <span>O portfólio deste jovem padawan está em construção...</span>
+                            <img src="images/coffee.svg" alt="coffee">
                         </div>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="skill-card">
-                        <img class="icone" src="images/icons/skills/js-icon.png" alt="JavaScript">
-                        <h3>JavaScript</h3>
-                        <p class="experience">1 ano de experiência</p>
-                        <div>
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_sith_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_sith_min.png" alt="">
+                    </article>
+                    
+                    <article>
+                        <div class="project-card" data-anime="top">
+                            <h3>Projeto</h3>
+                            <span>O portfólio deste jovem padawan está em construção...</span>
+                            <img src="images/coffee.svg" alt="coffee">
                         </div>
-                    </div>
-                </article>
+                    </article>
 
-                <article>
-                    <div class="skill-card">
-                        <img class="icone" src="images/icons/skills/react-icon.png" alt="React">
-                        <h3>React</h3>
-                        <p class="experience">1 ano de experiência</p>
-                        <div>
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_sith_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_sith_min.png" alt="">
+                    <article>
+                        <div class="project-card" data-anime="down">
+                            <h3>Projeto</h3>
+                            <span>O portfólio deste jovem padawan está em construção...</span>
+                            <img src="images/coffee.svg" alt="coffee">
                         </div>
-                    </div>
-                </article>
+                    </article>
 
-                <article>
-                    <div class="skill-card">
-                        <img class="icone" src="images/icons/skills/figma-icon.png" alt="Figma">
-                        <h3>Figma</h3>
-                        <p class="experience">6 meses de experiência</p>
-                        <div>
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_sith_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_sith_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_sith_min.png" alt="">
+                    <article>
+                        <div class="project-card" data-anime="down">
+                            <h3>Projeto</h3>
+                            <span>O portfólio deste jovem padawan está em construção...</span>
+                            <img src="images/coffee.svg" alt="coffee">
                         </div>
-                    </div>
-                </article>
+                    </article>
 
-                <article>
-                    <div class="skill-card">
-                        <img class="icone" src="images/icons/skills/bootstrap-icon.png" alt="Bootstrap">
-                        <h3>Bootstrap</h3>
-                        <p class="experience">3 meses de experiência</p>
-                        <div>
-                            <img src="images/icons/pixels/sabre_mestre_jedi_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_sith_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_sith_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_sith_min.png" alt="">
-                            <img src="images/icons/pixels/sabre_sith_min.png" alt="">
+                    <article>
+                        <div class="project-card" data-anime="down">
+                            <h3>Projeto</h3>
+                            <span>O portfólio deste jovem padawan está em construção...</span>
+                            <img src="images/coffee.svg" alt="coffee">
                         </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Section: Projetos -->
-    <section class="projetos js-scroll" id="projetos">
-        <div class="container-projetos">
-            <div class="title-projetos">
-                <h1>Projetos_</h1>
-                <img class="sabre_negro" src="images/icons/pixels/sabre sith.png" alt="sabre sith">
-            </div>
-            <div class="projects">
-                <!-- projeto 1 -->
-                <article>
-                    <div class="project-card">
-                        <h3>Em breve</h3>
-                        <p class="project-description">
-                            O portfólio deste 
-                            padawan encontra-se 
-                            em construção...
-                        </p>
-                    </div>
-                </article>
-
-                <!-- projeto 2 -->
-                <article>
-                    <div class="project-card">
-                        <h3>Em breve</h3>
-                        <p class="project-description">
-                            O portfólio deste 
-                            padawan encontra-se 
-                            em construção...
-                        </p>
-                    </div>
-                </article>
-
-                <!-- projeto 3 -->
-                <article>
-                    <div class="project-card">
-                        <h3>Em breve</h3>
-                        <p class="project-description">
-                            O portfólio deste 
-                            padawan encontra-se 
-                            em construção...
-                        </p>
-                    </div>
-                </article>
-
-                <!-- projeto 4 -->
-                <article>
-                    <div class="project-card">
-                        <h3>Em breve</h3>
-                        <p class="project-description">
-                            O portfólio deste 
-                            padawan encontra-se 
-                            em construção...
-                        </p>
-                    </div>
-                </article>
-
-                <!-- projeto 5 -->
-                <article>
-                    <div class="project-card">
-                        <h3>Em breve</h3>
-                        <p class="project-description">
-                            O portfólio deste 
-                            padawan encontra-se 
-                            em construção...
-                        </p>
-                    </div>
-                </article>
-
-                <!-- projeto 6 -->
-                <article>
-                    <div class="project-card">
-                        <h3>Em breve</h3>
-                        <p class="project-description">
-                            O portfólio deste 
-                            padawan encontra-se 
-                            em construção...
-                        </p>
-                    </div>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: Contato -->
-    <section class="contato js-scroll" id=contato>
-        <div class="container-contato">
-            <div class="title-contato">
-                <h1>Contato_</h1>
-                <img class="sabre_mestre_jedi" src="images/icons/pixels/sabre_mestre_jedi.png" alt="Sabre mestre jedi">
-            </div>
-
-            <form method="POST" action="https://formspree.io/f/xqkggpqp">
-                <article>
-                    <div class="card-agradecimentos">
-                        <img class="mandalorian" src="images/icons/pixels/animated/mandalorian_mask.gif" alt="Darth Vader">
-                        <p class="subtitle">Obrigado pela visita!</p>
-                        <p class="texto-agradecimentos">
-                            Caro Mestre(a) Jedi / Lord Sith,
-                            deixe uma mensagem de
-                            qualquer parte da
-                            galáxia...
-                        </p>
-                    </div>
-                </article>
-
-                <div class="card-contact">
-                    <label for="email">E-mail</label>
-                    <input  name="e-mail" type="email" placeholder="Digite seu e-mail aqui..." required>
-
-                    <label for="message">Mensagem</label>
-                    <textarea name="mensagem" type="text" placeholder="Digite sua mensagem aqui..." cols="30" rows="10" required></textarea>
-                
-                    <input class="btn-submit" type="submit" value="Enviar">
+                    </article>
+                    
                 </div>
-
-            </form>
-
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/gustavo-felipe-batista-carneiro-9342171a8/" target="_blank">
-                    <img src="images/icons/contact/linkedin-icon.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/gustavofbc" target="_blank">
-                    <img src="images/icons/contact/github-icon.png" alt="GitHub">
-                </a>
-                <a href="https://www.instagram.com/gustavo_fbc/" target="_blank">
-                    <img src="images/icons/contact/instagram-icon.png" alt="Instagram">
-                </a>
-                <a href="https://www.freecodecamp.org/fcc5bc1bd08-7cf7-4c4f-aacd-68123aca10da" target="_blank">
-                    <img src="images/icons/contact/freeCodeCamp-icon.png" alt="FreeCodeCamp">
-                </a>
-                <a href="mailto:gustavo.felipebc@gmail.com" target="_blank">
-                    <img src="images/icons/contact/gmail-icon.png"alt="Gmail">
-                </a>
             </div>
+        </section>
 
-            <footer>
-                <p> Desenvolvido <img class="footer-icon" src="images/icons/pixels/dev.gif" alt="dev"> 
-                    com <img class="footer-icon heart" src="images/icons/pixels/heart.gif" alt="heart"> 
-                    e muito <img class="footer-icon" src="images/icons/pixels/coffee.gif" alt="coffee"> 
-                    por { Gustavo Felipe } </p>
-            </footer>
+        <!-- Contato -->
+        <section id="contato">
+            <div class="container-contato">
+                <h2>
+                    <img class="animation-dev" src="images/dev1.svg" alt="menor que">
+                    Contato
+                    <img class="animation-dev" src="images/dev2.svg" alt="maior que">
+                </h2>
+                <div class="containter-contato-content" data-anime="down">
+                    <form method="POST" action="https://formspree.io/f/xqkggpqp">
+                        <div class="container-form">
+                            <article>
+                                <div class="card-mensagem" data-anime="left">
+                                    <img class="mandalorian" src="images/mandalorian_mask.gif" alt="mandalorian">
+                                    <p class="subtitle">Obrigado pela visita!</p>
+                                    <p class="texto-agradecimentos">
+                                        Caro Mestre(a) Jedi / Lord Sith,
+                                        deixe uma mensagem de
+                                        qualquer parte da
+                                        galáxia...
+                                    </p>
+                                </div>
+                            </article>
 
-        </div>
-    </section>
-    <script src="script.js"></script>
+                            <div class="card-contact">
+                                <label for="email" data-anime="left">E-mail</label>
+                                <input  name="e-mail" type="email" placeholder="Digite seu e-mail aqui..." required>
+            
+                                <label for="message" data-anime="left">Mensagem</label>
+                                <textarea name="mensagem" type="text" placeholder="Digite sua mensagem aqui..." cols="50" rows="8" required></textarea>
+                            
+                                <input class="btn-submit" type="submit" value="Enviar">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="icons-contact">
+                        <a href="https://github.com/gustavofbc" target="_blank">
+                            <img src="images/icons/contact/github.svg" alt="Github">
+                        </a>
+                        <a href="https://www.linkedin.com/in/gustavo-felipe-batista-carneiro-9342171a8/" target="_blank">
+                            <img src="images/icons/contact/linkedin.svg" alt="Linkedin">
+                        </a>
+                    </div>
+
+                </div>
+                <footer>
+                    <p class="text-footer">Desenvolvido com muito <img src="images/coffee.svg" alt="coffee">  por { Gustavo <span> Felipe }</span></p>
+                </footer>
+            </div>
+        </section>
+    </main>
+        
+    <script src="navbar.js"></script>
 </body>
-
 
 </html>
