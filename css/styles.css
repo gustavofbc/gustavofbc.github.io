@@ -439,8 +439,8 @@ section {
 }
 
 .project-card {
-  width: 20rem;
-  height: 12rem;
+  width: 22rem;
+  height: 20rem;
   background: linear-gradient( rgba(0, 25, 0, 0.1), rgba(0, 0, 0, 1) );
   box-sizing: border-box;
   padding: 1rem;
@@ -449,11 +449,28 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid var(--black-dark);
+  border: 2px solid var(--black-dark);
   box-shadow: 4px 4px 4px 4px rgb(0 0 0 / 25%);
 }
 
-.project-card img {
+.project-card:hover{
+  border: 2px solid var(--green);
+}
+
+.project-card-title {
+  line-height: 2.4rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--green);
+}
+
+.project-interface {
+  width: 20rem;
+  height: 14rem;
+  border-radius: 8px;
+  border-bottom: 2px solid var(--green);
+}
+
+.project-card .coffee {
   width: 2rem;
 }
 
