@@ -230,6 +230,29 @@ section {
   animation: js-animation 5s forwards infinite;
 }
 
+.react {
+  animation: react-animation 5s forwards infinite;
+}
+
+@keyframes react-animation {
+  0% {
+    top: 50px;
+    left: -50px;
+  }
+  50% {
+    top: 25px;
+    left: 15px;
+  }
+  75% {
+    top: 75px;
+    left: 75px;
+  }
+  100% {
+    top: 50px;
+    left: -50px;
+  }
+}
+
 @keyframes js-animation {
   0% {
     top: -50px;
