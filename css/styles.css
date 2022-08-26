@@ -142,13 +142,17 @@ section {
 }
 
 .container-sobre-mim {
-  height: 100vh;
   width: 100%;
   padding: 2rem;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.container-sobre-mim h2 {
+  text-align: right;
+  margin-bottom: 2rem;
 }
 
 .container-sobre-mim .container-images{
@@ -158,131 +162,36 @@ section {
 }
 
 .container-sobre-mim .container-images img {
-  width: 7rem;
+  width: 18rem;
+}
+
+.avatar {
   position: relative;
-  padding: 0.5rem;
+  animation: avatar-animation 4s forwards infinite;
 }
 
-.html {
-  animation: html-animation 4s forwards infinite;
-}
-
-@keyframes html-animation {
+@keyframes avatar-animation {
   0% {
-    top: -50px;
-    right: -50px;
-    left: 20px;
-    bottom: 50px;
+    top: 0px;
   }
+  
   50% {
-    top: 25px;
-    right: -25px;
-    left: -5px;
-    bottom: -25px;
-  }
-  75% {
-    top: -25px;
-    right: 25px;
-    left: 5px;
-    bottom: 25px;
-  }
-  100% {
-    top: -50px;
-    right: -50px;
-    left: 20px;
-    bottom: 50px;
-  }
-}
-
-
-.css {
-  animation: css-animation 5s forwards infinite;
-}
-
-@keyframes css-animation {
-  0% {
     top: 50px;
-    right: 25px;
-    left: 50px;
-    bottom: 0px;
   }
-  50% {
-    top: -25px;
-    right: -25px;
-    left: -25px;
-    bottom: -25px;
-  }
-  75% {
-    top: 25px;
-    right: 25px;
-    left: 0px;
-    bottom: 25px;
-  }
+
   100% {
-    top: 50px;
-    right: 25px;
-    left: 50px;
-    bottom: 0px;
-  }
-}
-
-.js {
-  animation: js-animation 5s forwards infinite;
-}
-
-.react {
-  animation: react-animation 5s forwards infinite;
-}
-
-@keyframes react-animation {
-  0% {
-    top: 50px;
-    left: -50px;
-  }
-  50% {
-    top: 25px;
-    left: 15px;
-  }
-  75% {
-    top: 75px;
-    left: 75px;
-  }
-  100% {
-    top: 50px;
-    left: -50px;
-  }
-}
-
-@keyframes js-animation {
-  0% {
-    top: -50px;
-    left: -25px;
-    right: -10px;
-  }
-  50% {
-    top: 25px;
-    left: 25px;
-    right: -10px;
-  }
-  75% {
-    top: -25px;
-    left: -25px;
-    right: 10px;
-  }
-  100% {
-    top: -50px;
-    left: -25px;
-    right: -10px;
+    top: 0px;
   }
 }
 
 .container-sobre-mim .container-description {
   width: 475px;
   color: var(--white);
-  padding: 1rem;
+  padding: 2rem;
+  margin: .5rem;
 }
 
-.animation-dev{
+.animation-dev {
   width: 2rem;
   padding: 0rem 0.4rem;
   animation:  blink 2s infinite linear;
@@ -308,7 +217,7 @@ section {
 
 .container-sobre-mim .container-description, li{
   font-size: 1.2rem;
-  line-height: 1.6rem;
+  line-height: 2rem;
   padding-left: 20px;
 }
 
@@ -327,105 +236,66 @@ section {
   background: var(--black);
 }
 
-.container-conhecimentos {
+.container-conhecimentos  {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  padding: 1rem;
 }
-
 .container-conhecimentos h2 {
-  margin: 1rem;
+  padding: 1rem;
 }
 
 .container-conhecimentos .container-cards {
-  width: 100%;
   display: flex;
-  position: relative;
-  justify-content: space-around;
-  
+  flex-direction: column;
+  padding: 5rem;
 }
 
-.container-conhecimentos .container-cards .card {
-  position: relative;
-  margin-bottom: 4rem;
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: var(--black-dark);
+  border-radius: 0.5rem;
+  margin: 0.5rem;
 }
 
-.container-cards .card .face {
-  width: 200px;
-  height: 180px;
-  transform: 1s;
+.card .card-title {
+  color: var(--green);
+  margin-top: 1rem;
+  text-align: center;
 }
 
-.container-cards .card .face.face1 {
-  position: relative;
-  background: var(--black-dark);
+.card .cards{
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  z-index: 1;
-  transform: translateY(90px);
-  transition: 1s;
-  border-radius: 6px 6px 0px 0px;
+  flex-wrap: wrap;
 }
 
-.container-cards .card:hover .face.face1 {
-  transform: translateY(0);
-  transition: 1s;
-}
-
-
-.container-cards .card .face.face1 .content {
-  opacity: 0.5;
-  transition: 1s;
-}
-
-.container-cards .card:hover .face.face1 .content {
-  opacity: 1;
-  transition: 1s;
-}
-
-.container-cards .card:hover .face.face1 .content h3{
-  background-color: var(--green);
-}
-
-.container-cards .card .face.face1 .content img {
+ .card-item {
+  width: 100px;
   height: 100px;
-}
-
-.container-cards .card .face.face1 .content h3 {
-  color: var(--white);
-  padding: 0;
-  margin: 10px 0 0;
-  text-align: center;
-  font-size: 1.1rem;
-  font-family: "Chakra-Semibold";
-}
-
-.container-cards .card .face.face2 {
-  position: relative;
-  background: rgba(0, 0, 0, 0.8);
+  
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-  transform: translateY(-90px);
-  border-radius: 8px 8px 6px 6px;
-  border-bottom: 1px solid var(--green);
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--black-dark);
+  border-radius: 0.5rem;
+  padding: 1rem;
 }
 
-.container-cards .card:hover .face.face2  {
-  transform: translateY(0);
+.card-item h4 {
+  margin-top: 1rem;
+  color: var(--green);
+  opacity: 0;
 }
 
-.container-cards .card .face.face2 .content p{
-  margin: 0;
-  padding: 0;
-  color: var(--white);
-  font-size: 1rem;
-  text-align: center;
+.card-item:hover h4{
+  opacity: 1;
 }
 
 /* projetos */
@@ -438,63 +308,96 @@ section {
   flex-direction: column;
   box-sizing: border-box;
   padding: 1rem;
-  text-align: right;
 }
 
 .container-projetos h2 {
-  margin: 1rem;
-}
-
-.container-projetos-content {
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-}
-
-.container-projetos-content span {
-  color: var(--white);
-  font-size: 1.2rem;
-  margin: 10px;
-}
-
-.project-card {
-  width: 22rem;
-  height: 20rem;
-  background: linear-gradient( rgba(0, 25, 0, 0.1), rgba(0, 0, 0, 1) );
-  box-sizing: border-box;
   padding: 1rem;
-  margin: 1rem;
-  border-radius: 8px;
+  text-align: right;
+}
+
+.container-projetos .container-projetos-content{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid var(--black-dark);
-  box-shadow: 4px 4px 4px 4px rgb(0 0 0 / 25%);
 }
 
-.project-card:hover{
+.project-card {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem;
+  margin: 1rem;
+  background: var(--black);
+  border-radius: .5rem;
+}
+
+.project-card-details {
+  height: 250px;
+  width: 350px;
+  padding: 0 .5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.project-card-details h3 {
+  font-size: 1.8rem;
+}
+
+.project-card-details h3::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  border-radius: 10px;
+  background-color: var(--green);
+}
+
+.project-card-details p{
+  color: var(--white);
+  text-align: left;
+}
+
+.project-card-details a {
+  width: 10rem;
+  height: 2.8rem;
+  color: var(--green);
+
+  font-weight: 600;
+  font-size: 1rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5rem;
   border: 2px solid var(--green);
+
+  transition: .3s;
 }
 
-.project-card-title {
-  line-height: 2.4rem;
-  margin-bottom: 10px;
-  border-bottom: 2px solid var(--green);
+.project-card-details a:hover {
+  color: var(--black);
+  background: var(--green);
 }
 
-.project-interface {
-  width: 20rem;
-  height: 14rem;
-  border-radius: 8px;
-  border-bottom: 2px solid var(--green);
+.project-card-details .project-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
-.project-card .coffee {
-  width: 2rem;
+.project-card-details .project-icons img {
+  width: 1.8rem;
+}
+
+.project-card .project-interface {
+  width: 350px;
+  height: 250px;
+  border-radius: .5rem;
 }
 
 /* contato */
@@ -573,20 +476,21 @@ section {
 }
 
 .card-contact .btn-submit {
-  font-family: "Chakra-Bold";
-  background: var(--green);
-  color: var(--white);
-  border: none;
   width: 8rem;
   height: 3rem;
-  border-radius: 4px;
+  color: var(--white);
+  background: var(--black-dark);
+  font-family: "Chakra-Bold";
+  border: 2px solid var(--green);
+  border-radius: 6px;
   margin-top: 8px;
-  transition: 0.5s;
+  transition: 0.3 s;
   cursor: pointer;
 }
 
 .card-contact .btn-submit:hover {
-  background: var(--green-dark);
+  color: var(--green);
+  border-color: var(--green);
 }
 
 .card-contact label {
@@ -621,17 +525,21 @@ section {
   padding: 10px 0px 10px 0px;
 }
 
+.icons-contact a {
+  display: inline-block;
+}
+
 .icons-contact img {
-  cursor: pointer;
-  margin-top: 10px;
-  margin-left: 5px;
-  padding: 5px;
   width: 3rem;
+  padding: .5rem;
+  margin: 5px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .icons-contact img:hover {
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 footer {
@@ -674,7 +582,7 @@ footer p span {
 
   .container-home .logo-line{
     height: 125px;
-    margin-top: 25px;
+    margin-top: 100px;
     margin-bottom: 75px;
   }
 
@@ -706,33 +614,24 @@ footer p span {
     align-items: center;
   }
 
-  .container-conhecimentos .container-cards .card {
-    margin-bottom: 0px;
-    padding: 1rem;
+  /* projects */
+  .project-card {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
   }
+
+  .project-card:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+
+  .project-card .project-card-details {
+    margin: 1rem;
+  }
+
+
   
-  .container-cards .card .face {
-    width: 300px;
-    height: 180px;
-  }
-
-  .container-cards .card .face.face1 {
-    transform: translateY(90px);
-  }
-
-  .container-cards .card .face.face2 {
-    transform: translateY(-90px);
-  }
-
-  .container-cards .card .face.face1 .content img {
-    width: 6rem;
-  }
-
-  .container-cards .card .face.face2 .content p {
-    font-size: 1.2rem;
-  }
-  
-
   /* contato */  
   .container-contato .containter-contato-content .container-form{
     flex-direction: column;
@@ -751,6 +650,26 @@ footer p span {
     max-width: 350px;
   }
 
+  .container-sobre-mim .container-images img {
+    padding: 30px 0;
+    max-width: 14rem;
+  }
+
+  /* projects */
+  .project-card {
+    width: 300px;
+    padding: 1rem;
+  }
+
+  .project-card .project-card-details {
+    width: 250px;
+  }
+
+  .project-card .project-interface {
+    width: 250px;
+    height: 200px;
+  }
+
   /* contato */
   .card-contact {
     max-width: 28rem;
@@ -759,19 +678,19 @@ footer p span {
   .card-contact .btn-submit {
     width: 100%;
   }
+
+  .icons-contact {
+    padding: 1rem;
+  }
+
+  .icons-contact img {
+    width: 2rem;
+  }
+  
 }
 
 
 @media screen and (max-width: 490px) {
-  /* sobre mim */
-  .container-sobre-mim .container-description {
-    max-width: 300px;
-  }
-
-  .container-sobre-mim .container-images img {
-    width: 5.4rem;
-  }
-
   /* contato */
   .card-contact {
     max-width: 22rem;
@@ -799,11 +718,34 @@ footer p span {
   }
 
   .container-sobre-mim .container-images img {
-    width: 4.8rem;
+    width: 10rem;
   }
 
   .container-sobre-mim .container-description {
-    max-width: 300px;
+    font-size: 1rem;
+    max-width: 240px;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+  }
+
+  /* conhecimentos */
+  .container-conhecimentos .container-cards {
+    padding: 2rem;
+  }
+
+  /* projects */
+  .project-card {
+    width: 225px;
+    padding: 1rem;
+  }
+
+  .project-card .project-card-details {
+    width: 200px;
+  }
+
+  .project-card .project-interface {
+    width: 200px;
+    height: 150px;
   }
 
   /* contato */
@@ -812,7 +754,11 @@ footer p span {
   }
 
   .container-contato .containter-contato-content .container-form .card-mensagem {
-    width: 20rem;
+    width: 15rem;
+  }
+
+  .card-contact {
+    width: 15rem;
   }
 
   footer {
