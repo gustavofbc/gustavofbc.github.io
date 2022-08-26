@@ -1,11 +1,12 @@
 # Portfólio
+
 <p><b> :computer: Desktop:</b></p>
-<img src="./images/demo/demo_v3.gif" alt="site desktop">
+<img src="./images/demo/demo_v4.gif" alt="site desktop">
 <hr>
 
 <p><b> :iphone: Mobile:</b></p>
 <br/>
-<img src="./images/demo/demo_mobile_v3.gif" alt="site mobile">
+<img src="./images/demo/demo_mobile_v4.gif" alt="site mobile">
 <hr>
 
 Projeto desenvolvido para mostrar um pouco mais do meu trabalho.
@@ -34,7 +35,11 @@ As atividades desempenhadas seguem mapeadas abaixo:
 - [x] Criação da logo;
 - [x] Refatorar as imagens .png e .jeg por .svg (otimização);
 - [x] Remover estrutura de código das versões anteriores junto aos arquivos;
-- [x] Atualizar o Readme.
+- [x] Atualizar o Readme;
+- [x] Refatoração 4 - Nova logo, elementos e estilos;
+- [x] Atualizar telas via Figma;
+- [x] Menu mobile refatorado;
+- [x] Novos ícones adicionados;
 
 ### Instalação:
 
@@ -49,4 +54,4 @@ Em seguida, para verificar o projeto funcionando, abra-o usando o live-server em
 
 e voalá! :tada:
 
-<i> _que a força esteja com você meu caro mestre/padawan/sith. </i>
+<i> \_que a força esteja com você meu caro mestre/padawan/sith. </i>
