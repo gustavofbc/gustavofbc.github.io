@@ -1,5 +1,31 @@
 # Portfólio
 
+<div align="center">
+  <img alt="Logo" src="https://github.com/gustavofbc/gustavofbc.github.io/blob/main/images/logo-max.svg" width="200"/>
+</div>
+<br/>
+
+<p align="center">
+  <a href="#bulb-ideia">Ideia</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#wrench-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#clipboard-desafios">Desafios</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#mortar_board-aprendizados">Aprendizados</a>&nbsp;&nbsp;&nbsp;
+</p>
+
+### :bulb: Ideia
+0 Projeto tem como objetivo mostrar um pouco mais do meu trabalho.
+
+<h4> Tecnologias utilizadas no projeto:</h4>
+
+<p align="center">
+    <img alt="HTML5" title="HTML5" src="https://github.com/gustavofbc/pixel_of_shields/blob/main/dark/html_dark.png" width="75"/>
+    <img alt="CSS3" title="CSS3" src="https://github.com/gustavofbc/pixel_of_shields/blob/main/dark/css_dark.png" width="75"/>
+    <img alt="JAVASCRIPT" title="JAVASCRIPT" src="https://github.com/gustavofbc/pixel_of_shields/blob/main/dark/javascript_dark.png" width="75"/>
+    <img alt="FIGMA" title="FIGMA" src="https://github.com/gustavofbc/pixel_of_shields/blob/main/dark/figma_dark.png" width="75"/>
+</p>
+
+<hr/>
+
 <p><b> :computer: Desktop:</b></p>
 <img src="./images/demo/demo_v4.gif" alt="site desktop">
 <hr>
@@ -9,9 +35,7 @@
 <img src="./images/demo/demo_mobile_v4.gif" alt="site mobile">
 <hr>
 
-Projeto desenvolvido para mostrar um pouco mais do meu trabalho.
-
-### Desáfios:
+### :clipboard: Desafios:
 
 Atualmente o projeto está concluído, entretanto não está terminado. O processo de criação não prende o projeto a algo fixo para sempre, tudo é mutável e conforme eu vá evoluindo o site também irá. Dando continuidade ao projeto depois de um ano, resolvi testar como estão minhas enferrujadas habilidades tentando retirar uma terceira versão deste projeto.
 As atividades desempenhadas seguem mapeadas abaixo:
@@ -41,7 +65,7 @@ As atividades desempenhadas seguem mapeadas abaixo:
 - [x] Menu mobile refatorado;
 - [x] Novos ícones adicionados;
 
-### Instalação:
+### :wrench: Instalação:
 
 Para iniciar, efetue o clone do projeto do GitHub em um diretório de sua preferência:
 
@@ -53,5 +77,15 @@ git clone https://github.com/gustavofbc/gustavofbc.github.io.git
 Em seguida, para verificar o projeto funcionando, abra-o usando o live-server em seu vscode ou abra o arquivo "index.html" utilizando o navegador de sua preferência.
 
 e voalá! :tada:
+
+### :mortar_board: Aprendizados
+
+-> HTML5: semântico, padronização de nomenclatura de classes, ID's e elementos;
+
+-> CSS3: animações, transições, responsividade, media-queries.
+
+-> JavaScript: import de fonts via arquivos e não somente via link, acessibilidade nas queries, animação ao scroll.
+
+-> Figma: prototipação de interfaces, exportação de ícones e elementos customizados.
 
 <i> \_que a força esteja com você meu caro mestre/padawan/sith. </i>
