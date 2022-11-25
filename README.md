@@ -65,6 +65,8 @@ As atividades desempenhadas seguem mapeadas abaixo:
 - [x] Menu mobile refatorado;
 - [x] Novos ícones adicionados;
 
+<hr/>
+
 ### :wrench: Instalação:
 
 Para iniciar, efetue o clone do projeto do GitHub em um diretório de sua preferência:
@@ -77,6 +79,8 @@ git clone https://github.com/gustavofbc/gustavofbc.github.io.git
 Em seguida, para verificar o projeto funcionando, abra-o usando o live-server em seu vscode ou abra o arquivo "index.html" utilizando o navegador de sua preferência.
 
 e voalá! :tada:
+
+<hr/>
 
 ### :mortar_board: Aprendizados
 
