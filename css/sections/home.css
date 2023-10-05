@@ -1,0 +1,82 @@
+.container-home {
+  height: calc(100vh - 50px);
+  /* weight: 100%; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--background);
+  gap: 2rem;
+}
+
+.home-text {
+  max-width: 50rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  line-height: 2rem;
+  color: var(--text);
+  opacity: 0;
+  animation: down 3s ease;
+  animation-fill-mode: forwards;
+}
+
+.home-text h1 {
+  font-size: 2.4rem;
+  line-height: 5rem;
+  color: var(--text);
+}
+
+.home-text span {
+  color: var(--primary)
+}
+
+.text-with-pixel {
+  display: flex;
+  align-items: center;
+}
+
+.text-with-pixel img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.curriculum-button {
+  display: flex;
+  justify-content: center;
+  border: 2px dashed var(--primary);
+  transition: all 2s linear;
+}
+
+.curriculum-button:hover {
+  border: 2px solid var(--primary);
+}
+
+.curriculum-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  color: var(--text);
+  gap: 0.8rem;
+}
+
+.curriculum-button a:hover {
+  cursor: pointer;
+}
+
+.arrow-animation {
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.arrow-animation img{
+  position: absolute;
+  animation: arrow 3s ease infinite;
+}

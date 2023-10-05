@@ -1,11 +1,16 @@
 *,
 section,
 p,
-body,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PressStart-Regular";
+}
+
 span {
   margin: 0;
   padding: 0;
-  font-family: "Chakra-Regular";
+  /* font-family: "Chakra-Regular"; */
 }
 
 a {
@@ -21,18 +26,19 @@ h2 {
   font-size: 2rem;
 }
 
-
 h3 {
   color: var(--white);
   font-size: 1.4rem;
 }
 /* cores */
 :root {
-  --white: #f0f0f0;
+  --text: #f0f0f0;
   --black: #121414;
   --green: #44ee69;
   --green-dark: #3DD150;
   --black-dark: #0D0F0D;
+  --primary: #467CFF;
+  --background: #0D0F1B;
 }
 /* -------------------------- */
 
@@ -52,6 +58,12 @@ h3 {
 @font-face {
   src: url("../fonts/Chakra_petch/ChakraPetch-Medium.ttf");
   font-family: "Chakra-Semibold";
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("../fonts/PressStart2P/PressStart2P-Regular.ttf");
+  font-family: "PressStart-Regular";
   font-weight: normal;
 }
 /* -------------------------- */

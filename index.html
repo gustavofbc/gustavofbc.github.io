@@ -1,354 +1,424 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Desenvolvedor Front End Jr">
-    <meta name="keywords" content="portfólio, desenvolvedor frontend, front-end, website" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="css/global.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Desenvolvedor Front End Jr" />
+    <meta
+      name="keywords"
+      content="Gustavo felipe, portfólio, desenvolvedor frontend, front-end, website, gusatavo felipe dev"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <link rel="stylesheet" type="text/css" href="css/sections/home.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" />
-    <title>Gustavo Felipe</title>
+    <title>Gustavo Felipe - Front-end developer</title>
+  </head>
 
-</head>
+  <body>
+    <header id="header" class="teste">
+      <a id="logo" href="/">
+        <img class="logo" src="images/logo-line1.svg" alt="logo" />
+      </a>
 
-<body>
-    <header id="header">
-        <a id="logo" href="/">
-            <img class="logo" src="images/logo-max.svg" alt="logo">
-        </a>
-
-        <nav id="nav">
-            <button id="btn-menu" aria-label="Abre menu" aria-haspopup="true" aria-controls="menu"
-                aria-expanded="false">
-                <span id="hamburguer"></span>
-            </button>
-            <ul id="menu" role="menu">
-                <li><a href="#sobre-mim">Sobre mim</a></li>
-                <li><a href="#conhecimentos">Conhecimentos</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+      <nav id="nav">
+        <button
+          id="btn-menu"
+          aria-label="Abre menu"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span id="hamburguer"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="#sobre-mim">About me</a></li>
+          <li><a href="#experiencia">Experiences</a></li>
+          <li><a href="#conhecimentos">Knowledges</a></li>
+          <li><a href="#projetos">Projects</a></li>
+          <li><a href="#contato">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-
-        <!-- Home -->
-        <section id="home">
-            <div class="container-home">
-                <div class="home-apresentation">
-                    <div class="home-apresentation-text">
-                        <span>Opa, eu sou</span>
-                        <h1>Gustavo <span>Felipe</span></h1>
-                        <span>Desenvolvedor front-end Jr</span>
-                    </div>
-                    <a class="github-button" href="https://github.com/gustavofbc" target="_blank">
-                        GitHub
-                    </a>
-                </div>
-                <svg class="logo-line" width="258" height="308" viewBox="0 0 258 308" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="path"
-                        d="M123.099 247.811V198.232H169.579C205.268 198.232 205.268 177.234 205.268 153.85H123.099V129.405C123.099 118.323 136.028 107.293 148.351 107.293H253.982C253.982 107.293 253.982 127.655 253.982 156.819C253.982 185.983 236.85 216.894 205.268 233.812C173.687 250.73 123.099 247.811 123.099 247.811ZM123.099 247.811V303.222C123.099 303.222 107.273 304.972 97.8831 303.222C88.4937 301.472 73.9244 292.723 73.9244 270.559V245.478M73.9244 245.478L75.3836 117.156C75.3836 94.3553 100.966 57.9799 136.716 57.9799H217.7C235.305 57.9799 254.671 45.9961 253.982 25.5813V4H153.148H131.482C49.3244 4 11.1799 57.9799 5.31149 113.073C-0.556881 168.167 11.7195 229.146 73.9244 245.478Z"
-                        fill="none" stroke="#44EE69" stroke-width="8" />
-                    <path class="path"
-                        d="M123.099 247.811V198.232H169.579C205.268 198.232 205.268 177.234 205.268 153.85H123.099V129.405C123.099 118.323 136.028 107.293 148.351 107.293H253.982C253.982 107.293 253.982 127.655 253.982 156.819C253.982 185.983 236.85 216.894 205.268 233.812C173.687 250.73 123.099 247.811 123.099 247.811ZM123.099 247.811V303.222C123.099 303.222 107.273 304.972 97.8831 303.222C88.4937 301.472 73.9244 292.723 73.9244 270.559V245.478M73.9244 245.478L75.3836 117.156C75.3836 94.3553 100.966 57.9799 136.716 57.9799H217.7C235.305 57.9799 254.671 45.9961 253.982 25.5813V4H153.148H131.482C49.3244 4 11.1799 57.9799 5.31149 113.073C-0.556881 168.167 11.7195 229.146 73.9244 245.478Z"
-                        fill="none" stroke="#44EE69" stroke-width="8" />
-                    <defs>
-                        <linearGradient id="paint0_linear_117_88" x1="219.206" y1="3" x2="52.7092" y2="216.085"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#44EE69" />
-                            <stop offset="1" stop-color="#071209" />
-                        </linearGradient>
-                        <linearGradient id="paint1_linear_117_88" x1="219.206" y1="3" x2="52.7092" y2="216.085"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#44EE69" />
-                            <stop offset="1" stop-color="#071209" />
-                        </linearGradient>
-                    </defs>
-                </svg>
+      <!-- Home -->
+      <section id="home">
+        <div class="container-home">
+          <div class="home-text">
+            <div class="text-with-pixel">
+              <p>Hello, I'm</p>
+              <img src="./images//sprites/avatar-pixel.gif" alt="Avatar in Pixel art">
             </div>
-        </section>
+              <h1>Gustavo <span>Felipe</span></h1>
+              <p>
+                Jr front-end developer passionate about pixel art, 
+                coffee connoisseur, lo-fi style enthusiast, 
+                casual cyclist and, above all, a dedicated professional. hohoho!
+              </p>
+          </div>
+          
+          <div class="curriculum-button">
+            <a>
+              <img src="./images/icons/download-pixel.svg" alt="download icon">
+              Curriculum
+            </a>
+          </div>
 
-        <!-- Sobre mim -->
-        <section id="sobre-mim">
-            <div class="container-sobre-mim">
-                <div class="container-images" data-anime="left">
-                    <img class="avatar" src="images/avatar.svg" alt="Avatar">
-                </div>
-                <div class="container-description" data-anime="left">
-                    <h2>
-                        <img class="animation-dev" src="images/arrow_left.svg" alt="arrow-left-icon">
-                        Sobre mim
-                        <img class="animation-dev" src="images/arrow_right.svg" alt="arrow-right-icon">
-                    </h2>
-                    <article id="description">
-                        <br />
-                        <p data-anime="down">
-                            Tenho 22 anos, sou formado pela UNIFESSPA como Analista de Sistemas e atuo como
-                            desenvolvedor Front-end. Atualmente tenho me capacitado para atingir minhas metas de
-                            carreira através de projetos pessoais e cursos.
-                        </p>
-                        <br />
-                        <p>Alguns dos meus hobbies e gostos são:</p>
-                        <ul>
-                            <li data-anime="left">Pedalar;</li>
-                            <li data-anime="left">Lo-fi;</li>
-                            <li data-anime="left">Pixel art;</li>
-                            <li data-anime="left">Livros;</li>
-                            <li data-anime="left">Star Wars;</li>
-                        </ul>
-                    </article>
+          <div class="arrow-animation">
+            <img src="./images/icons/arrow-pixel.svg" alt="arrow icon">
+          </div>
+        </div>
 
-                </div>
-            </div>
-        </section>
+      </section>
 
-        <!-- Conhecimentos -->
-        <section id="conhecimentos">
-            <div class="container-conhecimentos" data-anime="left">
-                <h2>
-                    <img class="animation-dev" src="images/arrow_left.svg" alt="arrow-left-icon">
-                    Conhecimentos
-                    <img class="animation-dev" src="images/arrow_right.svg" alt="arrow-right-icon">
-                </h2>
+      <!-- Sobre mim -->
+      <!-- <section id="sobre-mim">
+        <div class="container-sobre-mim">
+          <div class="container-images" data-anime="left">
+            <img class="avatar" src="images/avatar.svg" alt="Avatar" />
+          </div>
+          <div class="container-description" data-anime="left">
+            <h2>
+              <img
+                class="animation-dev"
+                src="images/arrow_left.svg"
+                alt="arrow-left-icon"
+              />
+              Sobre mim
+              <img
+                class="animation-dev"
+                src="images/arrow_right.svg"
+                alt="arrow-right-icon"
+              />
+            </h2>
+            <article id="description">
+              <br />
+              <p data-anime="down">
+                Tenho 22 anos, sou formado pela UNIFESSPA como Analista de
+                Sistemas e atuo como desenvolvedor Front-end. Atualmente tenho
+                me capacitado para atingir minhas metas de carreira através de
+                projetos pessoais e cursos.
+              </p>
+              <br />
+              <p>Alguns dos meus hobbies e gostos são:</p>
+              <ul>
+                <li data-anime="left">Pedalar;</li>
+                <li data-anime="left">Lo-fi;</li>
+                <li data-anime="left">Pixel art;</li>
+                <li data-anime="left">Livros;</li>
+                <li data-anime="left">Star Wars;</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section> -->
 
-                <div class="container-cards">
+      <!-- Conhecimentos -->
+      <!-- <section id="conhecimentos">
+        <div class="container-conhecimentos" data-anime="left">
+          <h2>
+            <img
+              class="animation-dev"
+              src="images/arrow_left.svg"
+              alt="arrow-left-icon"
+            />
+            Conhecimentos
+            <img
+              class="animation-dev"
+              src="images/arrow_right.svg"
+              alt="arrow-right-icon"
+            />
+          </h2>
 
-                    <div class="card" data-anime="down">
-                        <h3 class="card-title">Stack :</h3>
-                        <div class="cards">
-                            <article class="card-item">
-                                <img src="images/icons/html.svg" alt="HTML">
-                                <h4>HTML</h4>
-                            </article>
+          <div class="container-cards">
+            <div class="card" data-anime="down">
+              <h3 class="card-title">Stack :</h3>
+              <div class="cards">
+                <article class="card-item">
+                  <img src="images/icons/html.svg" alt="HTML" />
+                  <h4>HTML</h4>
+                </article>
 
-                            <article class="card-item">
-                                <img src="images/icons/css.svg" alt="CSS">
-                                <h4>CSS</h4>
-                            </article>
+                <article class="card-item">
+                  <img src="images/icons/css.svg" alt="CSS" />
+                  <h4>CSS</h4>
+                </article>
 
-                            <article class="card-item">
-                                <img src="images/icons/javascript.svg" alt="Javascript">
-                                <h4>JavaScript</h4>
-                            </article>
+                <article class="card-item">
+                  <img src="images/icons/javascript.svg" alt="Javascript" />
+                  <h4>JavaScript</h4>
+                </article>
 
-                            <article class="card-item">
-                                <img src="images/icons/react.svg" alt="REACT ">
-                                <h4>React</h4>
-                            </article>
+                <article class="card-item">
+                  <img src="images/icons/react.svg" alt="REACT " />
+                  <h4>React</h4>
+                </article>
 
-                            <article class="card-item">
-                                <img src="images/icons/typescript.svg" alt="TYPESCRIPT">
-                                <h4>TypeScript</h4>
-                            </article>
-                        </div>
-                    </div>
-
-                    <div class="card" data-anime="down">
-                        <h3 class="card-title">Aprendendo / Aprimorando :</h3>
-                        <div class="cards">
-                            <article class="card-item">
-                                <img src="images/icons/react.svg" alt="REACT ">
-                                <h4>React</h4>
-                            </article>
-
-                            <article class="card-item">
-                                <img src="images/icons/typescript.svg" alt="TYPESCRIPT">
-                                <h4>TypeScript</h4>
-                            </article>
-
-                            <article class="card-item">
-                                <img src="images/icons/sass.svg" alt="SASS">
-                                <h4>Sass</h4>
-                            </article>
-
-                            <article class="card-item">
-                                <img src="images/icons/styled-components.svg" alt="STYLED-COMPONENTS">
-                                <h4>Styled-Components</h4>
-                            </article>
-
-                            <article class="card-item">
-                                <img src="images/icons/next.js.svg" alt="NEXT.JS">
-                                <h4>Next.js</h4>
-                            </article>
-                        </div>
-                    </div>
-
-                    <div class="card" data-anime="down">
-                        <h3 class="card-title">Outros :</h3>
-                        <div class="cards">
-                            <article class="card-item">
-                                <img src="images/icons/figma.svg" alt="FIGMA ">
-                                <h4>Figma</h4>
-                            </article>
-
-                            <article class="card-item">
-                                <img src="images/icons/git.svg" alt="GIT">
-                                <h4>Git</h4>
-                            </article>
-
-                            <article class="card-item">
-                                <img src="images/icons/ubuntu.svg" alt="UBUNTU">
-                                <h4>Ubuntu</h4>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-
+                <article class="card-item">
+                  <img src="images/icons/typescript.svg" alt="TYPESCRIPT" />
+                  <h4>TypeScript</h4>
+                </article>
+              </div>
             </div>
 
-        </section>
+            <div class="card" data-anime="down">
+              <h3 class="card-title">Aprendendo / Aprimorando :</h3>
+              <div class="cards">
+                <article class="card-item">
+                  <img src="images/icons/react.svg" alt="REACT " />
+                  <h4>React</h4>
+                </article>
 
-        <!-- Projetos  -->
-        <section id="projetos">
-            <div class="container-projetos" data-anime="left">
-                <h2>
-                    <img class="animation-dev" src="images/arrow_left.svg" alt="arrow-left-icon">
-                    Projetos
-                    <img class="animation-dev" src="images/arrow_right.svg" alt="arrow-right-icon">
-                </h2>
+                <article class="card-item">
+                  <img src="images/icons/typescript.svg" alt="TYPESCRIPT" />
+                  <h4>TypeScript</h4>
+                </article>
 
-                <div class="container-projetos-content">
-                    <article class="project-card" data-anime="top">
-                        <div class="project-card-details">
-                            <h3 class="project-card-title">Pomos</h3>
-                            <p>
-                                Temporizador de pomodoros.
-                            </p>
-                            <div class="project-icons">
-                                <img src="images/icons/html.svg" alt="HTML">
-                                <img src="images/icons/css.svg" alt="CSS">
-                                <img src="images/icons/javascript.svg" alt="JAVASCRIPT">
-                                <img src="images/icons/react.svg" alt="REACT">
-                            </div>
-                            <a target="_blank" href="https://pomos-io.vercel.app/">Visualizar projeto</a>
-                        </div>
-                        <img class="project-interface" src="./images/projects/pomos-interface.png" alt="Pomos">
-                    </article>
+                <article class="card-item">
+                  <img src="images/icons/sass.svg" alt="SASS" />
+                  <h4>Sass</h4>
+                </article>
 
-                    <article class="project-card" data-anime="top">
-                        <img class="project-interface" src="./images/projects/buscacep-interface.png" alt="Buscacep">
-                        <div class="project-card-details">
-                            <h3 class="project-card-title">Buscacep</h3>
-                            <p>
-                                Aplicação desenvolvida para consumir dados a partir do CEP, obtidos utilizando a API
-                                externa viacep.
-                            </p>
-                            <div class="project-icons">
-                                <img src="images/icons/html.svg" alt="HTML">
-                                <img src="images/icons/css.svg" alt="CSS">
-                                <img src="images/icons/javascript.svg" alt="JAVASCRIPT">
-                            </div>
-                            <a target="_blank" href="https://gustavofbc.github.io/buscacep/">Visualizar projeto</a>
-                        </div>
-                    </article>
+                <article class="card-item">
+                  <img
+                    src="images/icons/styled-components.svg"
+                    alt="STYLED-COMPONENTS"
+                  />
+                  <h4>Styled-Components</h4>
+                </article>
 
-                    <article class="project-card" data-anime="top">
-                        <div class="project-card-details">
-                            <h3 class="project-card-title">Filter-next</h3>
-                            <p>
-                                Aplicação de filtragrem de dados de usuários (por nome e endereço), obtidos utilizando a
-                                API externa jsonplaceholder.
-                            </p>
-                            <div class="project-icons">
-                                <img src="images/icons/html.svg" alt="HTML">
-                                <img src="images/icons/css.svg" alt="CSS">
-                                <img src="images/icons/javascript.svg" alt="JAVASCRIPT">
-                                <img src="images/icons/react.svg" alt="REACT">
-                                <img src="images/icons/next.js.svg" alt="NEXT.JS">
-                            </div>
-                            <a target="_blank" href="https://filter-next.netlify.app/">Visualizar projeto</a>
-                        </div>
-                        <img class="project-interface" src="./images/projects/filter-next-interface.png"
-                            alt="Filter-next">
-                    </article>
-
-                    <article class="project-card" data-anime="top">
-                        <img class="project-interface" src="./images/projects/bin2dec-interface.png" alt="Bin2Dec">
-                        <div class="project-card-details">
-                            <h3 class="project-card-title">Bin2Dec</h3>
-                            <p>
-                                Conversor de números binários para decimal.
-                            </p>
-                            <div class="project-icons">
-                                <img src="images/icons/html.svg" alt="HTML">
-                                <img src="images/icons/css.svg" alt="CSS">
-                                <img src="images/icons/javascript.svg" alt="JAVASCRIPT">
-                                <img src="images/icons/react.svg" alt="REACT">
-                                <img src="images/icons/typescript.svg" alt="TYPESCRIPT">
-                                <img src="images/icons/styled-components.svg" alt="STYLED-COMPONENTS">
-                            </div>
-                            <a target="_blank" href="https://binary-2-decimal.netlify.app/">Visualizar projeto</a>
-                        </div>
-                    </article>
-
-                </div>
+                <article class="card-item">
+                  <img src="images/icons/next.js.svg" alt="NEXT.JS" />
+                  <h4>Next.js</h4>
+                </article>
+              </div>
             </div>
-        </section>
 
-        <!-- Contato -->
-        <section id="contato">
-            <div class="container-contato">
-                <h2>
-                    <img class="animation-dev" src="images/arrow_left.svg" alt="arrow-left-icon">
-                    Contato
-                    <img class="animation-dev" src="images/arrow_right.svg" alt="arrow-right-icon">
-                </h2>
-                <div class="containter-contato-content" data-anime="down">
-                    <form method="POST" action="https://formspree.io/f/xqkggpqp">
-                        <div class="container-form">
-                            <article>
-                                <div class="card-mensagem" data-anime="left">
-                                    <img class="mandalorian" src="images/mandalorian_mask.gif" alt="mandalorian">
-                                    <p class="subtitle">Obrigado pela visita!</p>
-                                    <p class="texto-agradecimentos">
-                                        Caro Mestre(a) Jedi / Lord Sith,
-                                        deixe uma mensagem de
-                                        qualquer parte da
-                                        galáxia...
-                                    </p>
-                                </div>
-                            </article>
+            <div class="card" data-anime="down">
+              <h3 class="card-title">Outros :</h3>
+              <div class="cards">
+                <article class="card-item">
+                  <img src="images/icons/figma.svg" alt="FIGMA " />
+                  <h4>Figma</h4>
+                </article>
 
-                            <div class="card-contact">
-                                <label for="email" data-anime="left">E-mail</label>
-                                <input name="e-mail" type="email" placeholder="Digite seu e-mail aqui..." required>
+                <article class="card-item">
+                  <img src="images/icons/git.svg" alt="GIT" />
+                  <h4>Git</h4>
+                </article>
 
-                                <label for="message" data-anime="left">Mensagem</label>
-                                <textarea name="mensagem" type="text" placeholder="Digite sua mensagem aqui..."
-                                    cols="50" rows="8" required></textarea>
-
-                                <input class="btn-submit" type="submit" value="Enviar">
-                            </div>
-                        </div>
-                    </form>
-                    <div class="icons-contact">
-                        <a href="https://www.instagram.com/gustavo_fbc/ " target="_blank">
-                            <img src="images/icons/contact/instagram.svg" alt="Instagram">
-                        </a>
-                        <a href="https://github.com/gustavofbc" target="_blank">
-                            <img src="images/icons/contact/github.svg" alt="Github">
-                        </a>
-                        <a href="https://www.linkedin.com/in/gustavo-felipe-batista-carneiro-9342171a8/"
-                            target="_blank">
-                            <img src="images/icons/contact/linkedin.svg" alt="Linkedin">
-                        </a>
-                    </div>
-
-                </div>
-                <footer>
-                    <p class="text-footer">Desenvolvido com muito <img src="images/coffee.svg" alt="coffee"> por {
-                        Gustavo <span> Felipe }</span></p>
-                </footer>
+                <article class="card-item">
+                  <img src="images/icons/ubuntu.svg" alt="UBUNTU" />
+                  <h4>Ubuntu</h4>
+                </article>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Projetos  -->
+      <!-- <section id="projetos">
+        <div class="container-projetos" data-anime="left">
+          <h2>
+            <img
+              class="animation-dev"
+              src="images/arrow_left.svg"
+              alt="arrow-left-icon"
+            />
+            Projetos
+            <img
+              class="animation-dev"
+              src="images/arrow_right.svg"
+              alt="arrow-right-icon"
+            />
+          </h2>
+
+          <div class="container-projetos-content">
+            <article class="project-card" data-anime="top">
+              <div class="project-card-details">
+                <h3 class="project-card-title">Pomos</h3>
+                <p>Temporizador de pomodoros.</p>
+                <div class="project-icons">
+                  <img src="images/icons/html.svg" alt="HTML" />
+                  <img src="images/icons/css.svg" alt="CSS" />
+                  <img src="images/icons/javascript.svg" alt="JAVASCRIPT" />
+                  <img src="images/icons/react.svg" alt="REACT" />
+                </div>
+                <a target="_blank" href="https://pomos-io.vercel.app/"
+                  >Visualizar projeto</a
+                >
+              </div>
+              <img
+                class="project-interface"
+                src="./images/projects/pomos-interface.png"
+                alt="Pomos"
+              />
+            </article>
+
+            <article class="project-card" data-anime="top">
+              <img
+                class="project-interface"
+                src="./images/projects/buscacep-interface.png"
+                alt="Buscacep"
+              />
+              <div class="project-card-details">
+                <h3 class="project-card-title">Buscacep</h3>
+                <p>
+                  Aplicação desenvolvida para consumir dados a partir do CEP,
+                  obtidos utilizando a API externa viacep.
+                </p>
+                <div class="project-icons">
+                  <img src="images/icons/html.svg" alt="HTML" />
+                  <img src="images/icons/css.svg" alt="CSS" />
+                  <img src="images/icons/javascript.svg" alt="JAVASCRIPT" />
+                </div>
+                <a target="_blank" href="https://gustavofbc.github.io/buscacep/"
+                  >Visualizar projeto</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card" data-anime="top">
+              <div class="project-card-details">
+                <h3 class="project-card-title">Filter-next</h3>
+                <p>
+                  Aplicação de filtragrem de dados de usuários (por nome e
+                  endereço), obtidos utilizando a API externa jsonplaceholder.
+                </p>
+                <div class="project-icons">
+                  <img src="images/icons/html.svg" alt="HTML" />
+                  <img src="images/icons/css.svg" alt="CSS" />
+                  <img src="images/icons/javascript.svg" alt="JAVASCRIPT" />
+                  <img src="images/icons/react.svg" alt="REACT" />
+                  <img src="images/icons/next.js.svg" alt="NEXT.JS" />
+                </div>
+                <a target="_blank" href="https://filter-next.netlify.app/"
+                  >Visualizar projeto</a
+                >
+              </div>
+              <img
+                class="project-interface"
+                src="./images/projects/filter-next-interface.png"
+                alt="Filter-next"
+              />
+            </article>
+
+            <article class="project-card" data-anime="top">
+              <img
+                class="project-interface"
+                src="./images/projects/bin2dec-interface.png"
+                alt="Bin2Dec"
+              />
+              <div class="project-card-details">
+                <h3 class="project-card-title">Bin2Dec</h3>
+                <p>Conversor de números binários para decimal.</p>
+                <div class="project-icons">
+                  <img src="images/icons/html.svg" alt="HTML" />
+                  <img src="images/icons/css.svg" alt="CSS" />
+                  <img src="images/icons/javascript.svg" alt="JAVASCRIPT" />
+                  <img src="images/icons/react.svg" alt="REACT" />
+                  <img src="images/icons/typescript.svg" alt="TYPESCRIPT" />
+                  <img
+                    src="images/icons/styled-components.svg"
+                    alt="STYLED-COMPONENTS"
+                  />
+                </div>
+                <a target="_blank" href="https://binary-2-decimal.netlify.app/"
+                  >Visualizar projeto</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Contato -->
+      <!-- <section id="contato">
+        <div class="container-contato">
+          <h2>
+            <img
+              class="animation-dev"
+              src="images/arrow_left.svg"
+              alt="arrow-left-icon"
+            />
+            Contato
+            <img
+              class="animation-dev"
+              src="images/arrow_right.svg"
+              alt="arrow-right-icon"
+            />
+          </h2>
+          <div class="containter-contato-content" data-anime="down">
+            <form method="POST" action="https://formspree.io/f/xqkggpqp">
+              <div class="container-form">
+                <article>
+                  <div class="card-mensagem" data-anime="left">
+                    <img
+                      class="mandalorian"
+                      src="images/mandalorian_mask.gif"
+                      alt="mandalorian"
+                    />
+                    <p class="subtitle">Obrigado pela visita!</p>
+                    <p class="texto-agradecimentos">
+                      Caro Mestre(a) Jedi / Lord Sith, deixe uma mensagem de
+                      qualquer parte da galáxia...
+                    </p>
+                  </div>
+                </article>
+
+                <div class="card-contact">
+                  <label for="email" data-anime="left">E-mail</label>
+                  <input
+                    name="e-mail"
+                    type="email"
+                    placeholder="Digite seu e-mail aqui..."
+                    required
+                  />
+
+                  <label for="message" data-anime="left">Mensagem</label>
+                  <textarea
+                    name="mensagem"
+                    type="text"
+                    placeholder="Digite sua mensagem aqui..."
+                    cols="50"
+                    rows="8"
+                    required
+                  ></textarea>
+
+                  <input class="btn-submit" type="submit" value="Enviar" />
+                </div>
+              </div>
+            </form>
+            <div class="icons-contact">
+              <a href="https://www.instagram.com/gustavo_fbc/ " target="_blank">
+                <img src="images/icons/contact/instagram.svg" alt="Instagram" />
+              </a>
+              <a href="https://github.com/gustavofbc" target="_blank">
+                <img src="images/icons/contact/github.svg" alt="Github" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/gustavo-felipe-batista-carneiro-9342171a8/"
+                target="_blank"
+              >
+                <img src="images/icons/contact/linkedin.svg" alt="Linkedin" />
+              </a>
+            </div>
+          </div>
+          <footer>
+            <p class="text-footer">
+              Desenvolvido com muito
+              <img src="images/coffee.svg" alt="coffee" /> por { Gustavo
+              <span> Felipe }</span>
+            </p>
+          </footer>
+        </div>
+      </section> -->
     </main>
 
     <script src="navbar.js"></script>
-</body>
-
+  </body>
 </html>

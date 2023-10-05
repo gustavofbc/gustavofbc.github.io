@@ -3,7 +3,7 @@ section {
   box-sizing: border-box;
 }
 
-.container-home {
+/* .container-home {
   height: calc(100vh - 50px);
   display: flex;
   align-items: center;
@@ -18,9 +18,9 @@ section {
   animation: down 3s ease;
   opacity: 0;
   animation-fill-mode: forwards;
-}
+} */
 
-@keyframes down {
+/* @keyframes down {
   from{
     opacity: 0;
     margin-top: -150px;
@@ -29,9 +29,9 @@ section {
     opacity: 1;
     top: 0px;
   }
-}
+} */
 
-.home-apresentation-text  h1{
+/* .home-apresentation-text  h1{
   color: var(--white);
   font-size: 3rem;
 }
@@ -45,9 +45,9 @@ section {
   color: var(--white);
   font-size: 1.8rem;
   line-height: 1.8rem;
-}
+} */
 
-@keyframes opacity {
+/* @keyframes opacity {
   from{
     opacity: 0;
     visibility: hidden;
@@ -56,9 +56,9 @@ section {
     opacity: 1;
     visibility: visible;
   }
-}
+} */
 
-.home-apresentation .github-button {
+/* .home-apresentation .github-button {
   color: var(--green);
   background: var(--black);
   position: relative;
@@ -128,13 +128,13 @@ section {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 3s linear forwards;
-}
+} */
 
-@keyframes dash {
+/* @keyframes dash {
   to {
     stroke-dashoffset: 0;
   }
-}
+} */
 
 /* sobre mim */
 #sobre-mim {

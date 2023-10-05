@@ -2,13 +2,16 @@
   box-sizing: border-box;
   height: 80px;
   width: 100%;
-  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--green);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  border-bottom: 1px solid var(--primary);
   position: fixed;
   z-index: 1000;
 }
@@ -30,16 +33,17 @@
 
 #menu a {
   display: block;
-  font-size: 1.2rem;
-  font-family: "Chakra-Bold";
+  font-size: 0.8rem;
+  /* font-family: "Chakra-Bold"; */
+  font-family: "PressStart-Regular";
   
-  color: var(--white);
+  color: var(--text);
   filter: brightness(0.8);
   transition: .3s;
 }
 
 #menu a:hover {
-  color: var(--green);
+  color: var(--primary);
   filter: brightness(1);
 }
 
@@ -82,7 +86,7 @@
   #btn-menu {
     display: flex;
     padding: 0.5rem 1rem;
-    color: var(--white);
+    color: var(--text);
     border: none;
     background: none;
     cursor: pointer;
