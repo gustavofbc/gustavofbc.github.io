@@ -40,3 +40,24 @@
     padding-top: 50px;
   }
 }
+
+@keyframes animated-one {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(50px, 50px);
+  }
+  40% {
+    transform: translate(-50px, 100px);
+  }
+  60% {
+    transform: translate(100px, -50px);
+  }
+  80% {
+    transform: translate(-25px, -75px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
