@@ -137,7 +137,7 @@ section {
 } */
 
 /* sobre mim */
-#sobre-mim {
+/* #sobre-mim {
   background: var(--black-dark);
 }
 
@@ -170,7 +170,7 @@ section {
   animation: avatar-animation 4s forwards infinite;
 }
 
-@keyframes avatar-animation {
+/* @keyframes avatar-animation {
   0% {
     top: 0px;
   }
@@ -182,22 +182,22 @@ section {
   100% {
     top: 0px;
   }
-}
+} */
 
-.container-sobre-mim .container-description {
+/* .container-sobre-mim .container-description {
   width: 475px;
   color: var(--white);
   padding: 2rem;
   margin: .5rem;
-}
+} */
 
-.animation-dev {
+/* .animation-dev {
   width: 2rem;
   padding: 0rem 0.4rem;
   animation:  blink 2s infinite linear;
-}
+} */
 
-@keyframes blink {
+/* @keyframes blink {
   0% {
     opacity: 0;
   }
@@ -213,7 +213,7 @@ section {
   100% {
     opacity: 0;
   }
-}
+} */
 
 .container-sobre-mim .container-description, li{
   font-size: 1.2rem;
@@ -228,7 +228,7 @@ section {
   margin-right: 10px;
   border-radius: 10px;
   background-color: var(--green);
-}
+} */
 
 /* conhecimentos */
 #conhecimentos {
@@ -699,9 +699,9 @@ footer p span {
 
 @media screen and (max-width: 420px) {
 
-  h2 {
+  /* h2 {
     font-size: 1.8rem !important;
-  }
+  } */
 
   .animation-dev {
     width: 1.8rem;

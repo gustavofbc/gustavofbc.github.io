@@ -41,6 +41,39 @@
   }
 }
 
+@keyframes avatar-animation {
+  0% {
+    top: 0px;
+  }
+  
+  50% {
+    top: 50px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75%{
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
 @keyframes animated-one {
   0% {
     transform: translate(0, 0);
