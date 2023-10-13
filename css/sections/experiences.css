@@ -1,0 +1,131 @@
+.container-unique {
+  flex-direction: column;
+}
+
+.experiences-title-container {
+  display: flex;
+  color: var(--text);
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.experiences-title-container > img {
+  width: 5rem;
+}
+
+.experiences-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experiences-title .title {
+  font-size: 1rem;
+  padding-left: 0.5rem;
+}
+
+.experiences-title img {
+  width: 1.2rem;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.card-container:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.card-container .card-experience {
+  max-width: 34rem;
+  padding: 1rem;
+  gap: 1rem;
+  color: var(--text);
+  border: 2px solid var(--primary);
+}
+
+.container-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container-image > img {
+  width: 6rem;
+}
+
+.container-image {
+  display: none;
+}
+
+.card-experience-title > h4 {
+  font-size: 0.8rem;
+  color: var(--text)
+}
+
+.card-experience-title-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primary);
+  padding-bottom: 1rem;
+  gap: 0.4rem;
+}
+
+.card-experience-title-container .title, .card-experience-title-container span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.card-experience-text {
+  padding: 1rem 0rem;
+}
+
+.card-experience-text > p {
+  font-size: 1.4rem;
+  font-family: 'VT323-Regular';
+}
+
+.card-experience-skills {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-experience-skills p {
+  font-family: 'VT323-Regular';
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 640px) {
+  .experiences-title {
+    margin-right: 5rem;
+  }
+
+  .card-experience-title-container .title, .card-experience-title-container span {
+    font-size: 1rem;
+  }
+
+  .container-image {
+    display: flex;
+  }
+
+  .card-container .card-experience {
+    padding: 1rem 2rem;
+  }
+}
