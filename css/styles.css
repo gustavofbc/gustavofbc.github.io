@@ -231,7 +231,7 @@ section {
 } */
 
 /* conhecimentos */
-#conhecimentos {
+/* #conhecimentos {
   background: var(--black);
 }
 
@@ -295,7 +295,7 @@ section {
 
 .card-item:hover h4{
   opacity: 1;
-}
+} */
 
 /* projetos */
 #projetos {
