@@ -298,7 +298,7 @@ section {
 } */
 
 /* projetos */
-#projetos {
+/* #projetos {
   background: var(--black-dark);
 }
 
@@ -398,7 +398,7 @@ section {
   width: 350px;
   height: 250px;
   border-radius: .5rem;
-}
+} */
 
 /* contato */
 #contato {

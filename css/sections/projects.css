@@ -1,0 +1,105 @@
+
+.instructions-container {
+  display: flex;
+  font-family: 'VT323-Regular';
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.instructions-container:before {
+  content: '* ';
+  padding-right: 0.5rem;
+  color: var(--primary);
+}
+
+.instructions-container:after {
+  content: "Para visualizar o link clique no card do projeto.";
+}
+
+.container-projects {
+  /* background: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container-project {
+  border: 1px solid;
+  border-image: linear-gradient( to right, var(--primary), transparent ) 1%;
+}
+
+.container-project:hover {
+  border-image: linear-gradient( to bottom, var(--primary), var(--primary) ) 30%;
+}
+
+
+.container-project-title {
+  box-sizing: border-box;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(0,0,0, 0.7);
+  color: var(--text);
+  transition: opacity 0.3s ease, height 0.3s ease, border-image 0.3s ease;
+}
+
+.container-project:hover .container-project-title {
+  opacity: 1;
+}
+
+.container-project-title .project-title::before {
+  content: ' ';
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 0.5rem;
+  background: var(--primary);
+}
+
+.project-description {
+  font-size: 1.2rem;
+  font-familY: 'VT323-Regular';
+}
+
+.project-icons img {
+  width: 3rem;
+}
+
+.project-button {
+  font-size: 0.7rem;
+  color: var(--primary);
+  padding: 1rem 2rem;
+  border: 2px solid var(--primary);
+  transition: all 0.3s ease;
+}
+
+.project-button:hover {
+  color: var(--text);
+  background: var(--primary);
+}
+
+.container-project-interface img{
+  display: flex;
+  width: 100%;
+  max-width: 24rem;
+}
+
+
+@media only screen and (min-width: 850px) {
+  .instructions-container {
+    font-size: 1.8rem;
+  }
+
+  .instructions-container:after {
+    content: "Para visualizar o link passe o mouse sob o projeto."
+  }
+}
