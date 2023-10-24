@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/sections/experiences.css" />
     <link rel="stylesheet" type="text/css" href="css/sections/knowledges.css" />
     <link rel="stylesheet" type="text/css" href="css/sections/projects.css" />
+    <link rel="stylesheet" type="text/css" href="css/sections/contact.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" />
     <title>Gustavo Felipe - Front-end developer</title>
   </head>
@@ -443,7 +444,7 @@
       </section>
 
       <!-- Projects  -->
-      <section id="projetos">
+      <section id="projects">
         <div class="container  container-unique" data-anime="left">
             <!-- title -->
             <div class="title-container">
@@ -653,87 +654,96 @@
         </div>
       </section>
 
-      <!-- Contato -->
-      <!-- <section id="contato">
-        <div class="container-contato">
-          <h2>
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container container-unique">
+          <!-- title -->
+          <div class="title-container">
+            <div class="dev-icons">
+              <img
+                class="animation-dev"
+                src="images/icons/arrow-left-pixel.svg"
+                alt="arrow left and bar icon"
+              />
+              <img
+                class="animation-dev"
+                src="images/icons/bar-pixel.svg"
+                alt="arrow left and bar icon"
+              />
+            </div>
+            <h2 class="title">Contact</h2>
             <img
               class="animation-dev"
-              src="images/arrow_left.svg"
-              alt="arrow-left-icon"
+              src="images/icons/arrow-right-pixel.svg"
+              alt="arrow right icon"
             />
-            Contato
-            <img
-              class="animation-dev"
-              src="images/arrow_right.svg"
-              alt="arrow-right-icon"
-            />
-          </h2>
-          <div class="containter-contato-content" data-anime="down">
-            <form method="POST" action="https://formspree.io/f/xqkggpqp">
-              <div class="container-form">
-                <article>
-                  <div class="card-mensagem" data-anime="left">
-                    <img
-                      class="mandalorian"
-                      src="images/mandalorian_mask.gif"
-                      alt="mandalorian"
-                    />
-                    <p class="subtitle">Obrigado pela visita!</p>
-                    <p class="texto-agradecimentos">
-                      Caro Mestre(a) Jedi / Lord Sith, deixe uma mensagem de
-                      qualquer parte da galáxia...
-                    </p>
-                  </div>
-                </article>
+          </div>
 
-                <div class="card-contact">
-                  <label for="email" data-anime="left">E-mail</label>
-                  <input
-                    name="e-mail"
-                    type="email"
-                    placeholder="Digite seu e-mail aqui..."
-                    required
-                  />
+          <div class="container-contact" data-anime="down">
+            <div class="card-message" data-anime="left">
+              <img
+                class="mandalorian"
+                src="images/mandalorian_mask.gif"
+                alt="mandalorian"
+              />
+              <h4>Obrigado pela visita!</h4>
+              <p class="message">
+                Caro Mestre(a) Jedi / Lord Sith, deixe uma mensagem de
+                qualquer parte da galáxia...
+              </p>
+            </div>
 
-                  <label for="message" data-anime="left">Mensagem</label>
-                  <textarea
-                    name="mensagem"
-                    type="text"
-                    placeholder="Digite sua mensagem aqui..."
-                    cols="50"
-                    rows="8"
-                    required
-                  ></textarea>
-
-                  <input class="btn-submit" type="submit" value="Enviar" />
-                </div>
-              </div>
-            </form>
-            <div class="icons-contact">
-              <a href="https://www.instagram.com/gustavo_fbc/ " target="_blank">
-                <img src="images/icons/contact/instagram.svg" alt="Instagram" />
-              </a>
-              <a href="https://github.com/gustavofbc" target="_blank">
-                <img src="images/icons/contact/github.svg" alt="Github" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/gustavo-felipe-batista-carneiro-9342171a8/"
-                target="_blank"
+            <div class="container-form">
+              <form
+                method="POST"
+                action="https://formspree.io/f/xqkggpqp"
+                class="card-form"
               >
-                <img src="images/icons/contact/linkedin.svg" alt="Linkedin" />
-              </a>
+                <label for="name" data-anime="left">Name</label>
+                <input
+                  name="name"
+                  type="text"
+                  placeholder="Enter your name here..."
+                  required
+                />
+                <label for="email" data-anime="left">E-mail</label>
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Enter your email here..."
+                  required
+                />
+                <label for="message" data-anime="left">Message</label>
+                <textarea
+                  name="message"
+                  type="text"
+                  placeholder="Enter your message here..."
+                  rows="8"
+                  required
+                ></textarea>
+                <button class="btn-submit" type="submit">Submit</button>
+              </form>
             </div>
           </div>
-          <footer>
-            <p class="text-footer">
-              Desenvolvido com muito
-              <img src="images/coffee.svg" alt="coffee" /> por { Gustavo
-              <span> Felipe }</span>
+
+          
+          <div class="developer-by-text">
+            <hr/>
+            <p>
+              Desenvolvido com muito 
+              <img src="images/sprites/cup-pixel.svg" alt="cup" />
+              por { Gustavo
+              &thinsp;
+              <span>Felipe }</span>
             </p>
-          </footer>
+          </div>
         </div>
-      </section> -->
+      </section>
+      
+
+      <footer>
+
+      </footer>
     </main>
 
     <script src="navbar.js"></script>

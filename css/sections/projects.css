@@ -17,7 +17,6 @@
 }
 
 .container-projects {
-  /* background: red; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -30,6 +29,7 @@
 }
 
 .container-project:hover {
+  width: 100%;
   border-image: linear-gradient( to bottom, var(--primary), var(--primary) ) 30%;
 }
 
@@ -87,12 +87,20 @@
   background: var(--primary);
 }
 
-.container-project-interface img{
+.container-project-interface img {
   display: flex;
   width: 100%;
   max-width: 24rem;
 }
 
+
+
+
+@media only screen and (min-width: 640px) {
+  .container-project {
+    max-width: 22rem;
+  }
+}
 
 @media only screen and (min-width: 850px) {
   .instructions-container {
