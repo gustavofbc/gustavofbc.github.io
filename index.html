@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="css/global.css" />
     <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <link rel="stylesheet" type="text/css" href="css/sections/home.css" />
     <link rel="stylesheet" type="text/css" href="css/sections/aboutme.css" />
     <link rel="stylesheet" type="text/css" href="css/sections/experiences.css" />
@@ -31,7 +32,7 @@
       <nav id="nav">
         <button
           id="btn-menu"
-          aria-label="Abre menu"
+          aria-label="Open menu"
           aria-haspopup="true"
           aria-controls="menu"
           aria-expanded="false"
@@ -39,11 +40,11 @@
           <span id="hamburguer"></span>
         </button>
         <ul id="menu" role="menu">
-          <li><a href="#sobre-mim">About me</a></li>
-          <li><a href="#experiencia">Experiences</a></li>
-          <li><a href="#conhecimentos">Knowledges</a></li>
-          <li><a href="#projetos">Projects</a></li>
-          <li><a href="#contato">Contact</a></li>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#knowledges">Knowledges</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -160,7 +161,7 @@
       </section>
 
       <!-- Experiences -->
-      <section>
+      <section id="experiences">
         <div class="container container-unique">
           <!-- title -->
           <div class="experiences-title-container">
@@ -683,8 +684,8 @@
             <div class="card-message" data-anime="left">
               <img
                 class="mandalorian"
-                src="images/mandalorian_mask.gif"
-                alt="mandalorian"
+                src="images/sprites/mandalorian-pixel.gif"
+                alt="Mandalorian mask pixel"
               />
               <h4>Obrigado pela visita!</h4>
               <p class="message">
@@ -730,9 +731,9 @@
           <div class="developer-by-text">
             <hr/>
             <p>
-              Desenvolvido com muito 
+              Developer with lots of
               <img src="images/sprites/cup-pixel.svg" alt="cup" />
-              por { Gustavo
+              by { Gustavo
               &thinsp;
               <span>Felipe }</span>
             </p>
@@ -740,11 +741,54 @@
         </div>
       </section>
       
-
-      <footer>
-
-      </footer>
     </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container container-unique">
+        <div></div>
+        <!-- <hr/> -->
+        <div class="content-baseline">
+          <div class="container-logo">
+            <a href="#home">
+              <img src="/images/logo-line1.svg" alt="logo">
+            </a>
+          </div>
+          <div class="container-text-rights">
+            <p>© All rights reserved.</p>
+          </div>
+          <div class="container-contact-icons">
+            <!-- Github -->
+            <a
+              href="https://github.com/gustavofbc"
+              target="_blank"
+            >
+              <img src="/images/icons/contact/github-pixel.svg" alt="Github logo pixel">
+            </a>
+            <!-- Gmail -->
+            <a
+              href="mailto:gustavo.felipebc@gmail.com"
+            >
+              <img src="/images/icons/contact/gmail-pixel.svg" alt="Gmail logo pixel">
+            </a>
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/gustavo_fbc/"
+              target="_blank"
+            >
+              <img src="/images/icons/contact/instagram-pixel.svg" alt="Instagram logo pixel">
+            </a>
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/gustavo-felipe-batista-carneiro"
+              target="_blank"
+            >
+              <img src="/images/icons/contact/linkedin-pixel.svg" alt="LinkedIn logo pixel">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="navbar.js"></script>
   </body>

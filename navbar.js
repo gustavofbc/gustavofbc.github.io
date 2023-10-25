@@ -11,9 +11,9 @@ function toggleMenu(event) {
   //! ACESSIIBILIDADE
   const menuAtivado = nav.classList.contains("ativo");
   if (menuAtivado) {
-    event.currentTarget.setAttribute("aria-label", "Fechar menu");
+    event.currentTarget.setAttribute("aria-label", "Close menu");
   } else {
-    event.currentTarget.setAttribute("aria-label", "Abrir menu");
+    event.currentTarget.setAttribute("aria-label", "Open menu");
   }
 }
 
@@ -33,7 +33,7 @@ function initScrollSuave() {
 
     scrollToPosition(toSection);
     //fechar o menu quando um item for selecionado
-    nav.classList.remove("ativo");
+    nav.classList.remove("active");
   }
 
   function getScrollTopByHref(element) {

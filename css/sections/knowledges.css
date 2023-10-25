@@ -1,12 +1,6 @@
-
-/* conhecimentos */
-/* #conhecimentos {
-  background: var(--black);
-} */
-
 .knowledges-title-container {
   display: flex;
-  /* align-items: end; */
+  align-items: center;
   flex-direction: column;
   justify-content: start;
   flex: 1;
@@ -70,7 +64,6 @@
   flex: 1;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* background: blue; */
 }
 
 .card-item {
@@ -96,6 +89,11 @@
   opacity: 1;
 }
 
+/* @media only screen and (min-width: 800px) {
+  .knowledges-image-container {
+    align-items: center;
+  }
+} */
 
 @media only screen and (min-width: 640px) {
   .knowledges-title-container {

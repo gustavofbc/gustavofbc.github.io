@@ -134,14 +134,14 @@
 /* scrollbar */
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--black);
+  background: var(--background);
 }
    
 ::-webkit-scrollbar-thumb {
-  background: var(--green-dark);
-  border-radius: 20px;
+  background: var(--primary);
+  /* border-radius: 20px; */
 }
