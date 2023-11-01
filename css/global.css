@@ -7,10 +7,18 @@ body {
   font-family: "PressStart-Regular";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
 span {
   margin: 0;
   padding: 0;
-  /* font-family: "Chakra-Regular"; */
 }
 
 a {
@@ -20,16 +28,6 @@ a {
 ul {
   list-style: none;
 }
-
-/* h2 {
-  color: var(--white);
-  font-size: 2rem;
-} */
-
-/* h3 {
-  color: var(--white);
-  font-size: 1.4rem;
-} */
 
 section {
   display: flex;
@@ -52,24 +50,6 @@ section {
 
 /* Fonts */
 @font-face {
-  src: url("../fonts/Chakra_petch/ChakraPetch-Regular.ttf");
-  font-family: "Chakra-Regular";
-  font-weight: normal;
-}
-
-@font-face {
-  src: url("../fonts/Chakra_petch/ChakraPetch-Bold.ttf");
-  font-family: "Chakra-Bold";
-  font-weight: normal;
-}
-
-@font-face {
-  src: url("../fonts/Chakra_petch/ChakraPetch-Medium.ttf");
-  font-family: "Chakra-Semibold";
-  font-weight: normal;
-}
-
-@font-face {
   src: url("../fonts/PressStart2P/PressStart2P-Regular.ttf");
   font-family: "PressStart-Regular";
   font-weight: normal;
@@ -78,18 +58,6 @@ section {
 @font-face {
   src: url("../fonts/VT323/VT323-Regular.ttf");
   font-family: "VT323-Regular";
-  font-weight: normal;
-}
-
-@font-face {
-  src: url("../fonts/Dogica/Dogica-Regular.ttf");
-  font-family: "Dogica-Regular";
-  font-weight: normal;
-}
-
-@font-face {
-  src: url("../fonts/Minecraftia/Minecraftia-Regular.ttf");
-  font-family: "Minecraftia-Regular";
   font-weight: normal;
 }
 /* -------------------------- */

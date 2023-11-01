@@ -17,6 +17,10 @@ footer {
   align-self: center;
 }
 
+.container-logo a {
+  scroll-behavior: smooth;
+}
+
 .container-logo img {
   width: 3rem;
   cursor: pointer;

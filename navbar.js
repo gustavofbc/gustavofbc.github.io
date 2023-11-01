@@ -33,7 +33,7 @@ function initScrollSuave() {
 
     scrollToPosition(toSection);
     //fechar o menu quando um item for selecionado
-    nav.classList.remove("active");
+    nav.classList.remove("ativo");
   }
 
   function getScrollTopByHref(element) {
@@ -71,3 +71,30 @@ function initAnimationToScroll() {
 }
 
 initAnimationToScroll();
+
+
+function getActiveSection(){
+  const sections = document.querySelectorAll('section');
+  for(let section of sections){
+    const rect = section.getBoundingClientRect();
+    if(rect.top < 100 && rect.bottom > 100){
+      return section.id;
+    }
+  }
+}
+
+function updateActiveMenuItem() {
+  const activeSection = getActiveSection();
+  const menuItems = document.querySelectorAll('nav ul li');
+  
+  menuItems.forEach((item) => {
+    const link = item.querySelector('a');
+    if (link.getAttribute('href').slice(1) === activeSection) {
+      item.classList.add('active-link');
+    } else {
+      item.classList.remove('active-link');
+    }
+  });
+}
+
+window.addEventListener('scroll', updateActiveMenuItem);

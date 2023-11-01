@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Desenvolvedor Front End Jr" />
+    <meta name="description" content="Front End Developer" />
     <meta
       name="keywords"
-      content="Gustavo felipe, portfólio, desenvolvedor frontend, front-end, website, gusatavo felipe dev"
+      content="Gustavo felipe, portfólio, desenvolvedor frontend, front-end, developer front-end, gustavo felipe dev"
     />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/navbar.css" />
@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/sections/projects.css" />
     <link rel="stylesheet" type="text/css" href="css/sections/contact.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" />
-    <title>Gustavo Felipe - Front-end developer</title>
+    <title>Gustavo Felipe - Front-end Developer</title>
   </head>
 
   <body>
@@ -50,6 +50,14 @@
     </header>
 
     <main>
+      <!-- pixel one -->
+      <div class="pixel-animated pixel-animated-one">
+        <div class="pixel-right">
+          <img src="./images/sprites/calcifer.svg" alt="Calcifer pixel art" />
+          <p>Calcifer - Howl's moving castle</p>
+        </div>
+      </div>
+
       <!-- Home -->
       <section id="home">
         <div class="container-home">
@@ -83,11 +91,19 @@
             <img src="./images/icons/arrow-pixel.svg" alt="arrow icon" />
           </div>
 
-          <div class="pixel-animated">
+          <!-- <div class="pixel-animated">
             <img src="./images/sprites/calcifer.svg" alt="Calcifer pixel art" />
-          </div>
+          </div> -->
         </div>
       </section>
+
+      <!-- pixel two -->
+      <div class="pixel-animated pixel-animated-two">
+        <div>
+          <img src="./images/sprites/catbus-pixel.svg" alt="Catbus pixel art" />
+          <p>Catbus - My Neighbor Totoro</p>
+        </div>
+      </div>
 
       <!-- About me -->
       <section id="about-me">
@@ -121,11 +137,10 @@
                   alt="arrow right icon"
                 />
               </div>
-              <img
-                  class="animation-"
-                  src="images/sprites/totoro-small-pixel.svg"
-                  alt="totoro small pixel art"
-                />
+              <div class="pixel-fixed">
+                <p>Totoro Small- My Neighbor Totoro</p>
+                <img src="./images/sprites/totoro-small-pixel.svg" alt="Totoro Small pixel art" />
+              </div>
             </div>
             <article id="description">
               <p data-anime="down">
@@ -147,10 +162,11 @@
             <br />
             <br />
             <article>
-              <p>Some of my hobbies and likes are:</p>
+              <p class="text-primary">Some of my hobbies and likes are:</p>
               <ul>
                 <li data-anime="left">Cycling;</li>
                 <li data-anime="left">Lo-fi;</li>
+                <li data-anime="left">Animes;</li>
                 <li data-anime="left">Pixel art;</li>
                 <li data-anime="left">Books and manga;</li>
                 <li data-anime="left">Coffee and tea;</li>
@@ -165,11 +181,10 @@
         <div class="container container-unique">
           <!-- title -->
           <div class="experiences-title-container">
-            <img
-              class="animation-"
-              src="images/sprites/totoro-pixel.svg"
-              alt="totoro pixel art"
-            />
+            <div class="pixel-fixed">
+              <p>Totoro - My Neighbor Totoro</p>
+              <img src="./images/sprites/totoro-pixel.svg" alt="Totoro pixel art" />
+            </div>
             <div class="experiences-title">
               <div class="dev-icons">
                 <img
@@ -193,122 +208,128 @@
           </div>
 
           <div class="container-cards">
-              <!-- experience card -->
-              <div class="card-container">
-                <div class="card-experience">
-                <div class="card-experience-title">
-                <div class="card-experience-title-container">
-                  <div class="title">
-                    <img src="./images/icons/dev-pixel.svg" alt="headset pixel icon">
-                    <h3>Criptomaníacos</h3>
-                  </div>
-                  <span>2023 - 2023</span>
+            <!-- experience card -->
+            <div class="card-container">
+              <div class="card-experience">
+              <div class="card-experience-title">
+              <div class="card-experience-title-container">
+                <div class="title">
+                  <img src="./images/icons/dev-pixel.svg" alt="headset pixel icon">
+                  <h3>Criptomaníacos</h3>
                 </div>
-                <h4>Desenvolvedor Front end Jr</h4>
-                </div>
-                <div class="card-experience-text">
-                <p>
-                  I worked on the development of responsive interfaces with stack: 
-                  ReactJs, NextJS, TailwindCSS, Directus CSM. In addition to these, 
-                  I had the opportunity to create Landing Pages with WordPress and 
-                  Elementor, prepare documentation for various company processes 
-                  through mind maps and writing with the Babel app.
-                </p>
-                </div>
-                <div class="card-experience-skills">
-                  <p>Communication</p>
-                  <p>Adaptability</p>
-                  <p>Team work</p>
-                </div>
-                </div>
-                <div class="container-image">
-                  <img
-                  class="animation- avatar"
-                  src="images/sprites/no-face-pixel.svg"
-                  alt="no face pixel art"
-                />
-                </div>
+                <span>01/2023 - 08/2023</span>
               </div>
-
-              <!-- experience card -->
-              <div class="card-container">
-                <div class="card-experience">
-                  <div class="card-experience-title">
-                    <div class="card-experience-title-container">
-                      <div class="title">
-                        <img src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
-                        <h3>Fibralink</h3>
-                      </div>
-                      <span>2021 - 2022</span>
-                    </div>
-                    <h4>Technical support assistant</h4>
-                  </div>
-                  <div class="card-experience-text">
-                    <p>
-                      I worked in support and customer service, configuring routers, 
-                      issuing communications, opening and managing protocols.
-                      I proposed improvements in the workload organization process 
-                      during my work period that generated significant results for 
-                      the team, in addition to being appointed to prepare emergency 
-                      notices via SMS and other means of communication.
-                    </p>
-                  </div>
-                  <div class="card-experience-skills">
-                    <p>Team work</p>
-                    <p>Communication</p>
-                    <p>Adaptability</p>
-                    <p>Emotional intelligence</p>
-                  </div>
-                </div>
-                <div class="container-image">
-                  <img
-                  class="animation- avatar"
-                  src="images/sprites/no-face-pixel.svg"
-                  alt="no face pixel art"
-                />
-                </div>
+              <h4>Desenvolvedor Front end Jr</h4>
               </div>
-
-              <!-- experience card -->
-              <div class="card-container">
-                <div class="card-experience">
-                  <div class="card-experience-title">
-                    <div class="card-experience-title-container">
-                      <div class="title">
-                        <img src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
-                        <h3>PRGNET</h3>
-                      </div>
-                      <span>2021 - 2021</span>
-                    </div>
-                    <h4>Technical support assistant</h4>
-                  </div>
-                  <div class="card-experience-text">
-                    <p>
-                      I worked in support and customer service, configuring routers, 
-                      issuing communications, opening and managing protocols.
-                      I proposed improvements in the workload organization process 
-                      during my work period that generated significant results for 
-                      the team, in addition to being appointed to prepare emergency 
-                      notices via SMS and other means of communication.
-                    </p>
-                  </div>
-                  <div class="card-experience-skills">
-                    <p>Team work</p>
-                    <p>Communication</p>
-                    <p>Adaptability</p>
-                    <p>Emotional intelligence</p>
-                  </div>
-                </div>
-                <div class="container-image">
-                  <img
-                  class="animation- avatar"
-                  src="images/sprites/no-face-pixel.svg"
-                  alt="no face pixel art"
-                />
+              <div class="card-experience-text">
+              <p>
+                I worked on the development of responsive interfaces with stack: 
+                ReactJs, NextJS, TailwindCSS, Directus CSM. In addition to these, 
+                I had the opportunity to create Landing Pages with WordPress and 
+                Elementor, prepare documentation for various company processes 
+                through mind maps and writing with the Babel app.
+              </p>
+              </div>
+              <div class="card-experience-skills">
+                <p>Communication</p>
+                <p>Adaptability</p>
+                <p>Team work</p>
+              </div>
+              </div>
+              <div class="container-image">
+                <div class="pixel-animated pixel-animated-two">
+                  <img src="./images/sprites/cup-pixel.svg" alt="Cup of coffee pixel art" />
+                  <p class="pixel-describe-object">Cup of coffee (pixel art)</p>
                 </div>
               </div>
             </div>
 
+            <!-- experience card -->
+            <div class="card-container">
+              <div class="card-experience">
+                <div class="card-experience-title">
+                  <div class="card-experience-title-container">
+                    <div class="title">
+                      <img src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
+                      <h3>Fibralink</h3>
+                    </div>
+                    <span>07/2021 - 05/2022</span>
+                  </div>
+                  <h4>Technical support assistant</h4>
+                </div>
+                <div class="card-experience-text">
+                  <p>
+                    I worked in support and customer service, configuring routers, 
+                    issuing communications, opening and managing protocols.
+                    I proposed improvements in the workload organization process 
+                    during my work period that generated significant results for 
+                    the team, in addition to being appointed to prepare emergency 
+                    notices via SMS and other means of communication.
+                  </p>
+                </div>
+                <div class="card-experience-skills">
+                  <p>Team work</p>
+                  <p>Communication</p>
+                  <p>Adaptability</p>
+                  <p>Emotional intelligence</p>
+                </div>
+              </div>
+              <div class="container-image">
+                <div class="pixel-animated avatar">
+                  <img src="./images/sprites/no-face-pixel.svg" alt="No face pixel art" />
+                  <p>No face - Spirited Away</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- experience card -->
+            <div class="card-container">
+              <div class="card-experience">
+                <div class="card-experience-title">
+                  <div class="card-experience-title-container">
+                    <div class="title">
+                      <img src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
+                      <h3>PRGNET</h3>
+                    </div>
+                    <span>05/2021 - 06/2021</span>
+                  </div>
+                  <h4>Technical support assistant</h4>
+                </div>
+                <div class="card-experience-text">
+                  <p>
+                    I worked in support and customer service, configuring routers, 
+                    managing protocols, mapping POPs, configuring radio equipment, 
+                    provisioning ONUs and monitoring the network.
+                  </p>
+                </div>
+                <div class="card-experience-title">
+                  <div class="card-experience-title-container">
+                    <div class="title"></div>
+                    <span>09/2020 - 05/2021</span>
+                  </div>
+                  <h4>Trainee</h4>
+                </div>
+                <div class="card-experience-text">
+                  <p>
+                    As an intern, I was responsible for customer service, configuring routers, 
+                    managing protocols, configuring radio equipment, provisioning ONUs and 
+                    more basic demands.
+                  </p>
+                </div>
+                <div class="card-experience-skills">
+                  <p>Team work</p>
+                  <p>Communication</p>
+                  <p>Adaptability</p>
+                  <p>Emotional intelligence</p>
+                </div>
+              </div>
+              <div class="container-image">
+                <div class="pixel-animated pixel-animated-four">
+                  <img src="./images/sprites/souta-munakata-pixel.svg" alt="Souta Muranaka pixel art" />
+                  <p>Souta Munakata - Suzume no Tojimari</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -341,12 +362,14 @@
 
             <!-- texts -->
             <div class="knowledges-text-container">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-                industry. Lorem Ipsum has been the industry's standard dummy text 
-                ever since the 1500s
+              <p>
+                Here are some of the technologies that I am working with, 
+                studying and that I use in my works. It's worth highlighting 
+                my training, where I gained a foundation in project management, 
+                programming, networks and incredible peoples.
               </p>
               <ul>
-                <li>Degree in Information Systems (2021)</li>
+                <li>Degree in Information Systems (2017 - 2022)</li>
               </ul>
             </div>
 
@@ -365,29 +388,35 @@
               <h3 class="knowledges-card-title">Stack:</h3>
               <div class="card-elements">
                 <article class="card-item">
-                  <img src="images/icons/html-pixel.svg" alt="HTML" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/html_dark.png" alt="HTML" />
                   <h4>HTML</h4>
                 </article>
 
                 <article class="card-item">
-                  <img src="images/icons/css-pixel.svg" alt="CSS" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/css_dark.png" alt="CSS" />
                   <h4>CSS</h4>
                 </article>
 
                 <article class="card-item">
-                  <img src="images/icons/javascript-pixel.svg" alt="Javascript" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/javascript_dark.png" alt="JAVASCRIPT" />
                   <h4>JavaScript</h4>
                 </article>
 
                 <article class="card-item">
-                  <img src="images/icons/react-pixel.svg" alt="REACT" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/react_dark.png" alt="REACT" />
                   <h4>React</h4>
                 </article>
 
                 <article class="card-item">
-                  <img src="images/icons/typescript-pixel.svg" alt="TYPESCRIPT" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/typescript_dark.png" alt="TYPESCRIPT" />
                   <h4>TypeScript</h4>
                 </article>
+
+                <!-- <article class="card-item">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/tailwind_dark.png" alt="JAVASCRIPT" />
+                  <h4>Tailwind CSS</h4>
+                </article> -->
+
               </div>
             </div>
 
@@ -395,18 +424,18 @@
               <h3 class="knowledges-card-title">Studying/Improving:</h3>
               <div class="card-elements">
                 <article class="card-item">
-                  <img src="images/icons/javascript-pixel.svg" alt="Javascript" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/javascript_dark.png" alt="JAVASCRIPT" />
                   <h4>JavaScript</h4>
                 </article>
 
                 <article class="card-item">
-                  <img src="images/icons/react-pixel.svg" alt="REACT" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/react_dark.png" alt="REACT" />
                   <h4>React</h4>
                 </article>
 
                 <article class="card-item">
-                  <img src="images/icons/typescript-pixel.svg" alt="TYPESCRIPT" />
-                  <h4>TypeScript</h4>
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/next_js_dark.png" alt="NEXT JS" />
+                  <h4>NextJs</h4>
                 </article>
               </div>
             </div>
@@ -415,28 +444,23 @@
               <h3 class="knowledges-card-title">Others :</h3>
               <div class="card-elements">
                 <article class="card-item">
-                  <img src="images/icons/html-pixel.svg" alt="HTML" />
-                  <h4>HTML</h4>
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/git_dark.png" alt="GIT" />
+                  <h4>GIT</h4>
                 </article>
 
                 <article class="card-item">
-                  <img src="images/icons/css-pixel.svg" alt="CSS" />
-                  <h4>CSS</h4>
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/sass_dark.png" alt="SASS" />
+                  <h4>SASS</h4>
                 </article>
 
                 <article class="card-item">
-                  <img src="images/icons/javascript-pixel.svg" alt="Javascript" />
-                  <h4>JavaScript</h4>
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/npm_dark.png" alt="NPM" />
+                  <h4>NPM</h4>
                 </article>
 
                 <article class="card-item">
-                  <img src="images/icons/react-pixel.svg" alt="REACT" />
-                  <h4>React</h4>
-                </article>
-
-                <article class="card-item">
-                  <img src="images/icons/typescript-pixel.svg" alt="TYPESCRIPT" />
-                  <h4>TypeScript</h4>
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/figma_dark.png" alt="FIGMA" />
+                  <h4>Figma</h4>
                 </article>
               </div>
             </div>
@@ -477,12 +501,12 @@
             <article class="container-project" data-anime="top">
               <div class="container-project-title">
                 <h3 class="project-title">Pomos</h3>
-                <p class="project-description">Temporizador de pomodoros.</p>
+                <p class="project-description">Pomodoro timer</p>
                 <div class="project-icons">
-                  <img src="images/icons/html-pixel.svg" alt="HTML" />
-                  <img src="images/icons/css-pixel.svg" alt="CSS" />
-                  <img src="images/icons/javascript-pixel.svg" alt="JAVASCRIPT" />
-                  <img src="images/icons/react-pixel.svg" alt="REACT" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/html_dark.png" alt="HTML" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/css_dark.png" alt="CSS" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/javascript_dark.png" alt="JAVASCRIPT" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/react_dark.png" alt="REACT" />
                 </div>
                 <a
                   target="_blank"
@@ -502,155 +526,55 @@
 
             <article class="container-project" data-anime="top">
               <div class="container-project-title">
-                <h3 class="project-title">Pomos</h3>
-                <p class="project-description">Temporizador de pomodoros.</p>
+                <h3 class="project-title">Buscacep</h3>
+                <p class="project-description">app created to consume data from the Viacep API.</p>
                 <div class="project-icons">
-                  <img src="images/icons/html-pixel.svg" alt="HTML" />
-                  <img src="images/icons/css-pixel.svg" alt="CSS" />
-                  <img src="images/icons/javascript-pixel.svg" alt="JAVASCRIPT" />
-                  <img src="images/icons/react-pixel.svg" alt="REACT" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/html_dark.png" alt="HTML" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/css_dark.png" alt="CSS" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/javascript_dark.png" alt="JAVASCRIPT" />
                 </div>
                 <a
                   target="_blank"
                   class="project-button"
-                  href="https://pomos-io.vercel.app/"
+                  href="https://gustavofbc.github.io/buscacep/"
                 >
                   Demo
                 </a>
               </div>
               <div class="container-project-interface">
                 <img
-                  src="./images/projects/pomos-interface.png"
-                  alt="Pomos"
+                  src="./images/projects/buscacep-interface.png"
+                  alt="Buscacep"
                 />
               </div>
             </article>
 
             <article class="container-project" data-anime="top">
               <div class="container-project-title">
-                <h3 class="project-title">Pomos</h3>
-                <p class="project-description">Temporizador de pomodoros.</p>
+                <h3 class="project-title">Bin2Dec</h3>
+                <p class="project-description">Binary to decimal converter</p>
                 <div class="project-icons">
-                  <img src="images/icons/html-pixel.svg" alt="HTML" />
-                  <img src="images/icons/css-pixel.svg" alt="CSS" />
-                  <img src="images/icons/javascript-pixel.svg" alt="JAVASCRIPT" />
-                  <img src="images/icons/react-pixel.svg" alt="REACT" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/html_dark.png" alt="HTML" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/css_dark.png" alt="CSS" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/javascript_dark.png" alt="JAVASCRIPT" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/react_dark.png" alt="REACT" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/typescript_dark.png" alt="TYPESCRIPT" />
                 </div>
                 <a
                   target="_blank"
                   class="project-button"
-                  href="https://pomos-io.vercel.app/"
+                  href="https://binary-2-decimal.netlify.app/"
                 >
                   Demo
                 </a>
               </div>
               <div class="container-project-interface">
                 <img
-                  src="./images/projects/pomos-interface.png"
-                  alt="Pomos"
+                  src="./images/projects/bin2dec-interface.png"
+                  alt="Bin2Dec"
                 />
               </div>
             </article>
-
-
-            <article class="container-project" data-anime="top">
-              <div class="container-project-title">
-                <h3 class="project-title">Pomos</h3>
-                <p class="project-description">Temporizador de pomodoros.</p>
-                <div class="project-icons">
-                  <img src="images/icons/html-pixel.svg" alt="HTML" />
-                  <img src="images/icons/css-pixel.svg" alt="CSS" />
-                  <img src="images/icons/javascript-pixel.svg" alt="JAVASCRIPT" />
-                  <img src="images/icons/react-pixel.svg" alt="REACT" />
-                </div>
-                <a
-                  target="_blank"
-                  class="project-button"
-                  href="https://pomos-io.vercel.app/"
-                >
-                  Demo
-                </a>
-              </div>
-              <div class="container-project-interface">
-                <img
-                  src="./images/projects/pomos-interface.png"
-                  alt="Pomos"
-                />
-              </div>
-            </article>
-            <!-- <article class="project-card" data-anime="top">
-              <img
-                class="project-interface"
-                src="./images/projects/buscacep-interface.png"
-                alt="Buscacep"
-              />
-              <div class="project-card-details">
-                <h3 class="project-card-title">Buscacep</h3>
-                <p>
-                  Aplicação desenvolvida para consumir dados a partir do CEP,
-                  obtidos utilizando a API externa viacep.
-                </p>
-                <div class="project-icons">
-                  <img src="images/icons/html.svg" alt="HTML" />
-                  <img src="images/icons/css.svg" alt="CSS" />
-                  <img src="images/icons/javascript.svg" alt="JAVASCRIPT" />
-                </div>
-                <a target="_blank" href="https://gustavofbc.github.io/buscacep/"
-                  >Visualizar projeto</a
-                >
-              </div>
-            </article>
-
-            <article class="project-card" data-anime="top">
-              <div class="project-card-details">
-                <h3 class="project-card-title">Filter-next</h3>
-                <p>
-                  Aplicação de filtragrem de dados de usuários (por nome e
-                  endereço), obtidos utilizando a API externa jsonplaceholder.
-                </p>
-                <div class="project-icons">
-                  <img src="images/icons/html.svg" alt="HTML" />
-                  <img src="images/icons/css.svg" alt="CSS" />
-                  <img src="images/icons/javascript.svg" alt="JAVASCRIPT" />
-                  <img src="images/icons/react.svg" alt="REACT" />
-                  <img src="images/icons/next.js.svg" alt="NEXT.JS" />
-                </div>
-                <a target="_blank" href="https://filter-next.netlify.app/"
-                  >Visualizar projeto</a
-                >
-              </div>
-              <img
-                class="project-interface"
-                src="./images/projects/filter-next-interface.png"
-                alt="Filter-next"
-              />
-            </article>
-
-            <article class="project-card" data-anime="top">
-              <img
-                class="project-interface"
-                src="./images/projects/bin2dec-interface.png"
-                alt="Bin2Dec"
-              />
-              <div class="project-card-details">
-                <h3 class="project-card-title">Bin2Dec</h3>
-                <p>Conversor de números binários para decimal.</p>
-                <div class="project-icons">
-                  <img src="images/icons/html.svg" alt="HTML" />
-                  <img src="images/icons/css.svg" alt="CSS" />
-                  <img src="images/icons/javascript.svg" alt="JAVASCRIPT" />
-                  <img src="images/icons/react.svg" alt="REACT" />
-                  <img src="images/icons/typescript.svg" alt="TYPESCRIPT" />
-                  <img
-                    src="images/icons/styled-components.svg"
-                    alt="STYLED-COMPONENTS"
-                  />
-                </div>
-                <a target="_blank" href="https://binary-2-decimal.netlify.app/"
-                  >Visualizar projeto</a
-                >
-              </div>
-            </article> -->
           </div>
         </div>
       </section>

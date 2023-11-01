@@ -12,7 +12,7 @@
   font-family: 'VT323-Regular';
   font-size: 1.4rem;
   /* text-align: end; */
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
 }
 
 .knowledges-text-container li::after {
@@ -88,12 +88,6 @@
 .card-item:hover h4 {
   opacity: 1;
 }
-
-/* @media only screen and (min-width: 800px) {
-  .knowledges-image-container {
-    align-items: center;
-  }
-} */
 
 @media only screen and (min-width: 640px) {
   .knowledges-title-container {

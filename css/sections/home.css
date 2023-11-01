@@ -48,12 +48,14 @@
 .curriculum-button {
   display: flex;
   justify-content: center;
-  border: 2px dashed var(--primary);
-  transition: all 2s linear;
+  border: 2px solid;
+  border-image: linear-gradient( to right, var(--primary), transparent ) 1%;
+  transition: all .8s linear;
 }
 
 .curriculum-button:hover {
-  border: 2px solid var(--primary);
+  border: 2px solid;
+  border-image: linear-gradient( to left, var(--primary), transparent ) 1%;
 }
 
 .curriculum-button a {
@@ -78,23 +80,9 @@
   align-items: center;
 }
 
-
 .arrow-animation img{
   position: absolute;
   animation: arrow 3s ease infinite;
-}
-
-.pixel-animated {
-  display: flex;
-  position: relative;
-  animation: animated-one 8s ease infinite;
-}
-
-.pixel-animated img {
-  position: absolute;
-  left: 100px;
-  width: 3rem;
-  height: 3rem;
 }
 
 @media only screen and (min-width: 800px) {
@@ -111,9 +99,4 @@
     line-height: 5rem;
   }
   
-
-  .pixel-animated img {
-    width: 4rem;
-    height: 4rem;
-  }
 }

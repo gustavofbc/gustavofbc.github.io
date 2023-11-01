@@ -34,12 +34,17 @@
 #menu a {
   display: block;
   font-size: 0.8rem;
-  /* font-family: "Chakra-Bold"; */
   font-family: "PressStart-Regular";
   
   color: var(--text);
   filter: brightness(0.8);
   transition: .3s;
+}
+
+#menu .active-link a {
+  transition: .5s;
+  filter: brightness(0.9);
+  color: var(--primary);
 }
 
 #menu a:hover {

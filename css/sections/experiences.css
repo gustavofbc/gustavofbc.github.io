@@ -10,7 +10,7 @@
   gap: 1rem;
 }
 
-.experiences-title-container > img {
+.experiences-title-container .pixel-fixed img {
   width: 5rem;
 }
 
@@ -37,12 +37,18 @@
 
 .card-container {
   display: flex;
+  flex-direction: column-reverse;
   margin-bottom: 2rem;
   gap: 1rem;
 }
 
 .card-container:nth-child(even) {
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+  /* flex-direction: row-reverse; */
+}
+
+.card-container:nth-child(even) .card-experience {
+  border-image: linear-gradient( to left, var(--primary), transparent ) 1%;
 }
 
 .card-container .card-experience {
@@ -50,7 +56,11 @@
   padding: 1rem;
   gap: 1rem;
   color: var(--text);
-  border: 2px solid var(--primary);
+  border: 2px solid;
+  border-image: linear-gradient( to right, var(--primary), transparent ) 1%;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .container-image {
@@ -59,13 +69,9 @@
   width: 100%;
 }
 
-.container-image > img {
+/* .container-image > img {
   width: 6rem;
-}
-
-.container-image {
-  display: none;
-}
+} */
 
 .card-experience-title > h4 {
   font-size: 0.8rem;
@@ -113,18 +119,30 @@
 }
 
 @media only screen and (min-width: 640px) {
-  .experiences-title {
-    margin-right: 5rem;
+
+  .card-experience-title-container .title {
+    font-size: 1rem;
   }
 
-  .card-experience-title-container .title, .card-experience-title-container span {
-    font-size: 1rem;
+  .card-experience-title-container span {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    gap: 1rem;
   }
 
   .container-image {
     display: flex;
   }
-
+  
+  .card-container:nth-child(even) {
+    flex-direction: row-reverse;
+  }
   .card-container .card-experience {
     padding: 1rem 2rem;
   }
