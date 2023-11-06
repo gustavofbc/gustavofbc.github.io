@@ -1,0 +1,121 @@
+.knowledge-title-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  flex: 1;
+  gap: 1rem;
+  color: var(--text);
+}
+
+.knowledge-text-container p, .knowledge-text-container li {
+  font-family: 'VT323-Regular';
+  font-size: 1.4rem;
+  /* text-align: end; */
+  margin-bottom: 1rem;
+}
+
+.knowledge-text-container li::after {
+  content: ' ';
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 0.5rem;
+  background: var(--primary);
+}
+
+.knowledge-image-container {
+  display: flex;
+  justify-content: center;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient( to right, var(--primary), transparent ) 70 1%;
+  position: relative;
+}
+
+.my-face {
+  max-width: 18rem;
+  width: 100%;
+  transition: all .5s;
+}
+
+.icon-top {
+  position: absolute;
+}
+
+.icon-bottom {
+  position: absolute;
+  bottom: 100px;
+}
+
+.icon-top img, .icon-base img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.knowledge-cards-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient( to left, var(--primary), transparent ) 70 1%;
+}
+
+.knowledge-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.knowledge-card-title {
+  color: var(--primary);
+  font-size: 0.8rem;
+  padding: 1rem 0rem;
+}
+
+.card-elements {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 100px;
+}
+
+.card-item img {
+  width: 5rem;
+}
+
+.card-item h4 {
+  opacity: 0;
+  color: var(--text);
+  font-size: 1.2rem;
+  font-family: 'VT323-Regular'
+}
+
+.card-item:hover h4 {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 640px) {
+  .knowledge-title-container {
+    align-items: end;
+    padding: 1rem;
+  }
+
+  .knowledge-text-container p, .knowledge-text-container li {
+    text-align: end;
+  }
+
+  .my-face {
+    width: 18rem;
+    height: 18rem;
+  }
+}

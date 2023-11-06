@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/sections/home.css" />
     <link rel="stylesheet" type="text/css" href="css/sections/aboutme.css" />
     <link rel="stylesheet" type="text/css" href="css/sections/experiences.css" />
-    <link rel="stylesheet" type="text/css" href="css/sections/knowledges.css" />
+    <link rel="stylesheet" type="text/css" href="css/sections/knowledge.css" />
     <link rel="stylesheet" type="text/css" href="css/sections/projects.css" />
     <link rel="stylesheet" type="text/css" href="css/sections/contact.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" />
@@ -42,7 +42,7 @@
         <ul id="menu" role="menu">
           <li><a href="#about-me">About me</a></li>
           <li><a href="#experiences">Experiences</a></li>
-          <li><a href="#knowledges">Knowledges</a></li>
+          <li><a href="#knowledge">Knowledge</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -50,6 +50,10 @@
     </header>
 
     <main>
+      <div class="">
+
+      </div>
+
       <!-- pixel one -->
       <div class="pixel-animated pixel-animated-one">
         <div class="pixel-right">
@@ -65,7 +69,7 @@
             <div class="text-with-pixel">
               <p>Hello, I'm</p>
               <img
-                src="./images//sprites/avatar-pixel.gif"
+                src="./images/sprites/avatar-pixel.gif"
                 alt="Avatar in Pixel art"
               />
             </div>
@@ -78,7 +82,7 @@
           </div>
 
           <div class="curriculum-button">
-            <a href="./archives/curriculum.pdf" download>
+            <a href="./archives/gustavo-felipe-curriculum.pdf" download>
               <img
                 src="./images/icons/download-pixel.svg"
                 alt="download icon"
@@ -109,11 +113,19 @@
       <section id="about-me">
         <div class="container">
           <div class="about-me-image" data-anime="left">
-            <img
-              class="avatar"
-              src="images/sprites/floki-pixel.svg"
-              alt="Avatar"
-            />
+            <div class="about-me-image-text">
+              <img
+                class="avatar"
+                src="images/sprites/floki-pixel.svg"
+                alt="Floki, my cat - pixel art"
+              />
+              <h3>Floki</h3>
+              <p>
+                This is my kitten, Floki. My faithful companion, a 
+                great warrior who has been through several battles 
+                with me, extremely cute and playful.
+              </p>
+            </div>
           </div>
           <div class="about-me-text" data-anime="left">
             <div class="about-me-title-container">
@@ -219,7 +231,7 @@
                 </div>
                 <span>01/2023 - 08/2023</span>
               </div>
-              <h4>Desenvolvedor Front end Jr</h4>
+              <h4>Jr front end developer</h4>
               </div>
               <div class="card-experience-text">
               <p>
@@ -304,7 +316,9 @@
                 </div>
                 <div class="card-experience-title">
                   <div class="card-experience-title-container">
-                    <div class="title"></div>
+                    <div class="title">
+                      <img src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
+                    </div>
                     <span>09/2020 - 05/2021</span>
                   </div>
                   <h4>Trainee</h4>
@@ -330,14 +344,100 @@
                 </div>
               </div>
             </div>
+
+            <!-- experience card -->
+            <div class="card-container">
+              <div class="card-experience">
+                <div class="card-experience-title">
+                  <div class="card-experience-title-container">
+                    <div class="title">
+                      <img src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
+                      <h3>Exception Jr</h3>
+                    </div>
+                    <span>09/2019 - 08/2020</span>
+                  </div>
+                  <h4>Project director / Developer</h4>
+                </div>
+                <div class="card-experience-text">
+                  <p>
+                    I worked in support and customer service, configuring routers, 
+                    managing protocols, mapping POPs, configuring radio equipment, 
+                    provisioning ONUs and monitoring the network.
+                  </p>
+                </div>
+                <div class="card-experience-title">
+                  <div class="card-experience-title-container">
+                    <div class="title">
+                      <img src="./images/icons/file-pixel.svg" alt="File pixel icon">
+                    </div>
+                    <span>06/2019 - 09/2019</span>
+                  </div>
+                  <h4>Deputy director / Financial administrative director</h4>
+                </div>
+                <div class="card-experience-text">
+                  <p>
+                    As an intern, I was responsible for customer service, configuring routers, 
+                    managing protocols, configuring radio equipment, provisioning ONUs and 
+                    more basic demands.
+                  </p>
+                </div>
+                <div class="card-experience-skills">
+                  <p>Team work</p>
+                  <p>Communication</p>
+                  <p>Adaptability</p>
+                  <p>Emotional intelligence</p>
+                </div>
+              </div>
+              <div class="container-image">
+                <div class="pixel-animated pixel-animated-six">
+                  <img src="./images/sprites/kodama-pixel.svg" alt="Souta Muranaka pixel art" />
+                  <p>Kodama - Princess Mononoke</p>
+                </div>
+              </div> 
+            </div>
+
+            <!-- experience card -->
+            <div class="card-container">
+              <div class="card-experience">
+              <div class="card-experience-title">
+              <div class="card-experience-title-container">
+                <div class="title">
+                  <img src="./images/icons/dev-pixel.svg" alt="headset pixel icon">
+                  <h3>CTIC - UNIFESSPA</h3>
+                </div>
+                <span>08/2018 - 08/2020</span>
+              </div>
+              <h4>Trainee</h4>
+              </div>
+              <div class="card-experience-text">
+              <p>
+                I worked with development and maintenance of web systems with 
+                an emphasis on PHP, MySQL;
+                My biggest contributions were improvements, maintenance and 
+                development of new features in SISPROL (Online Project System).
+              </p>
+              </div>
+              <div class="card-experience-skills">
+                <p>Team work</p>
+                <p>Communication</p>
+                <p>Adaptability</p>
+              </div>
+              </div>
+              <div class="container-image">
+                <div class="pixel-animated pixel-animated-two">
+                  <img src="./images/sprites/senbonzakura-kageyoshi-pixel.svg" alt="Senbonzakura kageyoshi pixel art" />
+                  <p class="pixel-describe-object">Senbonzakura kageyoshi - Bleach</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Knowledges -->
-      <section id="knowledges">
-        <div class="container container-knowledges" data-anime="left">
-          <div class="knowledges-title-container">
+      <!-- Knowledge -->
+      <section id="knowledge">
+        <div class="container container-knowledge" data-anime="left">
+          <div class="knowledge-title-container">
             <!-- title -->
             <div class="title-container">
               <div class="dev-icons">
@@ -352,7 +452,7 @@
                   alt="arrow left and bar icon"
                 />
               </div>
-              <h2 class="title">Knowledges</h2>
+              <h2 class="title">Knowledge</h2>
               <img
                 class="animation-dev"
                 src="images/icons/arrow-right-pixel.svg"
@@ -361,7 +461,7 @@
             </div>
 
             <!-- texts -->
-            <div class="knowledges-text-container">
+            <div class="knowledge-text-container">
               <p>
                 Here are some of the technologies that I am working with, 
                 studying and that I use in my works. It's worth highlighting 
@@ -374,18 +474,36 @@
             </div>
 
             <!-- images -->
-            <div class="knowledges-image-container">
+            <div class="knowledge-image-container">
+              <div class="icon-base">
+                <div class="pixel-animated pixel-animated-two">
+                  <img src="./images/sprites/punpun-pixel.svg" alt="Punpun pixel art" />
+                  <p>Punpun - Goodnight Punpun (manga)</p>
+                </div>
+              </div>
               <img
-                class="animation-"
-                src="images/sprites/souta-munakata-pixel.svg"
-                alt="Souta munakata pixel art"
+                class="my-face"
+                src="images/gustavo-fbc.png"
+                alt="Gustavo Felipe"
               />
+              <div class="icon-top">
+                <div class="pixel-animated pixel-animated-seven">
+                  <img src="images/sprites/black-cup-pixel.svg" alt="Black cup of coffee pixel art" />
+                  <p>Black cup of coffee (pixel art)</p>
+                </div>
+              </div>
+              <div class="icon-bottom">
+                <div class="pixel-animated pixel-animated-eight">
+                  <img src="images/sprites/bmo-pixel.svg" alt="Black cup of coffee pixel art" />
+                  <p>BMO - Adventure time</p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="knowledges-cards-container">
-            <div class="knowledges-card" data-anime="down">
-              <h3 class="knowledges-card-title">Stack:</h3>
+          <div class="knowledge-cards-container">
+            <div class="knowledge-card" data-anime="down">
+              <h3 class="knowledge-card-title">Stack:</h3>
               <div class="card-elements">
                 <article class="card-item">
                   <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/html_dark.png" alt="HTML" />
@@ -420,8 +538,8 @@
               </div>
             </div>
 
-            <div class="knowledges-card" data-anime="down">
-              <h3 class="knowledges-card-title">Studying/Improving:</h3>
+            <div class="knowledge-card" data-anime="down">
+              <h3 class="knowledge-card-title">Studying/Improving:</h3>
               <div class="card-elements">
                 <article class="card-item">
                   <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/javascript_dark.png" alt="JAVASCRIPT" />
@@ -440,8 +558,8 @@
               </div>
             </div>
 
-            <div class="knowledges-card" data-anime="down">
-              <h3 class="knowledges-card-title">Others :</h3>
+            <div class="knowledge-card" data-anime="down">
+              <h3 class="knowledge-card-title">Others :</h3>
               <div class="card-elements">
                 <article class="card-item">
                   <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/git_dark.png" alt="GIT" />
@@ -471,31 +589,31 @@
       <!-- Projects  -->
       <section id="projects">
         <div class="container  container-unique" data-anime="left">
-            <!-- title -->
-            <div class="title-container">
-              <div class="dev-icons">
-                <img
-                  class="animation-dev"
-                  src="images/icons/arrow-left-pixel.svg"
-                  alt="arrow left and bar icon"
-                />
-                <img
-                  class="animation-dev"
-                  src="images/icons/bar-pixel.svg"
-                  alt="arrow left and bar icon"
-                />
-              </div>
-              <h2 class="title">Projects</h2>
+          <!-- title -->
+          <div class="title-container">
+            <div class="dev-icons">
               <img
                 class="animation-dev"
-                src="images/icons/arrow-right-pixel.svg"
-                alt="arrow right icon"
+                src="images/icons/arrow-left-pixel.svg"
+                alt="arrow left and bar icon"
+              />
+              <img
+                class="animation-dev"
+                src="images/icons/bar-pixel.svg"
+                alt="arrow left and bar icon"
               />
             </div>
-            
-            <div class="instructions-container">
-              <p></p>
-            </div>
+            <h2 class="title">Projects</h2>
+            <img
+              class="animation-dev"
+              src="images/icons/arrow-right-pixel.svg"
+              alt="arrow right icon"
+            />
+          </div>
+          
+          <div class="instructions-container">
+            <p></p>
+          </div>
 
           <div class="container-projects">
             <article class="container-project" data-anime="top">
@@ -665,6 +783,13 @@
         </div>
       </section>
       
+      <!-- pixel two -->
+      <!-- <div class="pixel-animated pixel-animated-five">
+        <div>
+          <img src="./images/sprites/punpun-pixel.svg" alt="Punpun pixel art" />
+          <p>Punpun - Goodnight Punpun (manga)</p>
+        </div>
+      </div> -->
     </main>
 
     <!-- Footer -->

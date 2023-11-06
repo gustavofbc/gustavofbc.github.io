@@ -67,15 +67,13 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  min-height: 12rem;
 }
-
-/* .container-image > img {
-  width: 6rem;
-} */
 
 .card-experience-title > h4 {
   font-size: 0.8rem;
-  color: var(--text)
+  color: var(--text);
+  line-height: 1rem;
 }
 
 .card-experience-title-container {

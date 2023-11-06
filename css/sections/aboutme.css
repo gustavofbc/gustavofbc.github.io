@@ -4,21 +4,54 @@
 
 .about-me-image {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   flex: 1;
+  /* border: 2px solid;
+  border-image: linear-gradient( to right, var(--primary), transparent ) 1%; */
+}
+
+.about-me-image-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 14rem;
+  gap: 1rem;
+  padding: 1rem;
+  color: var(--text);
+  text-align: center;
+}
+
+/* .about-me-image-text h3 {
+  color: var(--primary);
+} */
+
+.about-me-image-text img {
+  margin-bottom: 1.2rem;
+}
+
+.about-me-image-text p {
+  color: var(--text);
+  line-height: 1rem;
+  font-size: 0.7rem;
 }
 
 .about-me-image img {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .about-me-text {
-  border: 2px solid;
-  border-image: linear-gradient( to left, var(--primary), transparent ) 1%;
   display: flex;
   flex: 1;
   flex-direction: column;
   color: var(--text);
   padding: 2rem;
+  margin-top: 2rem;
+  border: 2px solid;
+  border-image: linear-gradient( to left, var(--primary), transparent ) 1%;
   z-index: 2;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);

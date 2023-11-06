@@ -84,8 +84,8 @@ section {
 
 .pixel-animated img {
   position: absolute;
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
   margin-top: 0.8rem;
 }
 
@@ -107,6 +107,18 @@ section {
 
 .pixel-animated-five {
   animation: animated-five 8s ease infinite;
+}
+
+.pixel-animated-six {
+  animation: animated-six 8s ease infinite;
+}
+
+.pixel-animated-seven {
+  animation: animated-seven 4s ease-in-out infinite;
+}
+
+.pixel-animated-eight {
+  animation: animated-eight 5s ease-in-out infinite;
 }
 
 @media only screen and (min-width: 800px) {
