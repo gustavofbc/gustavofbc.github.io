@@ -45,7 +45,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  color: var(--text);
+  color: #f0f0f0;
   background: rgba(0,0,0, 0.7);
   transition: opacity 0.3s ease, height 0.3s ease, border-image 0.3s ease;
 }
@@ -66,6 +66,7 @@
 .project-description {
   font-size: 1.2rem;
   font-familY: 'VT323-Regular';
+  color: #f0f0f0;
 }
 
 .project-icons img {
