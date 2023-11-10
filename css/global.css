@@ -39,12 +39,14 @@ section {
 /* cores */
 :root {
   --text: #f0f0f0;
-  --black: #121414;
-  --green: #44ee69;
-  --green-dark: #3DD150;
-  --black-dark: #0D0F0D;
   --primary: #467CFF;
   --background: #0D0F1B;
+}
+
+.dark-mode {
+  --text: #0D0F1B;
+  --primary: #EB4916;
+  --background: #F8F0DA;
 }
 /* -------------------------- */
 
@@ -75,11 +77,6 @@ section {
   align-items: center;
   justify-content: space-around;
   gap: 2rem;
-}
-
-.animation-dev {
-  width: 2rem;
-  animation:  blink 2s infinite linear;
 }
 
 .title-container {

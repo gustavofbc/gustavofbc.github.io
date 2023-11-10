@@ -25,6 +25,10 @@
   padding-left: 0.5rem;
 }
 
+.dark-mode .icon {
+  filter: invert(88%) sepia(45%) saturate(4972%) hue-rotate(15deg) brightness(88%) contrast(88%);
+}
+
 .experiences-title img {
   width: 1.2rem;
 }

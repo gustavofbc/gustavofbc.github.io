@@ -89,7 +89,8 @@ function updateActiveMenuItem() {
   
   menuItems.forEach((item) => {
     const link = item.querySelector('a');
-    if (link.getAttribute('href').slice(1) === activeSection) {
+    const href = link.getAttribute('href');
+    if (typeof href === 'string' && href.slice(1) === activeSection) {
       item.classList.add('active-link');
     } else {
       item.classList.remove('active-link');

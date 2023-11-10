@@ -78,6 +78,10 @@
   cursor: pointer;
 }
 
+.curriculum-button img {
+  width: 2rem;
+}
+
 .arrow-animation {
   width: 100vh;
   display: flex;
@@ -85,9 +89,10 @@
   align-items: center;
 }
 
-.arrow-animation img{
+.arrow-animation svg{
   position: absolute;
   animation: arrow 3s ease infinite;
+  fill: var(--primary);
 }
 
 @media only screen and (min-width: 800px) {

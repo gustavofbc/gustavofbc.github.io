@@ -21,14 +21,18 @@ footer {
   scroll-behavior: smooth;
 }
 
-.container-logo img {
+.container-logo svg {
   width: 3rem;
   cursor: pointer;
   transition: transform 0.5s;
 }
 
-.container-logo img:hover {
+.container-logo svg:hover {
   transform: scale(1.1);
+}
+
+.container-logo  svg path {
+  stroke: var(--primary);
 }
 
 .container-text-rights {

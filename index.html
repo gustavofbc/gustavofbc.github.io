@@ -8,7 +8,6 @@
       name="keywords"
       content="Gustavo felipe, portfólio, desenvolvedor frontend, front-end, developer front-end, gustavo felipe dev"
     />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="css/global.css" />
     <link rel="stylesheet" type="text/css" href="css/animations.css" />
@@ -26,7 +25,9 @@
   <body>
     <header id="header">
       <a id="logo" href="/">
-        <img class="logo" src="images/logo-line1.svg" alt="logo" />
+        <svg class="logo" width="64" height="74" viewBox="0 0 64 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30.5838 58.8892V47.3208H41.739C50.3044 47.3208 50.3044 42.4213 50.3044 36.9649H30.5838V31.2612C30.5838 28.6753 33.6866 26.1018 36.6443 26.1018H61.9957C61.9957 26.1018 61.9957 30.8529 61.9957 37.6578C61.9957 44.4627 57.884 51.6753 50.3044 55.6228C42.7249 59.5703 30.5838 58.8892 30.5838 58.8892ZM30.5838 58.8892V71.8185C30.5838 71.8185 26.7854 72.2268 24.5319 71.8185C22.2785 71.4102 18.7819 69.3688 18.7819 64.197V58.3448M18.7819 58.3448L19.1321 28.4031C19.1321 23.0829 25.2719 14.5953 33.8519 14.5953H53.288C57.5132 14.5953 62.161 11.7991 61.9957 7.03564V2H37.7955H32.5956C12.8779 2 3.72317 14.5953 2.31476 27.4504C0.906348 40.3055 3.85268 54.534 18.7819 58.3448Z" stroke="#467CFF" stroke-width="4"/>
+        </svg>          
       </a>
 
       <nav id="nav">
@@ -45,6 +46,14 @@
           <li><a href="#knowledge">Knowledge</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              id="btn-mode"
+              name="btn-mode"
+              class="button-mode"
+            >
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -54,7 +63,7 @@
 
       </div>
 
-      <!-- pixel one -->
+      <!-- pixel -->
       <div class="pixel-animated pixel-animated-one">
         <div class="pixel-right">
           <img src="./images/sprites/calcifer.svg" alt="Calcifer pixel art" />
@@ -92,16 +101,20 @@
           </div>
 
           <div class="arrow-animation">
-            <img src="./images/icons/arrow-pixel.svg" alt="arrow icon" />
+            <!-- <img src="./images/icons/arrow-pixel.svg" alt="arrow icon" /> -->
+            <svg width="40" height="24" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="8" height="8"/>
+              <rect x="8" y="8" width="8" height="8"/>
+              <rect x="16" y="16" width="8" height="8"/>
+              <rect x="24" y="8" width="8" height="8"/>
+              <rect x="32" width="8" height="8"/>
+            </svg>
           </div>
 
-          <!-- <div class="pixel-animated">
-            <img src="./images/sprites/calcifer.svg" alt="Calcifer pixel art" />
-          </div> -->
         </div>
       </section>
 
-      <!-- pixel two -->
+      <!-- pixel -->
       <div class="pixel-animated pixel-animated-two">
         <div>
           <img src="./images/sprites/catbus-pixel.svg" alt="Catbus pixel art" />
@@ -131,23 +144,29 @@
             <div class="about-me-title-container">
               <div class="about-me-title">
                 <div class="dev-icons">
-                  <img
-                    class="animation-dev"
-                    src="images/icons/arrow-left-pixel.svg"
-                    alt="arrow left and bar icon"
-                  />
-                  <img
-                    class="animation-dev"
-                    src="images/icons/bar-pixel.svg"
-                    alt="arrow left and bar icon"
-                  />
+                  <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="22" width="8" height="8"/>
+                    <rect x="14" y="8" width="8" height="8"/>
+                    <rect x="6" y="16" width="8" height="8"/>
+                    <rect x="14" y="24" width="8" height="8"/>
+                    <rect x="22" y="32" width="8" height="8"/>
+                  </svg>
+                  <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="32" width="8" height="8"/>
+                    <rect x="24" y="8" width="8" height="8"/>
+                    <rect x="16" y="16" width="8" height="8"/>
+                    <rect x="8" y="24" width="8" height="8"/>
+                    <rect y="32" width="8" height="8"/>
+                  </svg>
+                  <h2 class="title">About me</h2>
+                  <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="18" y="40" width="8" height="8" transform="rotate(-180 18 40)"/>
+                    <rect x="26" y="32" width="8" height="8" transform="rotate(-180 26 32)"/>
+                    <rect x="34" y="24" width="8" height="8" transform="rotate(-180 34 24)"/>
+                    <rect x="26" y="16" width="8" height="8" transform="rotate(-180 26 16)"/>
+                    <rect x="18" y="8" width="8" height="8" transform="rotate(-180 18 8)"/>
+                  </svg>
                 </div>
-                <h2 class="title">About me</h2>
-                <img
-                  class="animation-dev"
-                  src="images/icons/arrow-right-pixel.svg"
-                  alt="arrow right icon"
-                />
               </div>
               <div class="pixel-fixed">
                 <p>Totoro Small- My Neighbor Totoro</p>
@@ -199,23 +218,29 @@
             </div>
             <div class="experiences-title">
               <div class="dev-icons">
-                <img
-                  class="animation-dev"
-                  src="images/icons/arrow-left-pixel.svg"
-                  alt="arrow left and bar icon"
-                />
-                <img
-                  class="animation-dev"
-                  src="images/icons/bar-pixel.svg"
-                  alt="arrow left and bar icon"
-                />
+                <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="22" width="8" height="8"/>
+                  <rect x="14" y="8" width="8" height="8"/>
+                  <rect x="6" y="16" width="8" height="8"/>
+                  <rect x="14" y="24" width="8" height="8"/>
+                  <rect x="22" y="32" width="8" height="8"/>
+                </svg>
+                <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="32" width="8" height="8"/>
+                  <rect x="24" y="8" width="8" height="8"/>
+                  <rect x="16" y="16" width="8" height="8"/>
+                  <rect x="8" y="24" width="8" height="8"/>
+                  <rect y="32" width="8" height="8"/>
+                </svg>
+                <h2 class="title">Experiences</h2>
+                <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="18" y="40" width="8" height="8" transform="rotate(-180 18 40)"/>
+                  <rect x="26" y="32" width="8" height="8" transform="rotate(-180 26 32)"/>
+                  <rect x="34" y="24" width="8" height="8" transform="rotate(-180 34 24)"/>
+                  <rect x="26" y="16" width="8" height="8" transform="rotate(-180 26 16)"/>
+                  <rect x="18" y="8" width="8" height="8" transform="rotate(-180 18 8)"/>
+                </svg>
               </div>
-              <h2 class="title">Experiences</h2>
-              <img
-                class="animation-dev"
-                src="images/icons/arrow-right-pixel.svg"
-                alt="arrow right icon"
-              />
             </div>
           </div>
 
@@ -226,7 +251,7 @@
               <div class="card-experience-title">
               <div class="card-experience-title-container">
                 <div class="title">
-                  <img src="./images/icons/dev-pixel.svg" alt="headset pixel icon">
+                  <img class="icon" src="./images/icons/dev-pixel.svg" alt="headset pixel icon">
                   <h3>Criptomaníacos</h3>
                 </div>
                 <span>01/2023 - 08/2023</span>
@@ -262,7 +287,7 @@
                 <div class="card-experience-title">
                   <div class="card-experience-title-container">
                     <div class="title">
-                      <img src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
+                      <img class="icon" src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
                       <h3>Fibralink</h3>
                     </div>
                     <span>07/2021 - 05/2022</span>
@@ -300,7 +325,7 @@
                 <div class="card-experience-title">
                   <div class="card-experience-title-container">
                     <div class="title">
-                      <img src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
+                      <img class="icon" src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
                       <h3>PRGNET</h3>
                     </div>
                     <span>05/2021 - 06/2021</span>
@@ -317,7 +342,7 @@
                 <div class="card-experience-title">
                   <div class="card-experience-title-container">
                     <div class="title">
-                      <img src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
+                      <img class="icon" src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
                     </div>
                     <span>09/2020 - 05/2021</span>
                   </div>
@@ -351,7 +376,7 @@
                 <div class="card-experience-title">
                   <div class="card-experience-title-container">
                     <div class="title">
-                      <img src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
+                      <img class="icon" src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
                       <h3>Exception Jr</h3>
                     </div>
                     <span>09/2019 - 08/2020</span>
@@ -368,7 +393,7 @@
                 <div class="card-experience-title">
                   <div class="card-experience-title-container">
                     <div class="title">
-                      <img src="./images/icons/file-pixel.svg" alt="File pixel icon">
+                      <img class="icon" src="./images/icons/file-pixel.svg" alt="File pixel icon">
                     </div>
                     <span>06/2019 - 09/2019</span>
                   </div>
@@ -402,7 +427,7 @@
               <div class="card-experience-title">
               <div class="card-experience-title-container">
                 <div class="title">
-                  <img src="./images/icons/dev-pixel.svg" alt="headset pixel icon">
+                  <img class="icon" src="./images/icons/dev-pixel.svg" alt="headset pixel icon">
                   <h3>CTIC - UNIFESSPA</h3>
                 </div>
                 <span>08/2018 - 08/2020</span>
@@ -441,23 +466,29 @@
             <!-- title -->
             <div class="title-container">
               <div class="dev-icons">
-                <img
-                  class="animation-dev"
-                  src="images/icons/arrow-left-pixel.svg"
-                  alt="arrow left and bar icon"
-                />
-                <img
-                  class="animation-dev"
-                  src="images/icons/bar-pixel.svg"
-                  alt="arrow left and bar icon"
-                />
+                <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="22" width="8" height="8"/>
+                  <rect x="14" y="8" width="8" height="8"/>
+                  <rect x="6" y="16" width="8" height="8"/>
+                  <rect x="14" y="24" width="8" height="8"/>
+                  <rect x="22" y="32" width="8" height="8"/>
+                </svg>
+                <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="32" width="8" height="8"/>
+                  <rect x="24" y="8" width="8" height="8"/>
+                  <rect x="16" y="16" width="8" height="8"/>
+                  <rect x="8" y="24" width="8" height="8"/>
+                  <rect y="32" width="8" height="8"/>
+                </svg>
+                <h2 class="title">Knowledge</h2>
+                <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="18" y="40" width="8" height="8" transform="rotate(-180 18 40)"/>
+                  <rect x="26" y="32" width="8" height="8" transform="rotate(-180 26 32)"/>
+                  <rect x="34" y="24" width="8" height="8" transform="rotate(-180 34 24)"/>
+                  <rect x="26" y="16" width="8" height="8" transform="rotate(-180 26 16)"/>
+                  <rect x="18" y="8" width="8" height="8" transform="rotate(-180 18 8)"/>
+                </svg>
               </div>
-              <h2 class="title">Knowledge</h2>
-              <img
-                class="animation-dev"
-                src="images/icons/arrow-right-pixel.svg"
-                alt="arrow right icon"
-              />
             </div>
 
             <!-- texts -->
@@ -592,23 +623,29 @@
           <!-- title -->
           <div class="title-container">
             <div class="dev-icons">
-              <img
-                class="animation-dev"
-                src="images/icons/arrow-left-pixel.svg"
-                alt="arrow left and bar icon"
-              />
-              <img
-                class="animation-dev"
-                src="images/icons/bar-pixel.svg"
-                alt="arrow left and bar icon"
-              />
+              <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="22" width="8" height="8"/>
+                <rect x="14" y="8" width="8" height="8"/>
+                <rect x="6" y="16" width="8" height="8"/>
+                <rect x="14" y="24" width="8" height="8"/>
+                <rect x="22" y="32" width="8" height="8"/>
+              </svg>
+              <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="32" width="8" height="8"/>
+                <rect x="24" y="8" width="8" height="8"/>
+                <rect x="16" y="16" width="8" height="8"/>
+                <rect x="8" y="24" width="8" height="8"/>
+                <rect y="32" width="8" height="8"/>
+              </svg>
+              <h2 class="title">Projects</h2>
+              <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="18" y="40" width="8" height="8" transform="rotate(-180 18 40)"/>
+                <rect x="26" y="32" width="8" height="8" transform="rotate(-180 26 32)"/>
+                <rect x="34" y="24" width="8" height="8" transform="rotate(-180 34 24)"/>
+                <rect x="26" y="16" width="8" height="8" transform="rotate(-180 26 16)"/>
+                <rect x="18" y="8" width="8" height="8" transform="rotate(-180 18 8)"/>
+              </svg>
             </div>
-            <h2 class="title">Projects</h2>
-            <img
-              class="animation-dev"
-              src="images/icons/arrow-right-pixel.svg"
-              alt="arrow right icon"
-            />
           </div>
           
           <div class="instructions-container">
@@ -703,36 +740,45 @@
           <!-- title -->
           <div class="title-container">
             <div class="dev-icons">
-              <img
-                class="animation-dev"
-                src="images/icons/arrow-left-pixel.svg"
-                alt="arrow left and bar icon"
-              />
-              <img
-                class="animation-dev"
-                src="images/icons/bar-pixel.svg"
-                alt="arrow left and bar icon"
-              />
+              <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="22" width="8" height="8"/>
+                <rect x="14" y="8" width="8" height="8"/>
+                <rect x="6" y="16" width="8" height="8"/>
+                <rect x="14" y="24" width="8" height="8"/>
+                <rect x="22" y="32" width="8" height="8"/>
+              </svg>
+              <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="32" width="8" height="8"/>
+                <rect x="24" y="8" width="8" height="8"/>
+                <rect x="16" y="16" width="8" height="8"/>
+                <rect x="8" y="24" width="8" height="8"/>
+                <rect y="32" width="8" height="8"/>
+              </svg>
+              <h2 class="title">Contact</h2>
+              <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="18" y="40" width="8" height="8" transform="rotate(-180 18 40)"/>
+                <rect x="26" y="32" width="8" height="8" transform="rotate(-180 26 32)"/>
+                <rect x="34" y="24" width="8" height="8" transform="rotate(-180 34 24)"/>
+                <rect x="26" y="16" width="8" height="8" transform="rotate(-180 26 16)"/>
+                <rect x="18" y="8" width="8" height="8" transform="rotate(-180 18 8)"/>
+              </svg>
             </div>
-            <h2 class="title">Contact</h2>
-            <img
-              class="animation-dev"
-              src="images/icons/arrow-right-pixel.svg"
-              alt="arrow right icon"
-            />
           </div>
 
           <div class="container-contact" data-anime="down">
             <div class="card-message" data-anime="left">
-              <img
-                class="mandalorian"
-                src="images/sprites/mandalorian-pixel.gif"
-                alt="Mandalorian mask pixel"
-              />
-              <h4>Obrigado pela visita!</h4>
+              <div class="pixel-fixed">
+                <img
+                  class="mandalorian"
+                  src="images/sprites/mandalorian-pixel.gif"
+                  alt="Mandalorian helmet pixel"
+                />
+                  <p> Din Djarin (helmet) - The mandalorian</p>
+              </div>
+              <h4>Thanks for the visit!</h4>
               <p class="message">
-                Caro Mestre(a) Jedi / Lord Sith, deixe uma mensagem de
-                qualquer parte da galáxia...
+                Dear Jedi Master/Sith Lord, please leave a message
+                anywhere in the galaxy...
               </p>
             </div>
 
@@ -744,20 +790,25 @@
               >
                 <label for="name" data-anime="left">Name</label>
                 <input
+                  id="name"
                   name="name"
                   type="text"
+                  autocomplete="name"
                   placeholder="Enter your name here..."
                   required
                 />
                 <label for="email" data-anime="left">E-mail</label>
                 <input
+                  id="email"
                   name="email"
                   type="email"
+                  autocomplete="email"
                   placeholder="Enter your email here..."
                   required
                 />
                 <label for="message" data-anime="left">Message</label>
                 <textarea
+                  id="message"
                   name="message"
                   type="text"
                   placeholder="Enter your message here..."
@@ -769,7 +820,6 @@
             </div>
           </div>
 
-          
           <div class="developer-by-text">
             <hr/>
             <p>
@@ -782,14 +832,6 @@
           </div>
         </div>
       </section>
-      
-      <!-- pixel two -->
-      <!-- <div class="pixel-animated pixel-animated-five">
-        <div>
-          <img src="./images/sprites/punpun-pixel.svg" alt="Punpun pixel art" />
-          <p>Punpun - Goodnight Punpun (manga)</p>
-        </div>
-      </div> -->
     </main>
 
     <!-- Footer -->
@@ -800,7 +842,9 @@
         <div class="content-baseline">
           <div class="container-logo">
             <a href="#home">
-              <img src="/images/logo-line1.svg" alt="logo">
+              <svg class="logo" width="64" height="64" viewBox="0 0 64 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30.5838 58.8892V47.3208H41.739C50.3044 47.3208 50.3044 42.4213 50.3044 36.9649H30.5838V31.2612C30.5838 28.6753 33.6866 26.1018 36.6443 26.1018H61.9957C61.9957 26.1018 61.9957 30.8529 61.9957 37.6578C61.9957 44.4627 57.884 51.6753 50.3044 55.6228C42.7249 59.5703 30.5838 58.8892 30.5838 58.8892ZM30.5838 58.8892V71.8185C30.5838 71.8185 26.7854 72.2268 24.5319 71.8185C22.2785 71.4102 18.7819 69.3688 18.7819 64.197V58.3448M18.7819 58.3448L19.1321 28.4031C19.1321 23.0829 25.2719 14.5953 33.8519 14.5953H53.288C57.5132 14.5953 62.161 11.7991 61.9957 7.03564V2H37.7955H32.5956C12.8779 2 3.72317 14.5953 2.31476 27.4504C0.906348 40.3055 3.85268 54.534 18.7819 58.3448Z" stroke="#467CFF" stroke-width="4"/>
+              </svg>  
             </a>
           </div>
           <div class="container-text-rights">
@@ -840,5 +884,6 @@
     </footer>
 
     <script src="navbar.js"></script>
+    <script src="darkmode.js"></script>
   </body>
 </html>

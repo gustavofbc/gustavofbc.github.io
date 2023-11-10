@@ -29,6 +29,11 @@
   margin-bottom: 0.5rem;
 }
 
+.card-message .pixel-fixed p {
+  top: 5%;
+  left: 15%;
+}
+
 .card-message h4 {
   color: var(--primary);
   font-size: 0.8rem;
@@ -75,15 +80,12 @@
 
 .card-form input, textarea {
   padding: 0.6rem;
+  margin-bottom: 1rem;
   font-size: 1.2rem;
   font-family: 'VT323-Regular';
   border-radius: 0.4rem;
-  margin-bottom: 1rem;
-  border: 1px solid var(--primary);
-}
-
-.card-form {
-  /* max-width: 34rem; */
+  border: 2px solid var(--text);
+  background: #f0f0f0;
 }
 
 .btn-submit {
@@ -120,7 +122,7 @@
 }
 
 .developer-by-text img {
-  /* margin: 0 auto; */
+  width: 3rem;
 }
 
 .developer-by-text p span {
@@ -142,5 +144,8 @@
     padding: 0 4rem;
   }
   
-
+  .card-message .pixel-fixed p {
+    top: 100px;
+    left: 10px;
+  }
 }

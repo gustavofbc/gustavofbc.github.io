@@ -26,9 +26,19 @@
   transform: scale(1.1);
 }
 
+#logo svg path {
+  stroke: var(--primary);
+}
+
 #menu {
   display: flex;
   gap: 1rem;
+}
+
+#menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #menu a {
@@ -47,6 +57,17 @@
   color: var(--primary);
 }
 
+#menu .active-link a::before {
+  content: ' ';
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.2rem;
+  background: var(--primary);
+}
+
+
 #menu a:hover {
   color: var(--primary);
   filter: brightness(1);
@@ -56,6 +77,18 @@
   display: none;
 }
 
+.button-mode {
+  background: red;
+  width: 3rem;
+  height: 3rem;
+  background: url('../images/sprites/sun-pixel.svg') no-repeat center;
+  background-size: contain;
+}
+
+.dark-mode .button-mode {
+  background: url('../images/sprites/moon-pixel.svg') no-repeat center;
+  background-size: contain;
+}
 
 @media (max-width: 870px){
   ::-webkit-scrollbar {
@@ -84,7 +117,12 @@
   #menu a {
     text-align: center;
     padding: 2rem 0rem;
-    margin: 1rem 0rem;
+    margin: 0.5rem 0rem;
+    width: 100%;
+  }
+
+  #menu .button-mode {
+    height: 0.5rem;
   }
 
   #nav.ativo #menu {
