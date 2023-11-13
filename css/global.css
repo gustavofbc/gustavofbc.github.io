@@ -14,6 +14,7 @@ html {
 main {
   box-sizing: border-box;
   overflow: hidden;
+  background: transparent;
 }
 
 span {
@@ -94,6 +95,30 @@ section {
 .title-container .title {
   font-size: 1rem;
   padding-left: 0.5rem;
+}
+
+
+#logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: var(--background);
+}
+
+.logo-line{
+  height: 15rem;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0002);
+  stroke: var(--primary);
+  opacity: 1;
+  transition: opacity 1.5s ease;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s linear forwards;
 }
 
 @media only screen and (max-width: 800px) {

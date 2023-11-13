@@ -8,8 +8,6 @@
   flex-direction: column;
   justify-content: center;
   flex: 1;
-  /* border: 2px solid;
-  border-image: linear-gradient( to right, var(--primary), transparent ) 1%; */
 }
 
 .about-me-image-text {
@@ -23,10 +21,6 @@
   color: var(--text);
   text-align: center;
 }
-
-/* .about-me-image-text h3 {
-  color: var(--primary);
-} */
 
 .about-me-image-text img {
   margin-bottom: 1.2rem;
