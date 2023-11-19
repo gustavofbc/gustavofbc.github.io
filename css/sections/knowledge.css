@@ -10,15 +10,20 @@
 
 .knowledge-text-container p, .knowledge-text-container li {
   font-family: 'VT323-Regular';
-  font-size: 1.4rem;
-  /* text-align: end; */
+  font-size: 1.6rem;
   margin-bottom: 1rem;
+}
+
+.knowledge-text-container li {
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  font-family: "PressStart-Regular";
 }
 
 .knowledge-text-container li::after {
   content: ' ';
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   display: inline-block;
   margin-left: 0.5rem;
   background: var(--primary);
@@ -97,7 +102,8 @@
   opacity: 0;
   color: var(--text);
   font-size: 1.2rem;
-  font-family: 'VT323-Regular'
+  text-transform: uppercase;
+  font-family: 'VT323-Regular';
 }
 
 .card-item:hover h4 {

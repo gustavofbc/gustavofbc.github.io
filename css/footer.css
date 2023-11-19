@@ -6,6 +6,10 @@ footer {
   background: var(--background);
 }
 
+footer .container-unique {
+  padding-top: 0rem;
+}
+
 .content-baseline {
   width: 100%;
   display: flex;

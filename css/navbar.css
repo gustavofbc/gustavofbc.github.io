@@ -32,7 +32,7 @@
 
 #menu {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 #menu li {
@@ -90,7 +90,7 @@
   background-size: contain;
 }
 
-@media (max-width: 870px){
+@media (max-width: 950px){
   ::-webkit-scrollbar {
     display: none;
   }

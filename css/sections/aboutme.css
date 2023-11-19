@@ -15,7 +15,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  max-width: 14rem;
+  max-width: 18rem;
   gap: 1rem;
   padding: 1rem;
   color: var(--text);
@@ -24,12 +24,13 @@
 
 .about-me-image-text img {
   margin-bottom: 1.2rem;
+  max-width: 14rem;
 }
 
 .about-me-image-text p {
   color: var(--text);
-  line-height: 1rem;
-  font-size: 0.7rem;
+  line-height: 1.4rem;
+  font-size: 0.8rem;
 }
 
 .about-me-image img {
@@ -53,7 +54,7 @@
 
 .about-me-text  #description p, .about-me-text #description span {
   font-family: 'VT323-Regular';
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .about-me-text span {
@@ -97,8 +98,8 @@
 .about-me-text li::before {
   content: '';
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   margin-right: 10px;
   background-color: var(--primary);
 }

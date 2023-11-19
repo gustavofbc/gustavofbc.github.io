@@ -44,7 +44,7 @@
 
 .message {
   font-family: 'VT323-Regular';
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -81,7 +81,7 @@
 .card-form input, textarea {
   padding: 0.6rem;
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: 'VT323-Regular';
   border-radius: 0.4rem;
   border: 2px solid var(--text);
@@ -116,7 +116,7 @@
   align-items: center;
   justify-content: center;
   color: var(--text);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: 'VT323-Regular';
   margin: 1rem 0;
 }

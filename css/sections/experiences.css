@@ -48,11 +48,14 @@
 
 .card-container:nth-child(even) {
   flex-direction: column-reverse;
-  /* flex-direction: row-reverse; */
 }
 
 .card-container:nth-child(even) .card-experience {
   border-image: linear-gradient( to left, var(--primary), transparent ) 1%;
+}
+
+.card-container:nth-child(even) > .card-experience-voluntary {
+  border-image: linear-gradient( to left, var(--red), transparent ) 1%;
 }
 
 .card-container .card-experience {
@@ -80,6 +83,15 @@
   line-height: 1rem;
 }
 
+.voluntary {
+  color: var(--red);
+}
+
+.card-experience-voluntary {
+  border: 2px solid var(--red);
+  /* border-image: linear-gradient( to left, var(--red), transparent ) 1%; */
+}
+
 .card-experience-title-container {
   display: flex;
   flex-wrap: wrap;
@@ -97,15 +109,20 @@
   gap: 0.5rem;
   font-size: 0.8rem;
   flex-wrap: wrap;
+  line-height: 1.6rem;
 }
 
 .card-experience-text {
   padding: 1rem 0rem;
 }
 
-.card-experience-text > p {
-  font-size: 1.4rem;
+.card-experience-text > p, .card-experience-text > ul > li {
+  font-size: 1.6rem;
   font-family: 'VT323-Regular';
+}
+
+.card-experience-text > ul > li {
+  margin: 1rem;
 }
 
 .card-experience-skills {
@@ -113,6 +130,7 @@
   flex: 1;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 0.8rem;
 }
 
 .card-experience-skills p {
@@ -124,6 +142,14 @@
 
   .card-experience-title-container .title {
     font-size: 1rem;
+  }
+
+  .card-experience-title-container {
+    line-height: 1.6rem;
+  }
+  
+  .voluntary {
+    color: var(--red);
   }
 
   .card-experience-title-container span {
@@ -145,6 +171,7 @@
   .card-container:nth-child(even) {
     flex-direction: row-reverse;
   }
+  
   .card-container .card-experience {
     padding: 1rem 2rem;
   }
