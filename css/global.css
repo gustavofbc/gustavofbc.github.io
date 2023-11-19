@@ -39,16 +39,16 @@ section {
 
 /* cores */
 :root {
-  --text: #f0f0f0;
-  --primary: #467CFF;
-  --background: #0D0F1B;
-  --red: #f44237;
-}
-
-.dark-mode {
   --text: #0D0F1B;
   --primary: #EB4916;
   --background: #F8F0DA;
+  --red: #d40001;
+}
+
+.dark-mode {
+  --text: #f0f0f0;
+  --primary: #467CFF;
+  --background: #0D0F1B;
   --red: #f44237;
 }
 /* -------------------------- */
