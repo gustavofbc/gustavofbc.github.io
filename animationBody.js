@@ -16,7 +16,7 @@ function displayLogo(){
       logoContainer.style.display = 'none';
       header.style.display = 'flex';
       main.style.display = 'block';
-      footer.style.display = 'block';
+      footer.style.display = 'flex';
   }, 4500);
 }
 

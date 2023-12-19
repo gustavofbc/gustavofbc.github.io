@@ -50,36 +50,39 @@
   margin-bottom: -1rem;
 }
 
-.curriculum-button {
-  display: flex;
-  justify-content: center;
-  border: 2px solid;
-  border-image: linear-gradient( to right, var(--primary), transparent ) 1%;
-  transition: all .8s linear;
-}
-
-.curriculum-button:hover {
-  border: 2px solid;
-  border-image: linear-gradient( to left, var(--primary), transparent ) 1%;
-}
-
 .curriculum-button a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  background-color: transparent;
-  border: none;
   color: var(--text);
-  gap: 0.8rem;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 3px;
+  border: 2px solid var(--primary);
+  padding: 1rem 2rem;
+  box-shadow: .1px 1px 0 0 var(--primary), 1.5px 2px 0 0 var(--primary), 2.5px 3px 0 0 var(--primary), 3.5px 4px 0 0 var(--primary), 4.5px 5px 0 0 var(--primary), 5.5px 6px 0 0 var(--primary), 6.5px 7px 0 0 var(--primary), 7.5px 8px 0 0 var(--primary), 8.5px 9px 0 0 var(--primary), 9.5px 10px 0 0 var(--primary);
+  position: relative;
+  inset: 0;
+  cursor: pointer;
+  transform: rotateX(0), rotateY(0) rotateZ(0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px dashed transparent;
+  transition: all 600ms ease;
 }
 
 .curriculum-button a:hover {
   cursor: pointer;
+  inset: 6px 0 5.5px 0;
+  transform: rotateX(5deg) rotateY(3deg) rotateZ(.25deg);
+  box-shadow: none;
 }
 
 .curriculum-button img {
-  width: 2rem;
+  width: 3rem;
+  margin-right: 0.5rem;
+}
+
+.dark-mode .curriculum-button img {
+  filter: brightness(1.8) hue-rotate(200deg);
 }
 
 .arrow-animation {
@@ -89,7 +92,7 @@
   align-items: center;
 }
 
-.arrow-animation svg{
+.arrow-animation svg {
   position: absolute;
   animation: arrow 3s ease infinite;
   fill: var(--primary);
