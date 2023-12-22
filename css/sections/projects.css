@@ -12,10 +12,6 @@
   color: var(--primary);
 }
 
-.instructions-container:after {
-  content: "To view the link, click on the project card.";
-}
-
 .container-projects {
   display: flex;
   flex-wrap: wrap;
@@ -109,9 +105,5 @@
 @media only screen and (min-width: 850px) {
   .instructions-container {
     font-size: 1.8rem;
-  }
-
-  .instructions-container:after {
-    content: "To view the link, hover your mouse over the project.";
   }
 }

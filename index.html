@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,10 +20,12 @@
     <link rel="stylesheet" type="text/css" href="css/sections/knowledge.css" />
     <link rel="stylesheet" type="text/css" href="css/sections/projects.css" />
     <link rel="stylesheet" type="text/css" href="css/sections/contact.css" />
+    <link rel="stylesheet" type="text/css" href="css/languages/en.css" />
+    <link rel="stylesheet" type="text/css" href="css/languages/pt-br.css" />
     <link rel="shortcut icon" id="favicon" href="./images/favicon.ico" />
     <title>Gustavo Felipe - Front-end Developer</title>
   </head>
-  <body>
+  <body class="en">
     <div id="logo-container">
       <svg
         id="my-logo" class="logo-line" width="258" height="308" viewBox="0 0 258 308" fill="none"
@@ -54,11 +56,11 @@
           <span id="hamburguer"></span>
         </button>
         <ul id="menu" role="menu">
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#experiences">Experiences</a></li>
-          <li><a href="#knowledge">Knowledge</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about-me"></a></li>
+          <li><a href="#experiences"></a></li>
+          <li><a href="#knowledge"></a></li>
+          <li><a href="#projects"></a></li>
+          <li><a href="#contact"></a></li>
           <li>
             <a
               id="btn-mode"
@@ -66,6 +68,9 @@
               class="button-mode"
             >
             </a>
+          </li>
+          <li>
+            <a id="btnToggleLanguage"></a>
           </li>
         </ul>
       </nav>
@@ -85,18 +90,14 @@
         <div class="container-home">
           <div class="home-text">
             <div class="text-with-pixel">
-              <p>Hello, I'm</p>
+              <p></p>
               <img
                 src="./images/sprites/avatar-pixel.gif"
                 alt="Avatar in Pixel art"
               />
             </div>
             <h1>Gustavo <span>Felipe</span></h1>
-            <p>
-              Front-end developer passionate about pixel art, coffee
-              connoisseur, lo-fi style enthusiast, casual cyclist and, above
-              all, a dedicated professional. hohoho!
-            </p>
+            <p class="describe"></p>
           </div>
 
           <div class="curriculum-button">
@@ -141,11 +142,7 @@
                 alt="Floki, my cat - pixel art"
               />
               <h3>Floki</h3>
-              <p>
-                This is my kitten, Floki. My faithful companion, a 
-                great warrior who has been through several battles 
-                with me, extremely cute and playful.
-              </p>
+              <p></p>
             </div>
           </div>
           <div class="about-me-text" data-anime="left">
@@ -166,7 +163,7 @@
                     <rect x="8" y="24" width="8" height="8"/>
                     <rect y="32" width="8" height="8"/>
                   </svg>
-                  <h2 class="title">About me</h2>
+                  <h2 class="title"></h2>
                   <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="18" y="40" width="8" height="8" transform="rotate(-180 18 40)"/>
                     <rect x="26" y="32" width="8" height="8" transform="rotate(-180 26 32)"/>
@@ -182,33 +179,20 @@
               </div>
             </div>
             <article id="description">
-              <p data-anime="down">
-                I have a degree in Information Systems from the Federal
-                University of South and Southeast of Pará (UNIFESSPA), I work
-                with front-end development and have knowledge related to this
-                aspect, as well as project management and computer networks.
-              </p>
+              <p class="paragraph-one" data-anime="down"></p>
               <br />
-              <p data-anime="down">
-                I am a committed professional and I am sure that
-                <span>"effort"</span> is a word that defines me, I always try to
-                support everything and everyone in any way I can. I believe that
-                collaboration strengthens a team and a strong, cohesive and
-                communicative team is capable of achieving the most ambitious
-                results.
-              </p>
+              <p  class="paragraph-two" data-anime="down"></p>
             </article>
             <br />
             <br />
             <article>
-              <p class="text-primary">Some of my hobbies and likes are:</p>
-              <ul>
-                <li data-anime="left">Cycling;</li>
-                <li data-anime="left">Lo-fi;</li>
-                <li data-anime="left">Animes;</li>
-                <li data-anime="left">Pixel art;</li>
-                <li data-anime="left">Books and manga;</li>
-                <li data-anime="left">Coffee and tea;</li>
+              <p class="text-primary"></p>
+              <ul class="list-hobbies">
+                <li id="first" data-anime="left"></li>
+                <li id="second" data-anime="left"></li>
+                <li id="third" data-anime="left"></li>
+                <li id="fourth" data-anime="left"></li>
+                <li id="fifth" data-anime="left"></li>
               </ul>
             </article>
           </div>
@@ -240,7 +224,7 @@
                   <rect x="8" y="24" width="8" height="8"/>
                   <rect y="32" width="8" height="8"/>
                 </svg>
-                <h2 class="title">Experiences</h2>
+                <h2 class="title"></h2>
                 <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="18" y="40" width="8" height="8" transform="rotate(-180 18 40)"/>
                   <rect x="26" y="32" width="8" height="8" transform="rotate(-180 26 32)"/>
@@ -264,26 +248,16 @@
                 </div>
                 <span>01/2023 - 08/2023</span>
               </div>
-              <h4>Jr front end developer</h4>
+              <h4></h4>
               </div>
               <div class="card-experience-text">
               <p>
-                I worked on the development of responsive web interfaces with the 
-                stack: ReactJS, NextJS, Tailwind CSS, Directus CMS, WordPress and 
-                Elementor. My main contributions to the company were the development 
-                of Landing Pages with WordPress and Elementor, the development of 
-                the interface and functionalities of a CMS based on Directus to build 
-                pages with specific objectives of capitalization and registration of 
-                new potential customers, documentation of processes by using the Babel 
-                tool, migrating projects to version 13 of NextJS and creating the 
-                company's Design System using Storybook, ReactJS, TypeScript, 
-                Tailwind CSS, Shadcn/ui and Radix UI.
               </p>
               </div>
               <div class="card-experience-skills">
-                <p>Communication</p>
-                <p>Adaptability</p>
-                <p>Team work</p>
+                <p class="skill-one"></p>
+                <p class="skill-two"></p>
+                <p class="skill-three"></p>
               </div>
               </div>
               <div class="container-image">
@@ -305,23 +279,16 @@
                     </div>
                     <span>07/2021 - 05/2022</span>
                   </div>
-                  <h4>Technical support assistant</h4>
+                  <h4></h4>
                 </div>
                 <div class="card-experience-text">
-                  <p>
-                    I worked in support and customer service, configuring routers, 
-                    issuing announcements, opening and managing protocols. I proposed 
-                    improvements in the workload organization process during my work 
-                    period that generated significant results for the team, in addition 
-                    to being appointed to prepare emergency notices via SMS and other 
-                    means of communication during my shift.
-                  </p>
+                  <p></p>
                 </div>
                 <div class="card-experience-skills">
-                  <p>Team work</p>
-                  <p>Communication</p>
-                  <p>Adaptability</p>
-                  <p>Emotional intelligence</p>
+                  <p class="skill-one"></p>
+                  <p class="skill-two"></p>
+                  <p class="skill-three"></p>
+                  <p class="skill-four"></p>
                 </div>
               </div>
               <div class="container-image">
@@ -343,19 +310,10 @@
                     </div>
                     <span>05/2021 - 06/2021</span>
                   </div>
-                  <h4>Technical support assistant</h4>
+                  <h4></h4>
                 </div>
                 <div class="card-experience-text">
-                  <p>
-                    I worked in support and customer service, configuring routers, 
-                    managing protocols, mapping POPs, configuring various radio 
-                    equipment, provisioning ONUs and monitoring the network. During 
-                    my period working at NOC my main contribution was the mapping of 
-                    network devices using spreadsheets, thanks to this several no 
-                    longer active connection points were removed as there was no need 
-                    for them to be managed, making real usage management of bandwidth 
-                    in front of customers more accurate.
-                  </p>
+                  <p></p>
                 </div>
                 <div class="card-experience-title">
                   <div class="card-experience-title-container">
@@ -364,25 +322,16 @@
                     </div>
                     <span>09/2020 - 05/2021</span>
                   </div>
-                  <h4>Trainee</h4>
+                  <h4></h4>
                 </div>
                 <div class="card-experience-text">
-                  <p>
-                    As an intern, I was responsible for customer service, configuring 
-                    routers, managing protocols, configuring radio equipment, 
-                    provisioning ONUs and more basic demands. During this period, 
-                    I would like to highlight the documentation/standardization of the 
-                    procedures I carried out, as these were used as a basis and aid 
-                    for everything from end customer service to the configuration of 
-                    the main models of routers and radio equipment that we use in 
-                    company.
-                  </p>
+                  <p></p>
                 </div>
                 <div class="card-experience-skills">
-                  <p>Team work</p>
-                  <p>Communication</p>
-                  <p>Adaptability</p>
-                  <p>Emotional intelligence</p>
+                  <p class="skill-three"></p>
+                  <p class="skill-one"></p>
+                  <p class="skill-two"></p>
+                  <p class="skill-four"></p>
                 </div>
               </div>
               <div class="container-image">
@@ -404,42 +353,16 @@
                     </div>
                     <span>09/2019 - 08/2020</span>
                   </div>
-                  <h4>Project director / Developer</h4>
+                  <h4></h4>
                 </div>
                 <div class="card-experience-text">
-                  <p>
-                    After a restructuring in the board, I was nominated and accepted to 
-                    be reassigned to the project board considering the need and mainly 
-                    my management-related skills. During my time in the position I was 
-                    responsible for project management and development, application of 
-                    agile methodologies, use of concepts, techniques and tools in 
-                    software projects.
-                    My main contributions were:
-                  </p>
+                  <p></p>
                   <ul>
-                    <li>
-                      - Implementation of processes (Threads and Coffee): Due to the 
-                      need for members to work in the remote model, internships, 
-                      class periods and research and extension projects, it would not 
-                      be possible to adopt a non-flexible development methodology. 
-                      Therefore, we used and adapted some SCRUM ceremonies.
-                    </li>
-                    <li>
-                      - Project manager and developer on the SICCO project 
-                      (Consumption Control System);
-                    </li>
-                    <li>
-                      - Developer on the LavCar project;
-                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                   </ul>
-                  <p>
-                    I also highlight that it was precisely considering this demand for 
-                    a flexible methodology that considered the remote operating model 
-                    driven by the COVID-19 pandemic, the context in which EJs operate 
-                    and the concepts of agile methodologies/processes that I developed 
-                    my TCC thesis (PRODEV JR) , being a proposal for a development 
-                    model based on solving this problem.
-                  </p>
+                  <p></p>
                 </div>
                 <div class="card-experience-title">
                   <div class="card-experience-title-container">
@@ -448,27 +371,16 @@
                     </div>
                     <span>06/2019 - 09/2019</span>
                   </div>
-                  <h4>Deputy director / Financial administrative director</h4>
+                  <h4></h4>
                 </div>
                 <div class="card-experience-text">
-                  <p>
-                    I was a founding member of EJ along with the other members of the 
-                    first board. During my time in the position I was responsible for 
-                    managing and controlling the flow of inflows and outflows of the 
-                    company's financial resources, managing contracts and implementing 
-                    processes for requesting company resources for training and 
-                    assistance purposes. As main contributions, I highlight the 
-                    structuring and creation of the first contract models and the 
-                    structuring of the organization and control of the validity of 
-                    contracts through Google Drive, facilitating access to them and 
-                    promoting greater transparency in the sector towards all EJ members.
-                  </p>
+                  <p></p>
                 </div>
                 <div class="card-experience-skills">
-                  <p>Team work</p>
-                  <p>Communication</p>
-                  <p>Adaptability</p>
-                  <p>Emotional intelligence</p>
+                  <p class="skill-three"></p>
+                  <p class="skill-one"></p>
+                  <p class="skill-two"></p>
+                  <p class="skill-four"></p>
                 </div>
               </div>
               <div class="container-image">
@@ -490,30 +402,16 @@
                 </div>
                 <span>08/2018 - 08/2020</span>
               </div>
-              <h4>Trainee</h4>
+              <h4></h4>
               </div>
               <div class="card-experience-text">
-              <p>
-                I worked with development and maintenance of web systems with an 
-                emphasis on PHP, MySQL in addition to the web triad (HTML, CSS and 
-                JavaScript); I worked with improvements, maintenance and development 
-                of new functionalities in SISPROL (Online Project System), mapping 
-                and documenting processes through BPMN and writing, creating a report 
-                on loss of link between members and the project, registration and 
-                sending functionality of files for admission of volunteer students and 
-                scholarship holders, among others.
-              </p>
-              <p>
-                During my period as an intern I was mainly responsible for demands 
-                related to this system and as my biggest contribution, I highlight 
-                the creation of the module for issuing and validating certificates 
-                and declarations of registered extension and research projects.
-              </p>
+              <p></p>
+              <p></p>
               </div>
               <div class="card-experience-skills">
-                <p>Team work</p>
-                <p>Communication</p>
-                <p>Adaptability</p>
+                <p class="skill-three"></p>
+                <p class="skill-one"></p>
+                <p class="skill-two"></p>
               </div>
               </div>
               <div class="container-image">
@@ -535,25 +433,16 @@
                 </div>
                 <span class="voluntary">10/2018 - 01/2019</span>
               </div>
-              <h4>Voluntary</h4>
+              <h4></h4>
             </div>
             <div class="card-experience-text">
-              <p>
-                I worked as an instructor for the basic computer course, more precisely 
-                with the last module of the course, where I taught about how the internet 
-                works. During the first modules of the course, I worked alongside the other 
-                instructors, assisting in classes, answering questions and providing support. 
-                My biggest contribution to the project was the development of new material for 
-                the classes that I proposed to teach based on the course syllabus but also with 
-                additions that I considered more relevant and current, I also considered the 
-                rhythm of the class up to the present module and Through this, I developed 
-                activities and tests that were more consistent with the context of all students.
-              </p>
+              <p></p>
               </div>
               <div class="card-experience-skills">
-                <p>Communication</p>
-                <p>Adaptability</p>
-                <p>Team work</p>
+                <p class="skill-three"></p>
+                <p class="skill-one"></p>
+                <p class="skill-two"></p>
+                <p class="skill-four"></p>
               </div>
               </div>
               <div class="container-image">
@@ -588,7 +477,7 @@
                   <rect x="8" y="24" width="8" height="8"/>
                   <rect y="32" width="8" height="8"/>
                 </svg>
-                <h2 class="title">Knowledge</h2>
+                <h2 class="title"></h2>
                 <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="18" y="40" width="8" height="8" transform="rotate(-180 18 40)"/>
                   <rect x="26" y="32" width="8" height="8" transform="rotate(-180 26 32)"/>
@@ -601,15 +490,8 @@
 
             <!-- texts -->
             <div class="knowledge-text-container">
-              <p>
-                Here are some of the technologies that I am working with, 
-                studying and that I use in my works. It's worth highlighting 
-                my training, where I gained a foundation in project management, 
-                programming, networks and incredible peoples.
-              </p>
-              <ul>
-                <li>Degree in Information Systems (2017 - 2022)</li>
-              </ul>
+              <p></p>
+              <ul><li></li></ul>
             </div>
 
             <!-- images -->
@@ -642,7 +524,7 @@
 
           <div class="knowledge-cards-container">
             <div class="knowledge-card" data-anime="down">
-              <h3 class="knowledge-card-title">Stack:</h3>
+              <h3 class="knowledge-card-title"></h3>
               <div class="card-elements">
                 <article class="card-item">
                   <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/html_dark.png" alt="HTML" />
@@ -678,7 +560,7 @@
             </div>
 
             <div class="knowledge-card" data-anime="down">
-              <h3 class="knowledge-card-title">Studying/Improving:</h3>
+              <h3 class="knowledge-card-title"></h3>
               <div class="card-elements">
                 <article class="card-item">
                   <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/javascript_dark.png" alt="JAVASCRIPT" />
@@ -698,7 +580,7 @@
             </div>
 
             <div class="knowledge-card" data-anime="down">
-              <h3 class="knowledge-card-title">Others :</h3>
+              <h3 class="knowledge-card-title"></h3>
               <div class="card-elements">
                 <article class="card-item">
                   <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/git_dark.png" alt="GIT" />
@@ -727,7 +609,7 @@
 
       <!-- Projects  -->
       <section id="projects">
-        <div class="container  container-unique" data-anime="left">
+        <div class="container container-unique" data-anime="left">
           <!-- title -->
           <div class="title-container">
             <div class="dev-icons">
@@ -745,7 +627,7 @@
                 <rect x="8" y="24" width="8" height="8"/>
                 <rect y="32" width="8" height="8"/>
               </svg>
-              <h2 class="title">Projects</h2>
+              <h2 class="title"></h2>
               <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="18" y="40" width="8" height="8" transform="rotate(-180 18 40)"/>
                 <rect x="26" y="32" width="8" height="8" transform="rotate(-180 26 32)"/>
@@ -764,7 +646,7 @@
             <article class="container-project" data-anime="top">
               <div class="container-project-title">
                 <h3 class="project-title">Pomos</h3>
-                <p class="project-description">Pomodoro timer</p>
+                <p class="project-description"></p>
                 <div class="project-icons">
                   <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/html_dark.png" alt="HTML" />
                   <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/css_dark.png" alt="CSS" />
@@ -790,7 +672,7 @@
             <article class="container-project" data-anime="top">
               <div class="container-project-title">
                 <h3 class="project-title">Buscacep</h3>
-                <p class="project-description">app created to consume data from the Viacep API.</p>
+                <p class="project-description"></p>
                 <div class="project-icons">
                   <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/html_dark.png" alt="HTML" />
                   <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/css_dark.png" alt="CSS" />
@@ -815,7 +697,7 @@
             <article class="container-project" data-anime="top">
               <div class="container-project-title">
                 <h3 class="project-title">Bin2Dec</h3>
-                <p class="project-description">Binary to decimal converter</p>
+                <p class="project-description"></p>
                 <div class="project-icons">
                   <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/html_dark.png" alt="HTML" />
                   <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/css_dark.png" alt="CSS" />
@@ -862,7 +744,7 @@
                 <rect x="8" y="24" width="8" height="8"/>
                 <rect y="32" width="8" height="8"/>
               </svg>
-              <h2 class="title">Contact</h2>
+              <h2 class="title"></h2>
               <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="18" y="40" width="8" height="8" transform="rotate(-180 18 40)"/>
                 <rect x="26" y="32" width="8" height="8" transform="rotate(-180 26 32)"/>
@@ -883,11 +765,8 @@
                 />
                   <p> Din Djarin (helmet) - The mandalorian</p>
               </div>
-              <h4>Thanks for the visit!</h4>
-              <p class="message">
-                Dear Jedi Master/Sith Lord, please leave a message
-                anywhere in the galaxy...
-              </p>
+              <h4></h4>
+              <p class="message"></p>
             </div>
 
             <div class="container-form">
@@ -896,34 +775,31 @@
                 action="https://formspree.io/f/xqkggpqp"
                 class="card-form"
               >
-                <label for="name" data-anime="left">Name</label>
+                <label for="name" data-anime="left"></label>
                 <input
                   id="name"
                   name="name"
                   type="text"
                   autocomplete="name"
-                  placeholder="Enter your name here..."
                   required
                 />
-                <label for="email" data-anime="left">E-mail</label>
+                <label for="email" data-anime="left"></label>
                 <input
                   id="email"
                   name="email"
                   type="email"
                   autocomplete="email"
-                  placeholder="Enter your email here..."
                   required
                 />
-                <label for="message" data-anime="left">Message</label>
+                <label for="message" data-anime="left"></label>
                 <textarea
                   id="message"
                   name="message"
                   type="text"
-                  placeholder="Enter your message here..."
                   rows="8"
                   required
                 ></textarea>
-                <button class="btn-submit" type="submit">Submit</button>
+                <button class="btn-submit" type="submit"></button>
               </form>
             </div>
           </div>
@@ -931,11 +807,10 @@
           <div class="developer-by-text">
             <hr/>
             <p>
-              Developer with lots of
               <img src="images/sprites/cup-pixel.svg" alt="cup" />
-              by { Gustavo
               &thinsp;
-              <span>Felipe }</span>
+              <span></span>&thinsp; { Gustavo
+              <span>&thinsp; Felipe }</span>
             </p>
           </div>
         </div>
@@ -956,7 +831,7 @@
             </a>
           </div>
           <div class="container-text-rights">
-            <p>© All rights reserved.</p>
+            <p></p>
           </div>
           <div class="container-contact-icons">
             <!-- Github -->
@@ -994,5 +869,6 @@
     <script src="navbar.js"></script>
     <script src="darkmode.js"></script>
     <script src="animationBody.js"></script>
+    <script src="translate.js"></script>
   </body>
 </html>

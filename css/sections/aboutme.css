@@ -57,10 +57,6 @@
   font-size: 1.8rem;
 }
 
-.about-me-text span {
-  border-bottom: 2px solid var(--primary);
-}
-
 .about-me-title {
   display: flex;
   align-items: center;
