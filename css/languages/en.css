@@ -28,6 +28,10 @@
   content: 'Front-end developer passionate about pixel art, coffee connoisseur, lo-fi style enthusiast, casual cyclist and, above all, a dedicated professional. hohoho!'
 }
 
+.en .curriculum-button a::after {
+  content: "Curriculum"
+}
+
 /* section: aboutme */
 
 .en .about-me-image-text > p::before {
@@ -267,4 +271,61 @@
 /* footer */
 .en .container-text-rights p::before {
   content: "© All rights reserved."
+}
+
+/* Animações */
+.en .pixel-animated:nth-child(1) p::before {
+  content: 'Calcifer - Howl\'s moving castle'
+}
+
+.en .pixel-animated:nth-child(3) p::before {
+  content: 'Catbus - My Neighbor Totoro'
+}
+
+.en .about-me-title-container .pixel-fixed p::before {
+  content: "Totoro Chibi - My Neighbor Totoro"
+}
+
+.en .experiences-title-container p::before {
+  content: "Totoro - My Neighbor Totoro"
+}
+
+.en .container-cards .card-container:nth-child(1) .container-image p::before {
+  content: "Cup of coffee (I made this one just because I really like coffee)"
+} 
+
+.en .container-cards .card-container:nth-child(2) .container-image p::before {
+  content: 'No face - Spirited Away'
+}
+
+.en .container-cards .card-container:nth-child(3) .container-image p::before {
+  content: "Souta Munakata - Suzume no Tojimari"
+} 
+
+.en .container-cards .card-container:nth-child(4) .container-image p::before {
+  content: "Kodama - Princess Mononoke"
+} 
+
+.en .container-cards .card-container:nth-child(5) .container-image p::before {
+  content: "Senbonzakura kageyoshi (Sixth Division Captain's Sword - Byakuya Kuchiki)- Bleach"
+}
+
+.en .container-cards .card-container:nth-child(6) .container-image p::before {
+  content: "Enchiridion - Adventure time"
+}
+
+.en .knowledge-image-container .icon-base p::before {
+  content: "Punpun - Goodnight Punpun"
+}
+
+.en .knowledge-image-container .icon-top p::before {
+  content: "Black cup of coffee (pixel art)"
+}
+
+.en .knowledge-image-container .icon-bottom p::before {
+  content: "BMO - Adventure time"
+}
+
+.en .container-contact p::before {
+  content: "Din Djarin (helmet) - The Mandalorian"
 }

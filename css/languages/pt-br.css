@@ -28,6 +28,10 @@
   content: 'Desenvolvedor front-end apaixonado por pixel art, apreciador de café, entusiasta do estilo lo-fi, ciclista casual e, acima de tudo, um profissional dedicado. hohoho!'
 }
 
+.pt-br .curriculum-button a::after {
+  content: "Currículo"
+}
+
 /* section: aboutme */
 
 .pt-br .about-me-image-text > p::before {
@@ -269,4 +273,61 @@
 /* footer */
 .pt-br .container-text-rights p::before {
   content: "© Todos os direitos reservados."
+}
+
+/* Animações */
+.pt-br .pixel-animated:nth-child(1) p::before {
+  content: 'Calcifer - O Castelo Animado'
+}
+
+.pt-br .pixel-animated:nth-child(3) p::before {
+  content: 'Catbus - Meu Amigo Totoro'
+}
+
+.pt-br .about-me-title-container .pixel-fixed p::before {
+  content: "Totoro Chibi - Meu Amigo Totoro"
+}
+
+.pt-br .experiences-title-container p::before {
+  content: "Totoro - Meu Amigo Totoro"
+}
+
+.pt-br .container-cards .card-container:nth-child(1) .container-image p::before {
+  content: "Xícara de café (fiz este só porque gosto muito de café)"
+}
+
+.pt-br .container-cards .card-container:nth-child(2) .container-image p::before {
+  content: "Sem rosto - A Viagem de Chihiro"
+} 
+
+.pt-br .container-cards .card-container:nth-child(3) .container-image p::before {
+  content: "Souta Munakata - Suzume no Tojimari"
+}
+
+.pt-br .container-cards .card-container:nth-child(4) .container-image p::before {
+  content: "Kodama - Princesa Mononoke"
+} 
+
+.pt-br .container-cards .card-container:nth-child(5) .container-image p::before {
+  content: "Senbonzakura kageyoshi (Espada do capitão da sexta divisão - Byakuya Kuchiki)- Bleach"
+}
+
+.pt-br .container-cards .card-container:nth-child(6) .container-image p::before {
+  content: "Enquirídio  - Hora de Aventura"
+} 
+
+.pt-br .knowledge-image-container .icon-base p::before {
+  content: "Punpun - Boa Noite Punpun"
+}
+
+.pt-br .knowledge-image-container .icon-top p::before {
+  content: "Xícara de café preto (pixel art)"
+}
+
+.pt-br .knowledge-image-container .icon-bottom p::before {
+  content: "BMO - Hora de Aventura"
+}
+
+.pt-br .container-contact p::before {
+  content: "Din Djarin (capacete) - O  Mandaloriano"
 }
