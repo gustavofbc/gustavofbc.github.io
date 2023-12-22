@@ -247,7 +247,7 @@
 }
 
 .pt-br .container-contact .container-form label:nth-child(1)::after {
-  content: "Nome"
+  content: "Nome:"
 }
 
 .pt-br .container-contact .container-form label:nth-child(3)::after {
