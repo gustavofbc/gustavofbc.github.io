@@ -1,0 +1,333 @@
+/* nav */
+.pt-br nav ul li:nth-child(1) a::after {
+  content: "Sobre mim"
+}
+
+.pt-br nav ul li:nth-child(2) a::after {
+  content: "Experiência"
+}
+
+.pt-br nav ul li:nth-child(3) a::after {
+  content: "Conhecimentos"
+}
+
+.pt-br nav ul li:nth-child(4) a::after {
+  content: "Projetos"
+}
+
+.pt-br nav ul li:nth-child(5) a::after {
+  content: "Contato"
+}
+
+/* section: home */
+.pt-br .text-with-pixel > p::before {
+  content: "Olá, eu sou"
+}
+
+.pt-br .home-text .describe::before {
+  content: 'Desenvolvedor front-end apaixonado por pixel art, apreciador de café, entusiasta do estilo lo-fi, ciclista casual e, acima de tudo, um profissional dedicado. hohoho!'
+}
+
+.pt-br .curriculum-button a::after {
+  content: "Currículo"
+}
+
+/* section: aboutme */
+
+.pt-br .about-me-image-text > p::before {
+  content: 'Este é meu gatinho, Floki. Meu fiel companheiro, um grande guerreiro que já passou por diversas batalhas comigo, extremamente fofo e brincalhão.'
+}
+
+.pt-br .about-me-title .title::before {
+  content: "Sobre mim"
+}
+
+.pt-br .about-me-text .paragraph-one::before {
+  content: 'Sou formado em Sistemas de Informação pela Universidade Federal do Sul e Sudeste do Pará (UNIFESSPA), trabalho com desenvolvimento front-end e possuo conhecimentos relacionados a este aspecto, além de gerenciamento de projetos e redes de computadores.'
+}
+
+.pt-br .about-me-text .paragraph-two::before {
+  content: "Sou um profissional comprometido e tenho certeza de que esforçado é a palavra que me define, procuro sempre apoiar tudo e todos da forma que posso. Acredito que a colaboração fortalece uma equipe e uma equipe forte, coesa e comunicativa é capaz de alcançar os resultados mais ambiciosos."
+}
+
+.pt-br .about-me-text .text-primary::before {
+  content: "Alguns dos meus hobbies e gostos são: "
+}
+
+.pt-br .about-me-text #first::after {
+  content: "Animes;"
+}
+
+.pt-br .about-me-text #second::after {
+  content: "Pedalar;"
+}
+
+.pt-br  .about-me-text #third::after {
+  content: "Pixel arte;"
+}
+
+.pt-br .about-me-text #fourth::after {
+  content: "Café e chá;"
+}
+
+.pt-br .about-me-text #fifth::after {
+  content: "Livros e mangás;"
+}
+
+/* section: experiences */
+.pt-br .experiences-title .title::before {
+  content: "Experiências"
+}
+
+.pt-br .card-container:nth-child(1) h4::before {
+  content: "Desenvolvedor Front-end Jr"
+}
+
+.pt-br .card-container:nth-child(1) .card-experience-text p::before {
+  content: "Atuei no desenvolvimento de interfaces web responsivas com a stack: ReactJS, NextJS, Tailwind CSS, Directus CMS, WordPress e Elementor. Minhas principais contribuições para a empresa foram o desenvolvimento de Landing Pages com WordPress e Elementor, o desenvolvimento da interface e funcionalidades de um CMS baseado em Directus para construção de páginas com objetivos específicos de capitalização e cadastro de novos potenciais clientes, documentação de processos utilizando a ferramenta Babel, migrando projetos para a versão 13 do NextJS e criando o Design System da empresa utilizando Storybook, ReactJS, TypeScript, Tailwind CSS, Shadcn/ui e Radix UI."
+}
+
+.pt-br .card-container:nth-child(2) h4::before {
+  content: "Assistente de suporte técnico"
+}
+
+.pt-br .card-container:nth-child(2) .card-experience-text p::before {
+  content: "Atuei no suporte e atendimento ao cliente, configurando roteadores, emitindo comunicados, abrindo e gerenciando protocolos. Propus melhorias no processo de organização da carga horária durante meu período de trabalho que geraram resultados significativos para a equipe, além de ter sido designado para elaborar avisos de emergência via SMS e outros meios de comunicação durante meu plantão."
+}
+
+.pt-br .card-container:nth-child(3) h4::before {
+  content: "Assistente de suporte técnico"
+}
+
+.pt-br .card-container:nth-child(3) .card-experience-text p::before {
+  content: "Atuei no suporte e atendimento ao cliente, configurando roteadores, gerenciando protocolos, mapeando POPs, configurando equipamentos de rádio diversos, provisionando ONUs e monitorando a rede. Durante meu período trabalhando no NOC minha principal contribuição foi o mapeamento de dispositivos de rede através de planilhas, graças a isso vários pontos de conexão não mais ativos foram removidos pois não havia necessidade de gerenciá-los, tornando real o gerenciamento do uso da largura de banda diante dos clientes mais preciso."
+}
+
+.pt-br .card-container:nth-child(3) .card-experience-title:nth-child(3) h4::before {
+  content: "Estagiário"
+}
+
+.pt-br .card-container:nth-child(3) .card-experience-text:nth-child(4) p::before {
+  content: "Como estagiário, fui responsável pelo atendimento ao cliente, configurando roteadores, gerenciando protocolos, configurando equipamentos de rádio, provisionando ONUs e demandas mais básicas. Neste período gostaria de destacar a documentação / padronização dos procedimentos que realizei, pois estes serviram de base e auxílio para tudo desde o atendimento ao cliente final até a configuração dos principais modelos de roteadores e equipamentos de rádio que utilizamos em companhia."
+}
+
+
+.pt-br .card-container:nth-child(4) h4::before {
+  content: "Diretor de projetos / Desenvolvedor"
+}
+
+.pt-br .card-container:nth-child(4) .card-experience-text p:nth-child(1)::before {
+  content: "Após uma reestruturação na diretoria, fui indicado e aceitei ser transferido para a diretoria de projetos considerando a necessidade e principalmente minhas competências relacionadas à gestão. Durante minha permanência no cargo fui responsável pelo gerenciamento e desenvolvimento de projetos, aplicação de metodologias ágeis, utilização de conceitos, técnicas e ferramentas em projetos de software. Minhas principais contribuições foram:"
+}
+
+.pt-br .card-container:nth-child(4) .card-experience-text li:nth-child(1)::before {
+  content: "- Implantação de processos (Threads and Coffee): Devido à necessidade dos integrantes atuarem no modelo remoto, estágios, aulas e projetos de pesquisa e extensão, não seria possível adotar uma metodologia de desenvolvimento não flexível. Portanto, utilizamos e adaptamos algumas cerimônias SCRUM;"
+}
+
+.pt-br .card-container:nth-child(4) .card-experience-text li:nth-child(2)::before {
+  content: " - Gerente de projetos e desenvolvedor no projeto SICCO (Sistema de Controle de Consumo);"
+}
+
+.pt-br .card-container:nth-child(4) .card-experience-text li:nth-child(3)::before {
+  content: " - Desenvolvedor no projeto LavCar;"
+}
+
+.pt-br .card-container:nth-child(4) .card-experience-text p:nth-child(3)::before {
+  content: "Destaco também que foi justamente considerando essa demanda por uma metodologia flexível que considerasse o modelo de operação remota impulsionado pela pandemia do COVID-19, o contexto em que os EJs atuam e os conceitos de metodologias/processos ágeis que desenvolvi minha tese TCC (PRODEV JR), sendo uma proposta de modelo de desenvolvimento baseado na resolução deste problema."
+}
+
+.pt-br .card-container:nth-child(4) .card-experience-title:nth-child(3) h4::before {
+  content: "Diretor administrativo financeiro"
+}
+
+.pt-br .card-container:nth-child(4) .card-experience-text:nth-child(4) p:nth-child(1)::before{
+  content: 'Fui membro fundador do EJ junto com os demais membros do primeiro conselho. Durante minha gestão no cargo, fui responsável por gerenciar e controlar o fluxo de entradas e saídas de recursos financeiros da empresa, administrar contratos e implementar processos de solicitação de recursos da empresa para fins de treinamento e atendimento. Como principais contribuições destaco a estruturação e criação dos primeiros modelos de contratos e a estruturação da organização e controle da vigência dos contratos através do Google Drive, facilitando o acesso aos mesmos e promovendo maior transparência no setor para todos os associados da EJ.'
+}
+
+.pt-br .card-container:nth-child(5) h4::before {
+  content: "Estagiário"
+}
+
+.pt-br .card-container:nth-child(5) .card-experience-text p:nth-child(1)::before {
+  content: "Atuei com desenvolvimento e manutenção de sistemas web com ênfase em PHP, MySQL além da tríade web (HTML, CSS e JavaScript); Trabalhei com melhorias, manutenção e desenvolvimento de novas funcionalidades no SISPROL (Sistema de Projetos Online), mapeando e documentando processos através de BPMN e redação, criando o relatório de perda de vínculo entre os membros e o projeto, cadastrando e enviando funcionalidades de arquivos para admissão de estudantes voluntários e bolsistas, entre outros."
+}
+
+.pt-br .card-container:nth-child(5) .card-experience-text p:nth-child(2)::before {
+  content: "Durante meu período como estagiário fui o principal responsável pelas demandas relacionadas a este sistema e como minha maior contribuição destaco a criação do módulo para emissão e validação de certificados e declarações de projetos de extensão e pesquisa cadastrados."
+}
+
+.pt-br .card-container:nth-child(6) h4::before {
+  content: "Voluntário"
+}
+
+.pt-br .card-container:nth-child(6) .card-experience-text p:nth-child(1)::before {
+  content: "Atuei como instrutor do curso básico de informática, mais precisamente do último módulo do curso, onde ensinei como funciona a internet. Durante os primeiros módulos do curso, trabalhei ao lado dos demais instrutores, auxiliando nas aulas, tirando dúvidas e prestando suporte. Minha maior contribuição para o projeto foi o desenvolvimento de novo material para as aulas que me propus ministrar com base na ementa do curso mas também com acréscimos que considerei mais relevantes e atuais, considerei também o ritmo da aula até o presente módulo e através disso desenvolvi atividades e testes mais condizentes com o contexto de todos os alunos."
+}
+
+.pt-br .card-experience-skills .skill-one::before {
+  content: 'Comunicação'
+}
+
+.pt-br .card-experience-skills .skill-two::before {
+  content: 'Adaptabilidade'
+}
+
+.pt-br .card-experience-skills .skill-three::before {
+  content: 'Trabalho em equipe'
+}
+
+.pt-br .card-experience-skills .skill-four::before {
+  content: 'Inteligencia emocional'
+}
+
+/* section: knowledge */
+.pt-br .knowledge-title-container .title::before {
+  content: "Conhecimentos"
+}
+
+.pt-br .knowledge-text-container p::before {
+  content: "Aqui estão algumas das tecnologias que estou trabalhando, estudando e que utilizo em meus trabalhos. Vale destacar minha formação, onde adquiri conhecimento em gerenciamento de projetos, programação, redes e conheci pessoas incríveis."
+}
+
+
+.pt-br .knowledge-text-container li::before {
+  content: "Bacharel em Sistemas de Informação (2017 - 2022)"
+}
+
+.pt-br .knowledge-card:nth-child(1) .knowledge-card-title::before {
+  content: "Tecnologias:"
+}
+
+.pt-br .knowledge-card:nth-child(2) .knowledge-card-title::before {
+  content: "Estudando/Melhorando:"
+}
+
+.pt-br .knowledge-card:nth-child(3) .knowledge-card-title::before {
+  content: "Outros:"
+}
+
+/* section: projects */
+.pt-br #projects .title::before {
+  content: "Projetos"
+}
+
+.pt-br .instructions-container:after {
+  content: "Para visualizar o link da demo do projeto, clique no card.";
+}
+
+@media only screen and (min-width: 850px) {
+  .pt-br .instructions-container:after {
+    content: "Para visualizar o link da demo do projeto, passe o mouse sob o card.";
+  }
+}
+
+.pt-br .container-project:nth-child(1) .project-description::before {
+  content: 'Temporizador de Pomodoros'
+}
+
+.pt-br .container-project:nth-child(2) .project-description::before {
+  content: 'Projeto criado para consumir e expôr dados da API Viacep.'
+}
+
+.pt-br .container-project:nth-child(3) .project-description::before {
+  content: 'Conversor de binário para decimal'
+}
+
+/* section: contact */
+.pt-br #contact .title::before {
+  content: "Contato"
+}
+
+.pt-br .container-contact .card-message h4::before {
+  content: "Obrigado pela visita!"
+}
+
+.pt-br .container-contact .card-message .message::before {
+  content: "Caro Mestre Jedi/Lorde Sith, por favor deixe uma mensagem de qualquer lugar da galáxia..."
+}
+
+.pt-br .container-contact .container-form label:nth-child(1)::after {
+  content: "Nome:"
+}
+
+.pt-br .container-contact .container-form label:nth-child(3)::after {
+  content: "E-mail:"
+}
+
+.pt-br .container-contact .container-form label:nth-child(5)::after {
+  content: "Mensagem:"
+}
+
+.pt-br .btn-submit::before {
+  content: "Enviar"
+}
+
+.pt-br .developer-by-text p::before {
+  content: "Desenvolvido com muito"
+}
+
+.pt-br .developer-by-text p span:nth-child(2)::before {
+  content: 'por'
+}
+
+/* footer */
+.pt-br .container-text-rights p::before {
+  content: "© Todos os direitos reservados."
+}
+
+/* Animações */
+.pt-br .pixel-animated:nth-child(1) p::before {
+  content: 'Calcifer - O Castelo Animado'
+}
+
+.pt-br .pixel-animated:nth-child(3) p::before {
+  content: 'Catbus - Meu Amigo Totoro'
+}
+
+.pt-br .about-me-title-container .pixel-fixed p::before {
+  content: "Totoro Chibi - Meu Amigo Totoro"
+}
+
+.pt-br .experiences-title-container p::before {
+  content: "Totoro - Meu Amigo Totoro"
+}
+
+.pt-br .container-cards .card-container:nth-child(1) .container-image p::before {
+  content: "Xícara de café (fiz este só porque gosto muito de café)"
+}
+
+.pt-br .container-cards .card-container:nth-child(2) .container-image p::before {
+  content: "Sem rosto - A Viagem de Chihiro"
+} 
+
+.pt-br .container-cards .card-container:nth-child(3) .container-image p::before {
+  content: "Souta Munakata - Suzume no Tojimari"
+}
+
+.pt-br .container-cards .card-container:nth-child(4) .container-image p::before {
+  content: "Kodama - Princesa Mononoke"
+} 
+
+.pt-br .container-cards .card-container:nth-child(5) .container-image p::before {
+  content: "Senbonzakura kageyoshi (Espada do capitão da sexta divisão - Byakuya Kuchiki)- Bleach"
+}
+
+.pt-br .container-cards .card-container:nth-child(6) .container-image p::before {
+  content: "Enquirídio  - Hora de Aventura"
+} 
+
+.pt-br .knowledge-image-container .icon-base p::before {
+  content: "Punpun - Boa Noite Punpun"
+}
+
+.pt-br .knowledge-image-container .icon-top p::before {
+  content: "Xícara de café preto (pixel art)"
+}
+
+.pt-br .knowledge-image-container .icon-bottom p::before {
+  content: "BMO - Hora de Aventura"
+}
+
+.pt-br .container-contact p::before {
+  content: "Din Djarin (capacete) - O  Mandaloriano"
+}

@@ -1,354 +1,873 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Desenvolvedor Front End Jr">
-    <meta name="keywords" content="portfólio, desenvolvedor frontend, front-end, website" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="css/global.css">
-    <link rel="shortcut icon" href="./images/favicon.ico" />
-    <title>Gustavo Felipe</title>
-
-</head>
-
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gustavo Felipe">
+    <meta name="description" content="Front End Developer" />
+    <meta property="og:image" content="./images/logo-line1.svg">
+    <meta
+      name="keywords"
+      content="Gustavo felipe, portfólio, desenvolvedor frontend, front-end, developer front-end, gustavo felipe dev"
+    />
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/sections/home.css" />
+    <link rel="stylesheet" type="text/css" href="css/sections/aboutme.css" />
+    <link rel="stylesheet" type="text/css" href="css/sections/experiences.css" />
+    <link rel="stylesheet" type="text/css" href="css/sections/knowledge.css" />
+    <link rel="stylesheet" type="text/css" href="css/sections/projects.css" />
+    <link rel="stylesheet" type="text/css" href="css/sections/contact.css" />
+    <link rel="stylesheet" type="text/css" href="css/languages/en.css" />
+    <link rel="stylesheet" type="text/css" href="css/languages/pt-br.css" />
+    <link rel="shortcut icon" id="favicon" href="./images/favicon.ico" />
+    <title>Gustavo Felipe - Front-end Developer</title>
+  </head>
+  <body class="en">
+    <div id="logo-container">
+      <svg
+        id="my-logo" class="logo-line" width="258" height="308" viewBox="0 0 258 308" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path class="path"
+          d="M123.099 247.811V198.232H169.579C205.268 198.232 205.268 177.234 205.268 153.85H123.099V129.405C123.099 118.323 136.028 107.293 148.351 107.293H253.982C253.982 107.293 253.982 127.655 253.982 156.819C253.982 185.983 236.85 216.894 205.268 233.812C173.687 250.73 123.099 247.811 123.099 247.811ZM123.099 247.811V303.222C123.099 303.222 107.273 304.972 97.8831 303.222C88.4937 301.472 73.9244 292.723 73.9244 270.559V245.478M73.9244 245.478L75.3836 117.156C75.3836 94.3553 100.966 57.9799 136.716 57.9799H217.7C235.305 57.9799 254.671 45.9961 253.982 25.5813V4H153.148H131.482C49.3244 4 11.1799 57.9799 5.31149 113.073C-0.556881 168.167 11.7195 229.146 73.9244 245.478Z"
+          fill="none" stroke-width="8" />
+        <path class="path"
+          d="M123.099 247.811V198.232H169.579C205.268 198.232 205.268 177.234 205.268 153.85H123.099V129.405C123.099 118.323 136.028 107.293 148.351 107.293H253.982C253.982 107.293 253.982 127.655 253.982 156.819C253.982 185.983 236.85 216.894 205.268 233.812C173.687 250.73 123.099 247.811 123.099 247.811ZM123.099 247.811V303.222C123.099 303.222 107.273 304.972 97.8831 303.222C88.4937 301.472 73.9244 292.723 73.9244 270.559V245.478M73.9244 245.478L75.3836 117.156C75.3836 94.3553 100.966 57.9799 136.716 57.9799H217.7C235.305 57.9799 254.671 45.9961 253.982 25.5813V4H153.148H131.482C49.3244 4 11.1799 57.9799 5.31149 113.073C-0.556881 168.167 11.7195 229.146 73.9244 245.478Z"
+          fill="none" stroke-width="8" />
+      </svg>      
+    </div>
     <header id="header">
-        <a id="logo" href="/">
-            <img class="logo" src="images/logo-max.svg" alt="logo">
-        </a>
+      <a id="logo" href="/">
+        <svg class="logo" width="64" height="74" viewBox="0 0 64 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30.5838 58.8892V47.3208H41.739C50.3044 47.3208 50.3044 42.4213 50.3044 36.9649H30.5838V31.2612C30.5838 28.6753 33.6866 26.1018 36.6443 26.1018H61.9957C61.9957 26.1018 61.9957 30.8529 61.9957 37.6578C61.9957 44.4627 57.884 51.6753 50.3044 55.6228C42.7249 59.5703 30.5838 58.8892 30.5838 58.8892ZM30.5838 58.8892V71.8185C30.5838 71.8185 26.7854 72.2268 24.5319 71.8185C22.2785 71.4102 18.7819 69.3688 18.7819 64.197V58.3448M18.7819 58.3448L19.1321 28.4031C19.1321 23.0829 25.2719 14.5953 33.8519 14.5953H53.288C57.5132 14.5953 62.161 11.7991 61.9957 7.03564V2H37.7955H32.5956C12.8779 2 3.72317 14.5953 2.31476 27.4504C0.906348 40.3055 3.85268 54.534 18.7819 58.3448Z" stroke="#467CFF" stroke-width="4"/>
+        </svg>          
+      </a>
 
-        <nav id="nav">
-            <button id="btn-menu" aria-label="Abre menu" aria-haspopup="true" aria-controls="menu"
-                aria-expanded="false">
-                <span id="hamburguer"></span>
-            </button>
-            <ul id="menu" role="menu">
-                <li><a href="#sobre-mim">Sobre mim</a></li>
-                <li><a href="#conhecimentos">Conhecimentos</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+      <nav id="nav">
+        <button
+          id="btn-menu"
+          aria-label="Open menu"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span id="hamburguer"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="#about-me"></a></li>
+          <li><a href="#experiences"></a></li>
+          <li><a href="#knowledge"></a></li>
+          <li><a href="#projects"></a></li>
+          <li><a href="#contact"></a></li>
+          <li>
+            <a
+              id="btn-mode"
+              name="btn-mode"
+              class="button-mode"
+            >
+            </a>
+          </li>
+          <li>
+            <a id="btnToggleLanguage"></a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <!-- pixel -->
+      <div class="pixel-animated pixel-animated-one">
+        <div class="pixel-right">
+          <img src="./images/sprites/calcifer.svg" alt="Calcifer pixel art" />
+          <p></p>
+        </div>
+      </div>
 
-        <!-- Home -->
-        <section id="home">
-            <div class="container-home">
-                <div class="home-apresentation">
-                    <div class="home-apresentation-text">
-                        <span>Opa, eu sou</span>
-                        <h1>Gustavo <span>Felipe</span></h1>
-                        <span>Desenvolvedor front-end Jr</span>
-                    </div>
-                    <a class="github-button" href="https://github.com/gustavofbc" target="_blank">
-                        GitHub
-                    </a>
+      <!-- Home -->
+      <section id="home">
+        <div class="container-home">
+          <div class="home-text">
+            <div class="text-with-pixel">
+              <p></p>
+              <img
+                src="./images/sprites/avatar-pixel.gif"
+                alt="Avatar in Pixel art"
+              />
+            </div>
+            <h1>Gustavo <span>Felipe</span></h1>
+            <p class="describe"></p>
+          </div>
+
+          <div class="curriculum-button">
+            <a href="./archives/gustavo-felipe-curriculum.pdf" download>
+              <img
+                src="./images/icons/download-pixel.svg"
+                alt="download icon"
+              />
+            </a>
+          </div>
+
+          <div class="arrow-animation">
+            <svg width="40" height="24" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="8" height="8"/>
+              <rect x="8" y="8" width="8" height="8"/>
+              <rect x="16" y="16" width="8" height="8"/>
+              <rect x="24" y="8" width="8" height="8"/>
+              <rect x="32" width="8" height="8"/>
+            </svg>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- pixel -->
+      <div class="pixel-animated pixel-animated-two">
+        <div>
+          <img src="./images/sprites/catbus-pixel.svg" alt="Catbus pixel art" />
+          <p></p>
+        </div>
+      </div>
+
+      <!-- About me -->
+      <section id="about-me">
+        <div class="container">
+          <div class="about-me-image" data-anime="left">
+            <div class="about-me-image-text">
+              <img
+                class="avatar"
+                src="images/sprites/floki-pixel.svg"
+                alt="Floki, my cat - pixel art"
+              />
+              <h3>Floki</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="about-me-text" data-anime="left">
+            <div class="about-me-title-container">
+              <div class="about-me-title">
+                <div class="dev-icons">
+                  <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="22" width="8" height="8"/>
+                    <rect x="14" y="8" width="8" height="8"/>
+                    <rect x="6" y="16" width="8" height="8"/>
+                    <rect x="14" y="24" width="8" height="8"/>
+                    <rect x="22" y="32" width="8" height="8"/>
+                  </svg>
+                  <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="32" width="8" height="8"/>
+                    <rect x="24" y="8" width="8" height="8"/>
+                    <rect x="16" y="16" width="8" height="8"/>
+                    <rect x="8" y="24" width="8" height="8"/>
+                    <rect y="32" width="8" height="8"/>
+                  </svg>
+                  <h2 class="title"></h2>
+                  <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="18" y="40" width="8" height="8" transform="rotate(-180 18 40)"/>
+                    <rect x="26" y="32" width="8" height="8" transform="rotate(-180 26 32)"/>
+                    <rect x="34" y="24" width="8" height="8" transform="rotate(-180 34 24)"/>
+                    <rect x="26" y="16" width="8" height="8" transform="rotate(-180 26 16)"/>
+                    <rect x="18" y="8" width="8" height="8" transform="rotate(-180 18 8)"/>
+                  </svg>
                 </div>
-                <svg class="logo-line" width="258" height="308" viewBox="0 0 258 308" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="path"
-                        d="M123.099 247.811V198.232H169.579C205.268 198.232 205.268 177.234 205.268 153.85H123.099V129.405C123.099 118.323 136.028 107.293 148.351 107.293H253.982C253.982 107.293 253.982 127.655 253.982 156.819C253.982 185.983 236.85 216.894 205.268 233.812C173.687 250.73 123.099 247.811 123.099 247.811ZM123.099 247.811V303.222C123.099 303.222 107.273 304.972 97.8831 303.222C88.4937 301.472 73.9244 292.723 73.9244 270.559V245.478M73.9244 245.478L75.3836 117.156C75.3836 94.3553 100.966 57.9799 136.716 57.9799H217.7C235.305 57.9799 254.671 45.9961 253.982 25.5813V4H153.148H131.482C49.3244 4 11.1799 57.9799 5.31149 113.073C-0.556881 168.167 11.7195 229.146 73.9244 245.478Z"
-                        fill="none" stroke="#44EE69" stroke-width="8" />
-                    <path class="path"
-                        d="M123.099 247.811V198.232H169.579C205.268 198.232 205.268 177.234 205.268 153.85H123.099V129.405C123.099 118.323 136.028 107.293 148.351 107.293H253.982C253.982 107.293 253.982 127.655 253.982 156.819C253.982 185.983 236.85 216.894 205.268 233.812C173.687 250.73 123.099 247.811 123.099 247.811ZM123.099 247.811V303.222C123.099 303.222 107.273 304.972 97.8831 303.222C88.4937 301.472 73.9244 292.723 73.9244 270.559V245.478M73.9244 245.478L75.3836 117.156C75.3836 94.3553 100.966 57.9799 136.716 57.9799H217.7C235.305 57.9799 254.671 45.9961 253.982 25.5813V4H153.148H131.482C49.3244 4 11.1799 57.9799 5.31149 113.073C-0.556881 168.167 11.7195 229.146 73.9244 245.478Z"
-                        fill="none" stroke="#44EE69" stroke-width="8" />
-                    <defs>
-                        <linearGradient id="paint0_linear_117_88" x1="219.206" y1="3" x2="52.7092" y2="216.085"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#44EE69" />
-                            <stop offset="1" stop-color="#071209" />
-                        </linearGradient>
-                        <linearGradient id="paint1_linear_117_88" x1="219.206" y1="3" x2="52.7092" y2="216.085"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#44EE69" />
-                            <stop offset="1" stop-color="#071209" />
-                        </linearGradient>
-                    </defs>
+              </div>
+              <div class="pixel-fixed">
+                <p></p>
+                <img src="./images/sprites/totoro-small-pixel.svg" alt="Totoro Small pixel art" />
+              </div>
+            </div>
+            <article id="description">
+              <p class="paragraph-one" data-anime="down"></p>
+              <br />
+              <p  class="paragraph-two" data-anime="down"></p>
+            </article>
+            <br />
+            <br />
+            <article>
+              <p class="text-primary"></p>
+              <ul class="list-hobbies">
+                <li id="first" data-anime="left"></li>
+                <li id="second" data-anime="left"></li>
+                <li id="third" data-anime="left"></li>
+                <li id="fourth" data-anime="left"></li>
+                <li id="fifth" data-anime="left"></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experiences -->
+      <section id="experiences">
+        <div class="container container-unique">
+          <!-- title -->
+          <div class="experiences-title-container">
+            <div class="pixel-fixed">
+              <p></p>
+              <img src="./images/sprites/totoro-pixel.svg" alt="Totoro pixel art" />
+            </div>
+            <div class="experiences-title">
+              <div class="dev-icons">
+                <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="22" width="8" height="8"/>
+                  <rect x="14" y="8" width="8" height="8"/>
+                  <rect x="6" y="16" width="8" height="8"/>
+                  <rect x="14" y="24" width="8" height="8"/>
+                  <rect x="22" y="32" width="8" height="8"/>
                 </svg>
+                <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="32" width="8" height="8"/>
+                  <rect x="24" y="8" width="8" height="8"/>
+                  <rect x="16" y="16" width="8" height="8"/>
+                  <rect x="8" y="24" width="8" height="8"/>
+                  <rect y="32" width="8" height="8"/>
+                </svg>
+                <h2 class="title"></h2>
+                <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="18" y="40" width="8" height="8" transform="rotate(-180 18 40)"/>
+                  <rect x="26" y="32" width="8" height="8" transform="rotate(-180 26 32)"/>
+                  <rect x="34" y="24" width="8" height="8" transform="rotate(-180 34 24)"/>
+                  <rect x="26" y="16" width="8" height="8" transform="rotate(-180 26 16)"/>
+                  <rect x="18" y="8" width="8" height="8" transform="rotate(-180 18 8)"/>
+                </svg>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Sobre mim -->
-        <section id="sobre-mim">
-            <div class="container-sobre-mim">
-                <div class="container-images" data-anime="left">
-                    <img class="avatar" src="images/avatar.svg" alt="Avatar">
+          <div class="container-cards">
+            <!-- experience card -->
+            <div class="card-container">
+              <div class="card-experience">
+              <div class="card-experience-title">
+              <div class="card-experience-title-container">
+                <div class="title">
+                  <img class="icon" src="./images/icons/dev-pixel.svg" alt="headset pixel icon">
+                  <h3>Criptomaníacos</h3>
                 </div>
-                <div class="container-description" data-anime="left">
-                    <h2>
-                        <img class="animation-dev" src="images/arrow_left.svg" alt="arrow-left-icon">
-                        Sobre mim
-                        <img class="animation-dev" src="images/arrow_right.svg" alt="arrow-right-icon">
-                    </h2>
-                    <article id="description">
-                        <br />
-                        <p data-anime="down">
-                            Tenho 22 anos, sou formado pela UNIFESSPA como Analista de Sistemas e atuo como
-                            desenvolvedor Front-end. Atualmente tenho me capacitado para atingir minhas metas de
-                            carreira através de projetos pessoais e cursos.
-                        </p>
-                        <br />
-                        <p>Alguns dos meus hobbies e gostos são:</p>
-                        <ul>
-                            <li data-anime="left">Pedalar;</li>
-                            <li data-anime="left">Lo-fi;</li>
-                            <li data-anime="left">Pixel art;</li>
-                            <li data-anime="left">Livros;</li>
-                            <li data-anime="left">Star Wars;</li>
-                        </ul>
-                    </article>
-
+                <span>01/2023 - 08/2023</span>
+              </div>
+              <h4></h4>
+              </div>
+              <div class="card-experience-text">
+              <p>
+              </p>
+              </div>
+              <div class="card-experience-skills">
+                <p class="skill-one"></p>
+                <p class="skill-two"></p>
+                <p class="skill-three"></p>
+              </div>
+              </div>
+              <div class="container-image">
+                <div class="pixel-animated pixel-animated-two">
+                  <img src="./images/sprites/cup-pixel.svg" alt="Cup of coffee pixel art" />
+                  <p class="pixel-describe-object"></p>
                 </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Conhecimentos -->
-        <section id="conhecimentos">
-            <div class="container-conhecimentos" data-anime="left">
-                <h2>
-                    <img class="animation-dev" src="images/arrow_left.svg" alt="arrow-left-icon">
-                    Conhecimentos
-                    <img class="animation-dev" src="images/arrow_right.svg" alt="arrow-right-icon">
-                </h2>
-
-                <div class="container-cards">
-
-                    <div class="card" data-anime="down">
-                        <h3 class="card-title">Stack :</h3>
-                        <div class="cards">
-                            <article class="card-item">
-                                <img src="images/icons/html.svg" alt="HTML">
-                                <h4>HTML</h4>
-                            </article>
-
-                            <article class="card-item">
-                                <img src="images/icons/css.svg" alt="CSS">
-                                <h4>CSS</h4>
-                            </article>
-
-                            <article class="card-item">
-                                <img src="images/icons/javascript.svg" alt="Javascript">
-                                <h4>JavaScript</h4>
-                            </article>
-
-                            <article class="card-item">
-                                <img src="images/icons/react.svg" alt="REACT ">
-                                <h4>React</h4>
-                            </article>
-
-                            <article class="card-item">
-                                <img src="images/icons/typescript.svg" alt="TYPESCRIPT">
-                                <h4>TypeScript</h4>
-                            </article>
-                        </div>
+            <!-- experience card -->
+            <div class="card-container">
+              <div class="card-experience">
+                <div class="card-experience-title">
+                  <div class="card-experience-title-container">
+                    <div class="title">
+                      <img class="icon" src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
+                      <h3>Fibralink</h3>
                     </div>
-
-                    <div class="card" data-anime="down">
-                        <h3 class="card-title">Aprendendo / Aprimorando :</h3>
-                        <div class="cards">
-                            <article class="card-item">
-                                <img src="images/icons/react.svg" alt="REACT ">
-                                <h4>React</h4>
-                            </article>
-
-                            <article class="card-item">
-                                <img src="images/icons/typescript.svg" alt="TYPESCRIPT">
-                                <h4>TypeScript</h4>
-                            </article>
-
-                            <article class="card-item">
-                                <img src="images/icons/sass.svg" alt="SASS">
-                                <h4>Sass</h4>
-                            </article>
-
-                            <article class="card-item">
-                                <img src="images/icons/styled-components.svg" alt="STYLED-COMPONENTS">
-                                <h4>Styled-Components</h4>
-                            </article>
-
-                            <article class="card-item">
-                                <img src="images/icons/next.js.svg" alt="NEXT.JS">
-                                <h4>Next.js</h4>
-                            </article>
-                        </div>
-                    </div>
-
-                    <div class="card" data-anime="down">
-                        <h3 class="card-title">Outros :</h3>
-                        <div class="cards">
-                            <article class="card-item">
-                                <img src="images/icons/figma.svg" alt="FIGMA ">
-                                <h4>Figma</h4>
-                            </article>
-
-                            <article class="card-item">
-                                <img src="images/icons/git.svg" alt="GIT">
-                                <h4>Git</h4>
-                            </article>
-
-                            <article class="card-item">
-                                <img src="images/icons/ubuntu.svg" alt="UBUNTU">
-                                <h4>Ubuntu</h4>
-                            </article>
-                        </div>
-                    </div>
+                    <span>07/2021 - 05/2022</span>
+                  </div>
+                  <h4></h4>
                 </div>
-
+                <div class="card-experience-text">
+                  <p></p>
+                </div>
+                <div class="card-experience-skills">
+                  <p class="skill-one"></p>
+                  <p class="skill-two"></p>
+                  <p class="skill-three"></p>
+                  <p class="skill-four"></p>
+                </div>
+              </div>
+              <div class="container-image">
+                <div class="pixel-animated avatar">
+                  <img src="./images/sprites/no-face-pixel.svg" alt="No face pixel art" />
+                  <p></p>
+                </div>
+              </div>
             </div>
 
-        </section>
-
-        <!-- Projetos  -->
-        <section id="projetos">
-            <div class="container-projetos" data-anime="left">
-                <h2>
-                    <img class="animation-dev" src="images/arrow_left.svg" alt="arrow-left-icon">
-                    Projetos
-                    <img class="animation-dev" src="images/arrow_right.svg" alt="arrow-right-icon">
-                </h2>
-
-                <div class="container-projetos-content">
-                    <article class="project-card" data-anime="top">
-                        <div class="project-card-details">
-                            <h3 class="project-card-title">Pomos</h3>
-                            <p>
-                                Temporizador de pomodoros.
-                            </p>
-                            <div class="project-icons">
-                                <img src="images/icons/html.svg" alt="HTML">
-                                <img src="images/icons/css.svg" alt="CSS">
-                                <img src="images/icons/javascript.svg" alt="JAVASCRIPT">
-                                <img src="images/icons/react.svg" alt="REACT">
-                            </div>
-                            <a target="_blank" href="https://pomos-io.vercel.app/">Visualizar projeto</a>
-                        </div>
-                        <img class="project-interface" src="./images/projects/pomos-interface.png" alt="Pomos">
-                    </article>
-
-                    <article class="project-card" data-anime="top">
-                        <img class="project-interface" src="./images/projects/buscacep-interface.png" alt="Buscacep">
-                        <div class="project-card-details">
-                            <h3 class="project-card-title">Buscacep</h3>
-                            <p>
-                                Aplicação desenvolvida para consumir dados a partir do CEP, obtidos utilizando a API
-                                externa viacep.
-                            </p>
-                            <div class="project-icons">
-                                <img src="images/icons/html.svg" alt="HTML">
-                                <img src="images/icons/css.svg" alt="CSS">
-                                <img src="images/icons/javascript.svg" alt="JAVASCRIPT">
-                            </div>
-                            <a target="_blank" href="https://gustavofbc.github.io/buscacep/">Visualizar projeto</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-anime="top">
-                        <div class="project-card-details">
-                            <h3 class="project-card-title">Filter-next</h3>
-                            <p>
-                                Aplicação de filtragrem de dados de usuários (por nome e endereço), obtidos utilizando a
-                                API externa jsonplaceholder.
-                            </p>
-                            <div class="project-icons">
-                                <img src="images/icons/html.svg" alt="HTML">
-                                <img src="images/icons/css.svg" alt="CSS">
-                                <img src="images/icons/javascript.svg" alt="JAVASCRIPT">
-                                <img src="images/icons/react.svg" alt="REACT">
-                                <img src="images/icons/next.js.svg" alt="NEXT.JS">
-                            </div>
-                            <a target="_blank" href="https://filter-next.netlify.app/">Visualizar projeto</a>
-                        </div>
-                        <img class="project-interface" src="./images/projects/filter-next-interface.png"
-                            alt="Filter-next">
-                    </article>
-
-                    <article class="project-card" data-anime="top">
-                        <img class="project-interface" src="./images/projects/bin2dec-interface.png" alt="Bin2Dec">
-                        <div class="project-card-details">
-                            <h3 class="project-card-title">Bin2Dec</h3>
-                            <p>
-                                Conversor de números binários para decimal.
-                            </p>
-                            <div class="project-icons">
-                                <img src="images/icons/html.svg" alt="HTML">
-                                <img src="images/icons/css.svg" alt="CSS">
-                                <img src="images/icons/javascript.svg" alt="JAVASCRIPT">
-                                <img src="images/icons/react.svg" alt="REACT">
-                                <img src="images/icons/typescript.svg" alt="TYPESCRIPT">
-                                <img src="images/icons/styled-components.svg" alt="STYLED-COMPONENTS">
-                            </div>
-                            <a target="_blank" href="https://binary-2-decimal.netlify.app/">Visualizar projeto</a>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Contato -->
-        <section id="contato">
-            <div class="container-contato">
-                <h2>
-                    <img class="animation-dev" src="images/arrow_left.svg" alt="arrow-left-icon">
-                    Contato
-                    <img class="animation-dev" src="images/arrow_right.svg" alt="arrow-right-icon">
-                </h2>
-                <div class="containter-contato-content" data-anime="down">
-                    <form method="POST" action="https://formspree.io/f/xqkggpqp">
-                        <div class="container-form">
-                            <article>
-                                <div class="card-mensagem" data-anime="left">
-                                    <img class="mandalorian" src="images/mandalorian_mask.gif" alt="mandalorian">
-                                    <p class="subtitle">Obrigado pela visita!</p>
-                                    <p class="texto-agradecimentos">
-                                        Caro Mestre(a) Jedi / Lord Sith,
-                                        deixe uma mensagem de
-                                        qualquer parte da
-                                        galáxia...
-                                    </p>
-                                </div>
-                            </article>
-
-                            <div class="card-contact">
-                                <label for="email" data-anime="left">E-mail</label>
-                                <input name="e-mail" type="email" placeholder="Digite seu e-mail aqui..." required>
-
-                                <label for="message" data-anime="left">Mensagem</label>
-                                <textarea name="mensagem" type="text" placeholder="Digite sua mensagem aqui..."
-                                    cols="50" rows="8" required></textarea>
-
-                                <input class="btn-submit" type="submit" value="Enviar">
-                            </div>
-                        </div>
-                    </form>
-                    <div class="icons-contact">
-                        <a href="https://www.instagram.com/gustavo_fbc/ " target="_blank">
-                            <img src="images/icons/contact/instagram.svg" alt="Instagram">
-                        </a>
-                        <a href="https://github.com/gustavofbc" target="_blank">
-                            <img src="images/icons/contact/github.svg" alt="Github">
-                        </a>
-                        <a href="https://www.linkedin.com/in/gustavo-felipe-batista-carneiro-9342171a8/"
-                            target="_blank">
-                            <img src="images/icons/contact/linkedin.svg" alt="Linkedin">
-                        </a>
+            <!-- experience card -->
+            <div class="card-container">
+              <div class="card-experience">
+                <div class="card-experience-title">
+                  <div class="card-experience-title-container">
+                    <div class="title">
+                      <img class="icon" src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
+                      <h3>PRGNET</h3>
                     </div>
-
+                    <span>05/2021 - 06/2021</span>
+                  </div>
+                  <h4></h4>
                 </div>
-                <footer>
-                    <p class="text-footer">Desenvolvido com muito <img src="images/coffee.svg" alt="coffee"> por {
-                        Gustavo <span> Felipe }</span></p>
-                </footer>
+                <div class="card-experience-text">
+                  <p></p>
+                </div>
+                <div class="card-experience-title">
+                  <div class="card-experience-title-container">
+                    <div class="title">
+                      <img class="icon" src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
+                    </div>
+                    <span>09/2020 - 05/2021</span>
+                  </div>
+                  <h4></h4>
+                </div>
+                <div class="card-experience-text">
+                  <p></p>
+                </div>
+                <div class="card-experience-skills">
+                  <p class="skill-three"></p>
+                  <p class="skill-one"></p>
+                  <p class="skill-two"></p>
+                  <p class="skill-four"></p>
+                </div>
+              </div>
+              <div class="container-image">
+                <div class="pixel-animated pixel-animated-four">
+                  <img src="./images/sprites/souta-munakata-pixel.svg" alt="Souta Muranaka pixel art" />
+                  <p></p>
+                </div>
+              </div>
             </div>
-        </section>
+
+            <!-- experience card -->
+            <div class="card-container">
+              <div class="card-experience">
+                <div class="card-experience-title">
+                  <div class="card-experience-title-container">
+                    <div class="title">
+                      <img class="icon" src="./images/icons/headset-pixel.svg" alt="headset pixel icon">
+                      <h3>Exception Jr</h3>
+                    </div>
+                    <span>09/2019 - 08/2020</span>
+                  </div>
+                  <h4></h4>
+                </div>
+                <div class="card-experience-text">
+                  <p></p>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <p></p>
+                </div>
+                <div class="card-experience-title">
+                  <div class="card-experience-title-container">
+                    <div class="title">
+                      <img class="icon" src="./images/icons/file-pixel.svg" alt="File pixel icon">
+                    </div>
+                    <span>06/2019 - 09/2019</span>
+                  </div>
+                  <h4></h4>
+                </div>
+                <div class="card-experience-text">
+                  <p></p>
+                </div>
+                <div class="card-experience-skills">
+                  <p class="skill-three"></p>
+                  <p class="skill-one"></p>
+                  <p class="skill-two"></p>
+                  <p class="skill-four"></p>
+                </div>
+              </div>
+              <div class="container-image">
+                <div class="pixel-animated pixel-animated-six">
+                  <img src="./images/sprites/kodama-pixel.svg" alt="Souta Muranaka pixel art" />
+                  <p></p>
+                </div>
+              </div> 
+            </div>
+
+            <!-- experience card -->
+            <div class="card-container">
+              <div class="card-experience">
+              <div class="card-experience-title">
+              <div class="card-experience-title-container">
+                <div class="title">
+                  <img class="icon" src="./images/icons/dev-pixel.svg" alt="headset pixel icon">
+                  <h3>CTIC - UNIFESSPA</h3>
+                </div>
+                <span>08/2018 - 08/2020</span>
+              </div>
+              <h4></h4>
+              </div>
+              <div class="card-experience-text">
+              <p></p>
+              <p></p>
+              </div>
+              <div class="card-experience-skills">
+                <p class="skill-three"></p>
+                <p class="skill-one"></p>
+                <p class="skill-two"></p>
+              </div>
+              </div>
+              <div class="container-image">
+                <div class="pixel-animated pixel-animated-two">
+                  <img src="./images/sprites/senbonzakura-kageyoshi-pixel.svg" alt="Senbonzakura kageyoshi pixel art" />
+                  <p class="pixel-describe-object"></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- experience card -->
+            <div class="card-container">
+              <div class="card-experience card-experience-voluntary">
+              <div class="card-experience-title">
+              <div class="card-experience-title-container">
+                <div class="voluntary">
+                  <img src="./images/icons/heart-pixel.svg" alt="heart pixel icon">
+                  <h3>PID (Programa de Inclusão Digital) - UNIFESSPA</h3>
+                </div>
+                <span class="voluntary">10/2018 - 01/2019</span>
+              </div>
+              <h4></h4>
+            </div>
+            <div class="card-experience-text">
+              <p></p>
+              </div>
+              <div class="card-experience-skills">
+                <p class="skill-three"></p>
+                <p class="skill-one"></p>
+                <p class="skill-two"></p>
+                <p class="skill-four"></p>
+              </div>
+              </div>
+              <div class="container-image">
+                <div class="pixel-animated pixel-animated-eight">
+                  <img src="./images/sprites/enchiridion-pixel.svg" alt="enchiridion pixel art" />
+                  <p class="pixel-describe-object"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Knowledge -->
+      <section id="knowledge">
+        <div class="container container-knowledge" data-anime="left">
+          <div class="knowledge-title-container">
+            <!-- title -->
+            <div class="title-container">
+              <div class="dev-icons">
+                <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="22" width="8" height="8"/>
+                  <rect x="14" y="8" width="8" height="8"/>
+                  <rect x="6" y="16" width="8" height="8"/>
+                  <rect x="14" y="24" width="8" height="8"/>
+                  <rect x="22" y="32" width="8" height="8"/>
+                </svg>
+                <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="32" width="8" height="8"/>
+                  <rect x="24" y="8" width="8" height="8"/>
+                  <rect x="16" y="16" width="8" height="8"/>
+                  <rect x="8" y="24" width="8" height="8"/>
+                  <rect y="32" width="8" height="8"/>
+                </svg>
+                <h2 class="title"></h2>
+                <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="18" y="40" width="8" height="8" transform="rotate(-180 18 40)"/>
+                  <rect x="26" y="32" width="8" height="8" transform="rotate(-180 26 32)"/>
+                  <rect x="34" y="24" width="8" height="8" transform="rotate(-180 34 24)"/>
+                  <rect x="26" y="16" width="8" height="8" transform="rotate(-180 26 16)"/>
+                  <rect x="18" y="8" width="8" height="8" transform="rotate(-180 18 8)"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- texts -->
+            <div class="knowledge-text-container">
+              <p></p>
+              <ul><li></li></ul>
+            </div>
+
+            <!-- images -->
+            <div class="knowledge-image-container">
+              <div class="icon-base">
+                <div class="pixel-animated pixel-animated-two">
+                  <img src="./images/sprites/punpun-pixel.svg" alt="Punpun pixel art" />
+                  <p></p>
+                </div>
+              </div>
+              <img
+                class="my-face"
+                src="images/gustavo-fbc.png"
+                alt="Gustavo Felipe"
+              />
+              <div class="icon-top">
+                <div class="pixel-animated pixel-animated-seven">
+                  <img src="images/sprites/black-cup-pixel.svg" alt="Black cup of coffee pixel art" />
+                  <p></p>
+                </div>
+              </div>
+              <div class="icon-bottom">
+                <div class="pixel-animated pixel-animated-eight">
+                  <img src="images/sprites/bmo-pixel.svg" alt="Black cup of coffee pixel art" />
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="knowledge-cards-container">
+            <div class="knowledge-card" data-anime="down">
+              <h3 class="knowledge-card-title"></h3>
+              <div class="card-elements">
+                <article class="card-item">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/html_dark.png" alt="HTML" />
+                  <h4>HTML</h4>
+                </article>
+
+                <article class="card-item">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/css_dark.png" alt="CSS" />
+                  <h4>CSS</h4>
+                </article>
+
+                <article class="card-item">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/javascript_dark.png" alt="JAVASCRIPT" />
+                  <h4>JavaScript</h4>
+                </article>
+
+                <article class="card-item">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/react_dark.png" alt="REACT" />
+                  <h4>React</h4>
+                </article>
+
+                <article class="card-item">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/typescript_dark.png" alt="TYPESCRIPT" />
+                  <h4>TypeScript</h4>
+                </article>
+
+                <!-- <article class="card-item">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/tailwind_dark.png" alt="JAVASCRIPT" />
+                  <h4>Tailwind CSS</h4>
+                </article> -->
+
+              </div>
+            </div>
+
+            <div class="knowledge-card" data-anime="down">
+              <h3 class="knowledge-card-title"></h3>
+              <div class="card-elements">
+                <article class="card-item">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/javascript_dark.png" alt="JAVASCRIPT" />
+                  <h4>JavaScript</h4>
+                </article>
+
+                <article class="card-item">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/react_dark.png" alt="REACT" />
+                  <h4>React</h4>
+                </article>
+
+                <article class="card-item">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/next_js_dark.png" alt="NEXT JS" />
+                  <h4>NextJs</h4>
+                </article>
+              </div>
+            </div>
+
+            <div class="knowledge-card" data-anime="down">
+              <h3 class="knowledge-card-title"></h3>
+              <div class="card-elements">
+                <article class="card-item">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/git_dark.png" alt="GIT" />
+                  <h4>GIT</h4>
+                </article>
+
+                <article class="card-item">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/sass_dark.png" alt="SASS" />
+                  <h4>SASS</h4>
+                </article>
+
+                <article class="card-item">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/npm_dark.png" alt="NPM" />
+                  <h4>NPM</h4>
+                </article>
+
+                <article class="card-item">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/figma_dark.png" alt="FIGMA" />
+                  <h4>Figma</h4>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects  -->
+      <section id="projects">
+        <div class="container container-unique" data-anime="left">
+          <!-- title -->
+          <div class="title-container">
+            <div class="dev-icons">
+              <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="22" width="8" height="8"/>
+                <rect x="14" y="8" width="8" height="8"/>
+                <rect x="6" y="16" width="8" height="8"/>
+                <rect x="14" y="24" width="8" height="8"/>
+                <rect x="22" y="32" width="8" height="8"/>
+              </svg>
+              <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="32" width="8" height="8"/>
+                <rect x="24" y="8" width="8" height="8"/>
+                <rect x="16" y="16" width="8" height="8"/>
+                <rect x="8" y="24" width="8" height="8"/>
+                <rect y="32" width="8" height="8"/>
+              </svg>
+              <h2 class="title"></h2>
+              <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="18" y="40" width="8" height="8" transform="rotate(-180 18 40)"/>
+                <rect x="26" y="32" width="8" height="8" transform="rotate(-180 26 32)"/>
+                <rect x="34" y="24" width="8" height="8" transform="rotate(-180 34 24)"/>
+                <rect x="26" y="16" width="8" height="8" transform="rotate(-180 26 16)"/>
+                <rect x="18" y="8" width="8" height="8" transform="rotate(-180 18 8)"/>
+              </svg>
+            </div>
+          </div>
+          
+          <div class="instructions-container">
+            <p></p>
+          </div>
+
+          <div class="container-projects">
+            <article class="container-project" data-anime="top">
+              <div class="container-project-title">
+                <h3 class="project-title">Pomos</h3>
+                <p class="project-description"></p>
+                <div class="project-icons">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/html_dark.png" alt="HTML" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/css_dark.png" alt="CSS" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/javascript_dark.png" alt="JAVASCRIPT" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/react_dark.png" alt="REACT" />
+                </div>
+                <a
+                  target="_blank"
+                  class="project-button"
+                  href="https://pomos-io.vercel.app/"
+                >
+                  Demo
+                </a>
+              </div>
+              <div class="container-project-interface">
+                <img
+                  src="./images/projects/pomos-interface.png"
+                  alt="Pomos"
+                />
+              </div>
+            </article>
+
+            <article class="container-project" data-anime="top">
+              <div class="container-project-title">
+                <h3 class="project-title">Buscacep</h3>
+                <p class="project-description"></p>
+                <div class="project-icons">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/html_dark.png" alt="HTML" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/css_dark.png" alt="CSS" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/javascript_dark.png" alt="JAVASCRIPT" />
+                </div>
+                <a
+                  target="_blank"
+                  class="project-button"
+                  href="https://gustavofbc.github.io/buscacep/"
+                >
+                  Demo
+                </a>
+              </div>
+              <div class="container-project-interface">
+                <img
+                  src="./images/projects/buscacep-interface.png"
+                  alt="Buscacep"
+                />
+              </div>
+            </article>
+
+            <article class="container-project" data-anime="top">
+              <div class="container-project-title">
+                <h3 class="project-title">Bin2Dec</h3>
+                <p class="project-description"></p>
+                <div class="project-icons">
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/html_dark.png" alt="HTML" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/css_dark.png" alt="CSS" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/javascript_dark.png" alt="JAVASCRIPT" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/react_dark.png" alt="REACT" />
+                  <img src="https://raw.githubusercontent.com/gustavofbc/pixel_of_shields/main/dark/typescript_dark.png" alt="TYPESCRIPT" />
+                </div>
+                <a
+                  target="_blank"
+                  class="project-button"
+                  href="https://binary-2-decimal.netlify.app/"
+                >
+                  Demo
+                </a>
+              </div>
+              <div class="container-project-interface">
+                <img
+                  src="./images/projects/bin2dec-interface.png"
+                  alt="Bin2Dec"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container container-unique">
+          <!-- title -->
+          <div class="title-container">
+            <div class="dev-icons">
+              <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="22" width="8" height="8"/>
+                <rect x="14" y="8" width="8" height="8"/>
+                <rect x="6" y="16" width="8" height="8"/>
+                <rect x="14" y="24" width="8" height="8"/>
+                <rect x="22" y="32" width="8" height="8"/>
+              </svg>
+              <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="32" width="8" height="8"/>
+                <rect x="24" y="8" width="8" height="8"/>
+                <rect x="16" y="16" width="8" height="8"/>
+                <rect x="8" y="24" width="8" height="8"/>
+                <rect y="32" width="8" height="8"/>
+              </svg>
+              <h2 class="title"></h2>
+              <svg class="animation-dev" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="18" y="40" width="8" height="8" transform="rotate(-180 18 40)"/>
+                <rect x="26" y="32" width="8" height="8" transform="rotate(-180 26 32)"/>
+                <rect x="34" y="24" width="8" height="8" transform="rotate(-180 34 24)"/>
+                <rect x="26" y="16" width="8" height="8" transform="rotate(-180 26 16)"/>
+                <rect x="18" y="8" width="8" height="8" transform="rotate(-180 18 8)"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="container-contact" data-anime="down">
+            <div class="card-message" data-anime="left">
+              <div class="pixel-fixed">
+                <img
+                  class="mandalorian"
+                  src="images/sprites/mandalorian-pixel.gif"
+                  alt="Mandalorian helmet pixel"
+                />
+                  <p></p>
+              </div>
+              <h4></h4>
+              <p class="message"></p>
+            </div>
+
+            <div class="container-form">
+              <form
+                method="POST"
+                action="https://formspree.io/f/xqkggpqp"
+                class="card-form"
+              >
+                <label for="name" data-anime="left"></label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                />
+                <label for="email" data-anime="left"></label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+                <label for="message" data-anime="left"></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  type="text"
+                  rows="8"
+                  required
+                ></textarea>
+                <button class="btn-submit" type="submit"></button>
+              </form>
+            </div>
+          </div>
+
+          <div class="developer-by-text">
+            <hr/>
+            <p>
+              <img src="images/sprites/cup-pixel.svg" alt="cup" />
+              &thinsp;
+              <span></span>&thinsp; { Gustavo
+              <span>&thinsp; Felipe }</span>
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <script src="navbar.js"></script>
-</body>
+    <!-- Footer -->
+    <footer>
+      <div class="container container-unique">
+        <div></div>
+        <!-- <hr/> -->
+        <div class="content-baseline">
+          <div class="container-logo">
+            <a href="#home">
+              <svg class="logo" width="64" height="64" viewBox="0 0 64 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30.5838 58.8892V47.3208H41.739C50.3044 47.3208 50.3044 42.4213 50.3044 36.9649H30.5838V31.2612C30.5838 28.6753 33.6866 26.1018 36.6443 26.1018H61.9957C61.9957 26.1018 61.9957 30.8529 61.9957 37.6578C61.9957 44.4627 57.884 51.6753 50.3044 55.6228C42.7249 59.5703 30.5838 58.8892 30.5838 58.8892ZM30.5838 58.8892V71.8185C30.5838 71.8185 26.7854 72.2268 24.5319 71.8185C22.2785 71.4102 18.7819 69.3688 18.7819 64.197V58.3448M18.7819 58.3448L19.1321 28.4031C19.1321 23.0829 25.2719 14.5953 33.8519 14.5953H53.288C57.5132 14.5953 62.161 11.7991 61.9957 7.03564V2H37.7955H32.5956C12.8779 2 3.72317 14.5953 2.31476 27.4504C0.906348 40.3055 3.85268 54.534 18.7819 58.3448Z" stroke="#467CFF" stroke-width="4"/>
+              </svg>  
+            </a>
+          </div>
+          <div class="container-text-rights">
+            <p></p>
+          </div>
+          <div class="container-contact-icons">
+            <!-- Github -->
+            <a
+              href="https://github.com/gustavofbc"
+              target="_blank"
+            >
+              <img src="/images/icons/contact/github-pixel.svg" alt="Github logo pixel">
+            </a>
+            <!-- Gmail -->
+            <a
+              href="mailto:gustavo.felipebc@gmail.com"
+            >
+              <img src="/images/icons/contact/gmail-pixel.svg" alt="Gmail logo pixel">
+            </a>
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/gustavo_fbc/"
+              target="_blank"
+            >
+              <img src="/images/icons/contact/instagram-pixel.svg" alt="Instagram logo pixel">
+            </a>
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/gustavo-felipe-batista-carneiro"
+              target="_blank"
+            >
+              <img src="/images/icons/contact/linkedin-pixel.svg" alt="LinkedIn logo pixel">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <script src="navbar.js"></script>
+    <script src="darkmode.js"></script>
+    <script src="animationBody.js"></script>
+    <script src="translate.js"></script>
+  </body>
 </html>

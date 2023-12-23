@@ -1,0 +1,120 @@
+#about-me {
+  background: var(--background);
+}
+
+.about-me-image {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.about-me-image-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 18rem;
+  gap: 1rem;
+  padding: 1rem;
+  color: var(--text);
+  text-align: center;
+}
+
+.about-me-image-text img {
+  margin-bottom: 1.2rem;
+  max-width: 14rem;
+}
+
+.about-me-image-text p {
+  color: var(--text);
+  line-height: 1.4rem;
+  font-size: 0.8rem;
+}
+
+.about-me-image img {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-me-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: var(--text);
+  padding: 2rem;
+  margin-top: 2rem;
+  border: 2px solid;
+  border-image: linear-gradient( to left, var(--primary), transparent ) 1%;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.about-me-text  #description p, .about-me-text #description span {
+  font-family: 'VT323-Regular';
+  font-size: 1.8rem;
+}
+
+.about-me-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me-title img {
+  width: 1.2rem;
+}
+
+.about-me-title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.about-me-title .title {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.avatar {
+  position: relative;
+  animation: avatar-animation 5s forwards infinite;
+}
+
+.about-me-text li{
+  font-family: 'VT323-Regular';
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.about-me-text li::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
+  background-color: var(--primary);
+}
+
+.text-primary {
+  font-family: 'VT323-Regular';
+  font-size: 1.6rem;
+  color: var(--primary);
+}
+
+@media only screen and (min-width: 640px) {
+  .about-me-title {
+    align-items: end;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .about-me-title {
+    justify-content: start;
+  }
+}

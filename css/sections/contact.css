@@ -1,0 +1,151 @@
+.container-contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-message {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--text);
+  gap: 1rem;
+  padding: 1rem;
+  border: 2px solid;
+  border-image: linear-gradient( to right, var(--primary), transparent ) 1%;
+}
+
+.card-message img {
+  width: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-message .pixel-fixed p {
+  top: 5%;
+  left: 15%;
+}
+
+.card-message h4 {
+  color: var(--primary);
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.message {
+  font-family: 'VT323-Regular';
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.card-form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem 1rem;
+  border: 2px solid;
+  border-image: linear-gradient( to left, var(--primary), transparent ) 1%;
+}
+
+.card-form label {
+  font-size: 0.8rem;
+  color: var(--text);
+}
+
+.card-form label:before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 12px;
+  margin-bottom: 4px;
+  background-color: var(--primary);
+}
+
+.card-form label:after {
+  content: ':';
+  color: var(--primary);
+}
+
+.card-form input, textarea {
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-family: 'VT323-Regular';
+  border-radius: 0.4rem;
+  border: 2px solid var(--text);
+  background: #f0f0f0;
+}
+
+.btn-submit {
+  cursor: pointer;
+  color: var(--text);
+  background: transparent;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  border: 2px solid var(--primary);
+  transition: all 0.3s ease;
+  font-family: 'PressStart-Regular';
+}
+
+.btn-submit:hover {
+  background: var(--primary);
+}
+
+.developer-by-text {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.developer-by-text p {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  font-size: 1.6rem;
+  font-family: 'VT323-Regular';
+  margin: 1rem 0;
+}
+
+.developer-by-text img {
+  width: 3rem;
+}
+
+.developer-by-text p span {
+  color: var(--primary);
+  font-size: 1.6rem;
+  font-family: 'VT323-Regular';
+}
+
+@media only screen and (min-width: 640px) {
+  .container-contact {
+    flex-direction: row;
+  }
+
+  .card-message {
+    max-width: 12rem;
+  }
+
+  .developer-by-text {
+    padding: 0 4rem;
+  }
+  
+  .card-message .pixel-fixed p {
+    top: 100px;
+    left: 10px;
+  }
+}

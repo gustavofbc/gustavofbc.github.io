@@ -1,7 +1,7 @@
 # Portfólio
 
 <div align="center">
-  <img alt="Logo" src="https://github.com/gustavofbc/gustavofbc.github.io/blob/main/images/logo-max.svg" width="200"/>
+  <img alt="Logo" src="https://github.com/gustavofbc/gustavofbc.github.io/blob/main/images/logo.png" width="200"/>
 </div>
 <br/>
 
@@ -27,12 +27,12 @@
 <hr/>
 
 <p><b> :computer: Desktop:</b></p>
-<img src="./images/demo/demo_v4.gif" alt="site desktop">
+<img src="./images/demo/demo_v5.gif" alt="site desktop">
 <hr>
 
 <p><b> :iphone: Mobile:</b></p>
 <br/>
-<img src="./images/demo/demo_mobile_v4.gif" alt="site mobile">
+<img src="./images/demo/demo_mobile_v5.gif" alt="site mobile">
 <hr>
 
 ### :clipboard: Desafios:
@@ -64,6 +64,16 @@ As atividades desempenhadas seguem mapeadas abaixo:
 - [x] Atualizar telas via Figma;
 - [x] Menu mobile refatorado;
 - [x] Novos ícones adicionados;
+- [x] Refatoração 5 -  Novo estilo, cores, artes, exposição de elementos, modo noturno e claro, tradução (pt-br e en);
+- [x] Novas telas projetadas no Figma;
+- [x] Novas fontes adicionadas (maior relação com a nova temática do site);
+- [x] Novos ícones feitos com pixel art;
+- [x] Textos de referência para cada pixel art (visível por meio da interação);
+- [x] Nova organização dos arquivos (separação por sessões no CSS, arquivos de tradução manual);
+- [x] Novos recursos de animação ao longo de todo o site;
+- [x] Novos recursos de interação com o site (hover e touchstart nas artes de pixel);
+- [x] Funcionalidade de escolha de modo (noturno e claro);
+- [x] Novo recurso de tradução (manual, via CSS devido a necessidade de referenciar as obras de pixel);
 
 <hr/>
 
@@ -84,11 +94,11 @@ e voalá! :tada:
 
 ### :mortar_board: Aprendizados
 
--> HTML5: semântico, padronização de nomenclatura de classes, ID's e elementos;
+-> HTML5: semântico, padronização de nomenclatura de classes;
 
--> CSS3: animações, transições, responsividade, media-queries.
+-> CSS3: animações, transições, responsividade, media-queries, nova organização de arquivos.
 
--> JavaScript: import de fonts via arquivos e não somente via link, acessibilidade nas queries, animação ao scroll.
+-> JavaScript: import de fonts via arquivos e não somente via link, acessibilidade nas queries, animação ao scroll, animações de movimentação, animações pausadas por meio da interação, tradução, uso do LocalStorage.
 
 -> Figma: prototipação de interfaces, exportação de ícones e elementos customizados.
 

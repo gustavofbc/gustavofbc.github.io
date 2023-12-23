@@ -1,0 +1,331 @@
+/* nav */
+.en nav ul li:nth-child(1) a::after {
+  content: "About me"
+}
+
+.en nav ul li:nth-child(2) a::after {
+  content: "Experiences"
+}
+
+.en nav ul li:nth-child(3) a::after {
+  content: "Knowledge"
+}
+
+.en nav ul li:nth-child(4) a::after {
+  content: "Projects"
+}
+
+.en nav ul li:nth-child(5) a::after {
+  content: "Contact"
+}
+
+/* section: home */
+.en .text-with-pixel > p::before {
+  content: "Hello, I'm"
+}
+
+.en .home-text .describe::before {
+  content: 'Front-end developer passionate about pixel art, coffee connoisseur, lo-fi style enthusiast, casual cyclist and, above all, a dedicated professional. hohoho!'
+}
+
+.en .curriculum-button a::after {
+  content: "Curriculum"
+}
+
+/* section: aboutme */
+
+.en .about-me-image-text > p::before {
+  content: 'This is my kitten, Floki. My faithful companion, a great warrior who has been through several battles with me, extremely cute and playful.'
+}
+
+.en .about-me-title .title::before {
+  content: "About me"
+}
+
+.en .about-me-text .paragraph-one::before {
+  content: "I have a degree in Information Systems from the Federal University of South and Southeast of Pará (UNIFESSPA), I work with front-end development and have knowledge related to this aspect, as well as project management and computer networks."
+}
+
+.en .about-me-text .paragraph-two::before {
+  content: "I am a committed professional and I am sure that effort is a word that defines me, I always try to support everything and everyone in any way I can. I believe that collaboration strengthens a team and a strong, cohesive and communicative team is capable of achieving the most ambitious results."
+}
+
+.en .about-me-text .text-primary::before {
+  content: "Some of my hobbies and likes are: "
+}
+
+.en .about-me-text #first::after {
+  content: "Anime;"
+}
+
+.en .about-me-text #second::after {
+  content: "Cycling;"
+}
+
+.en .about-me-text #third::after {
+  content: "Pixel art;"
+}
+
+.en .about-me-text #fourth::after {
+  content: "Coffee and tea;"
+}
+
+.en .about-me-text #fifth::after {
+  content: "Books and manga;"
+}
+
+/* section: experiences */
+.en .experiences-title .title::before {
+  content: "Experiences"
+}
+
+.en .card-container:nth-child(1) h4::before {
+  content: "Jr front end developer"
+}
+
+.en .card-container:nth-child(1) .card-experience-text p::before {
+  content: "I worked on the development of responsive web interfaces with the stack: ReactJS, NextJS, Tailwind CSS, Directus CMS, WordPress and Elementor. My main contributions to the company were the development of Landing Pages with WordPress and Elementor, the development of the interface and functionalities of a CMS based on Directus to build pages with specific objectives of capitalization and registration of new potential customers, documentation of processes by using the Babel tool, migrating projects to version 13 of NextJS and creating the company's Design System using Storybook, ReactJS, TypeScript, Tailwind CSS, Shadcn/ui and Radix UI."
+}
+
+.en .card-container:nth-child(2) h4::before {
+  content: "Technical support assistant"
+}
+
+.en .card-container:nth-child(2) .card-experience-text p::before {
+  content: "I worked in support and customer service, configuring routers, issuing announcements, opening and managing protocols. I proposed improvements in the workload organization process during my work period that generated significant results for the team, in addition to being appointed to prepare emergency notices via SMS and other means of communication during my shift."
+}
+
+.en .card-container:nth-child(3) h4::before {
+  content: "Technical support assistant"
+}
+
+.en .card-container:nth-child(3) .card-experience-text p::before {
+  content: "I worked in support and customer service, configuring routers, managing protocols, mapping POPs, configuring various radio equipment, provisioning ONUs and monitoring the network. During my period working at NOC my main contribution was the mapping of network devices using spreadsheets, thanks to this several no longer active connection points were removed as there was no need for them to be managed, making real usage management of bandwidth in front of customers more accurate."
+}
+
+.en .card-container:nth-child(3) .card-experience-title:nth-child(3) h4::before {
+  content: "Treinee"
+}
+
+.en .card-container:nth-child(3) .card-experience-text:nth-child(4) p::before {
+  content: "As an intern, I was responsible for customer service, configuring routers, managing protocols, configuring radio equipment, provisioning ONUs and more basic demands. During this period, I would like to highlight the documentation/standardization of the procedures I carried out, as these were used as a basis and aid for everything from end customer service to the configuration of the main models of routers and radio equipment that we use in company."
+}
+
+.en .card-container:nth-child(4) h4::before {
+  content: "Project director / Developer"
+}
+
+.en .card-container:nth-child(4) .card-experience-text p:nth-child(1)::before {
+  content: "After a restructuring in the board, I was nominated and accepted to be reassigned to the project board considering the need and mainly my management-related skills. During my time in the position I was responsible for project management and development, application of agile methodologies, use of concepts, techniques and tools in  software projects. My main contributions were:"
+}
+
+.en .card-container:nth-child(4) .card-experience-text li:nth-child(1)::before {
+  content: "- Implementation of processes (Threads and Coffee): Due to the need for members to work in the remote model, internships, class periods and research and extension projects, it would not be possible to adopt a non-flexible development methodology. Therefore, we used and adapted some SCRUM ceremonies;"
+}
+
+.en .card-container:nth-child(4) .card-experience-text li:nth-child(2)::before {
+  content: " - Project manager and developer on the SICCO project (Consumption Control System);"
+}
+
+.en .card-container:nth-child(4) .card-experience-text li:nth-child(3)::before {
+  content: " - Developer on the LavCar project;"
+}
+
+.en .card-container:nth-child(4) .card-experience-text p:nth-child(3)::before {
+  content: "I also highlight that it was precisely considering this demand for a flexible methodology that considered the remote operating model driven by the COVID-19 pandemic, the context in which EJs operate and the concepts of agile methodologies/processes that I developed my TCC thesis (PRODEV JR) , being a proposal for a development model based on solving this problem."
+}
+
+.en .card-container:nth-child(4) .card-experience-title:nth-child(3) h4::before {
+  content: "Financial administrative director"
+}
+
+.en .card-container:nth-child(4) .card-experience-text:nth-child(4) p:nth-child(1)::before{
+  content: 'I was a founding member of EJ along with the other members of the first board. During my time in the position I was responsible for managing and controlling the flow of inflows and outflows of the company\'s financial resources, managing contracts and implementing processes for requesting company resources for training and assistance purposes. As main contributions, I highlight the structuring and creation of the first contract models and the structuring of the organization and control of the validity of contracts through Google Drive, facilitating access to them and promoting greater transparency in the sector towards all EJ members.'
+}
+
+.en .card-container:nth-child(5) h4::before {
+  content: "Trainee"
+}
+
+.en .card-container:nth-child(5) .card-experience-text p:nth-child(1)::before {
+  content: "I worked with development and maintenance of web systems with an emphasis on PHP, MySQL in addition to the web triad (HTML, CSS and JavaScript); I worked with improvements, maintenance and development of new functionalities in SISPROL (Online Project System), mapping and documenting processes through BPMN and writing, creating a report on loss of link between members and the project, registration and sending functionality of files for admission of volunteer students and scholarship holders, among others."
+}
+
+.en .card-container:nth-child(5) .card-experience-text p:nth-child(2)::before {
+  content: "During my period as an intern I was mainly responsible for demands related to this system and as my biggest contribution, I highlight the creation of the module for issuing and validating certificates and declarations of registered extension and research projects."
+}
+
+.en .card-container:nth-child(6) h4::before {
+  content: "Voluntary"
+}
+
+.en .card-container:nth-child(6) .card-experience-text p:nth-child(1)::before {
+  content: "I worked as an instructor for the basic computer course, more precisely with the last module of the course, where I taught about how the internet works. During the first modules of the course, I worked alongside the other instructors, assisting in classes, answering questions and providing support. My biggest contribution to the project was the development of new material for the classes that I proposed to teach based on the course syllabus but also with additions that I considered more relevant and current, I also considered the rhythm of the class up to the present module and Through this, I developed activities and tests that were more consistent with the context of all students."
+}
+
+.en .card-experience-skills .skill-one::before {
+  content: 'Communication'
+}
+
+.en .card-experience-skills .skill-two::before {
+  content: 'Adaptability'
+}
+
+.en .card-experience-skills .skill-three::before {
+  content: 'Team work'
+}
+
+.en .card-experience-skills .skill-four::before {
+  content: 'Emotional intelligence'
+}
+
+/* section: knowledge */
+.en .knowledge-title-container .title::before {
+  content: "Knowledge"
+}
+
+.en .knowledge-text-container p::before {
+  content: "Here are some of the technologies that I am working on, studying and that I use in my work. It is worth highlighting my training, where I acquired knowledge in project management, programming, networks and met incredible people."
+}
+
+.en .knowledge-text-container li::before {
+  content: "bachelor in Information Systems (2017 - 2022)"
+}
+
+.en .knowledge-card:nth-child(1) .knowledge-card-title::before {
+  content: "Stack:"
+}
+
+.en .knowledge-card:nth-child(2) .knowledge-card-title::before {
+  content: "Studying/Improving:"
+}
+
+.en .knowledge-card:nth-child(3) .knowledge-card-title::before {
+  content: "Others:"
+}
+
+/* section: projects */
+.en #projects .title::before {
+  content: "Projects"
+}
+
+.en .instructions-container:after {
+  content: "To view the link, click on the project card.";
+}
+
+@media only screen and (min-width: 850px) {
+  .en .instructions-container:after {
+    content: "To view the link, hover your mouse over the project.";
+  }
+}
+
+.en .container-project:nth-child(1) .project-description::before {
+  content: 'Pomodoro timer'
+}
+
+.en .container-project:nth-child(2) .project-description::before {
+  content: 'App created to consume data from the Viacep API.'
+}
+
+.en .container-project:nth-child(3) .project-description::before {
+  content: 'Binary to decimal converter'
+}
+
+/* section: contact */
+.en #contact .title::before {
+  content: "Contact"
+}
+
+.en .container-contact .card-message h4::before {
+  content: "Thanks for the visit!"
+}
+
+.en .container-contact .card-message .message::before {
+  content: "Dear Jedi Master/Sith Lord, please leave a message anywhere in the galaxy..."
+}
+
+.en .container-contact .container-form label:nth-child(1)::after {
+  content: "Name:"
+}
+
+.en .container-contact .container-form label:nth-child(3)::after {
+  content: "E-mail:"
+}
+
+.en .container-contact .container-form label:nth-child(5)::after {
+  content: "Message:"
+}
+
+.en .btn-submit::before {
+  content: "Submit"
+}
+
+.en .developer-by-text p::before {
+  content: "Developer with lots of"
+}
+
+.en .developer-by-text p span:nth-child(2)::before {
+  content: 'by'
+}
+
+/* footer */
+.en .container-text-rights p::before {
+  content: "© All rights reserved."
+}
+
+/* Animações */
+.en .pixel-animated:nth-child(1) p::before {
+  content: 'Calcifer - Howl\'s moving castle'
+}
+
+.en .pixel-animated:nth-child(3) p::before {
+  content: 'Catbus - My Neighbor Totoro'
+}
+
+.en .about-me-title-container .pixel-fixed p::before {
+  content: "Totoro Chibi - My Neighbor Totoro"
+}
+
+.en .experiences-title-container p::before {
+  content: "Totoro - My Neighbor Totoro"
+}
+
+.en .container-cards .card-container:nth-child(1) .container-image p::before {
+  content: "Cup of coffee (I made this one just because I really like coffee)"
+} 
+
+.en .container-cards .card-container:nth-child(2) .container-image p::before {
+  content: 'No face - Spirited Away'
+}
+
+.en .container-cards .card-container:nth-child(3) .container-image p::before {
+  content: "Souta Munakata - Suzume no Tojimari"
+} 
+
+.en .container-cards .card-container:nth-child(4) .container-image p::before {
+  content: "Kodama - Princess Mononoke"
+} 
+
+.en .container-cards .card-container:nth-child(5) .container-image p::before {
+  content: "Senbonzakura kageyoshi (Sixth Division Captain's Sword - Byakuya Kuchiki)- Bleach"
+}
+
+.en .container-cards .card-container:nth-child(6) .container-image p::before {
+  content: "Enchiridion - Adventure time"
+}
+
+.en .knowledge-image-container .icon-base p::before {
+  content: "Punpun - Goodnight Punpun"
+}
+
+.en .knowledge-image-container .icon-top p::before {
+  content: "Black cup of coffee (pixel art)"
+}
+
+.en .knowledge-image-container .icon-bottom p::before {
+  content: "BMO - Adventure time"
+}
+
+.en .container-contact p::before {
+  content: "Din Djarin (helmet) - The Mandalorian"
+}

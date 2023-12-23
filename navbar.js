@@ -11,9 +11,9 @@ function toggleMenu(event) {
   //! ACESSIIBILIDADE
   const menuAtivado = nav.classList.contains("ativo");
   if (menuAtivado) {
-    event.currentTarget.setAttribute("aria-label", "Fechar menu");
+    event.currentTarget.setAttribute("aria-label", "Close menu");
   } else {
-    event.currentTarget.setAttribute("aria-label", "Abrir menu");
+    event.currentTarget.setAttribute("aria-label", "Open menu");
   }
 }
 
@@ -71,3 +71,31 @@ function initAnimationToScroll() {
 }
 
 initAnimationToScroll();
+
+
+function getActiveSection(){
+  const sections = document.querySelectorAll('section');
+  for(let section of sections){
+    const rect = section.getBoundingClientRect();
+    if(rect.top < 100 && rect.bottom > 100){
+      return section.id;
+    }
+  }
+}
+
+function updateActiveMenuItem() {
+  const activeSection = getActiveSection();
+  const menuItems = document.querySelectorAll('nav ul li');
+  
+  menuItems.forEach((item) => {
+    const link = item.querySelector('a');
+    const href = link.getAttribute('href');
+    if (typeof href === 'string' && href.slice(1) === activeSection) {
+      item.classList.add('active-link');
+    } else {
+      item.classList.remove('active-link');
+    }
+  });
+}
+
+window.addEventListener('scroll', updateActiveMenuItem);
