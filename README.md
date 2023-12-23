@@ -1,7 +1,7 @@
 # Portfólio
 
 <div align="center">
-  <img alt="Logo" src="https://github.com/gustavofbc/gustavofbc.github.io/blob/main/images/logo-max.svg" width="200"/>
+  <img alt="Logo" src="https://github.com/gustavofbc/gustavofbc.github.io/blob/main/images/logo.png" width="200"/>
 </div>
 <br/>
 
