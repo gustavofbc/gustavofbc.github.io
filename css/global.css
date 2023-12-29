@@ -37,6 +37,33 @@ section {
   background: var(--background);
 }
 
+.btn-summary {
+  width: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  padding: 0.8rem;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  transition: all 0.5s ease; 
+  cursor: pointer;
+  background: var(--background);
+  margin: 1rem 0rem;
+}
+
+.btn-summary:hover {
+  color: var(--primary);
+}
+
+#btn-summary {
+  margin: 0.5rem 0rem;
+}
+
+.hidden {
+  display: none;
+}
+
 /* cores */
 :root {
   --text: #0D0F1B;

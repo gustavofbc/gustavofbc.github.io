@@ -74,6 +74,12 @@
   backdrop-filter: blur(10px);
 }
 
+.card-experience {
+  max-width: 34rem;
+  //min-width: 34rem;
+  //width: 100%;
+}
+
 .container-image {
   display: flex;
   justify-content: center;
@@ -81,7 +87,7 @@
   min-height: 12rem;
 }
 
-.card-experience-title > h4 {
+.card-experience-title > h4, .title-2 {
   font-size: 0.8rem;
   color: var(--text);
   line-height: 1rem;
@@ -93,7 +99,6 @@
 
 .card-experience-voluntary {
   border: 2px solid var(--red);
-  /* border-image: linear-gradient( to left, var(--red), transparent ) 1%; */
 }
 
 .card-experience-title-container {
@@ -116,16 +121,26 @@
   line-height: 1.6rem;
 }
 
-.card-experience-text {
-  padding: 1rem 0rem;
+.card-experience-title h4 {
+  margin-bottom: 1rem;
 }
 
-.card-experience-text > p, .card-experience-text > ul > li {
+.card-experience-text {
+  min-width: 100%;
+  padding: 0rem;
+  margin-top: -0.5rem;
+}
+
+.card-experience-text > p, .card-experience-text li, .text-2, .text-3, .text-4 {
   font-size: 1.6rem;
   font-family: 'VT323-Regular';
 }
 
-.card-experience-text > ul > li {
+.text-full {
+  margin: 0.5rem 0rem;
+}
+
+.card-experience-text li {
   margin: 1rem;
 }
 
@@ -133,7 +148,7 @@
   display: flex;
   flex: 1;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 0.8rem;
 }
 
@@ -166,6 +181,10 @@
     flex-direction: row;
     margin-bottom: 2rem;
     gap: 1rem;
+  }
+
+  .card-experience {
+    width: 100%;
   }
 
   .container-image {
